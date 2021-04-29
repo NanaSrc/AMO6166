@@ -30,13 +30,15 @@ namespace marco
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbMain = new System.Windows.Forms.Label();
+            this.tbMemoria = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.tbMemoria);
+            this.groupBox1.Controls.Add(this.lbMain);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(581, 295);
@@ -44,15 +46,23 @@ namespace marco
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Memórias";
             // 
-            // label1
+            // lbMain
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(31, 44);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(504, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Se você conseguiu entrar aqui, significa que você é o Marco, o que também signifi" +
-    "ca que você";
+            this.lbMain.AutoSize = true;
+            this.lbMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbMain.Location = new System.Drawing.Point(15, 35);
+            this.lbMain.Name = "lbMain";
+            this.lbMain.Size = new System.Drawing.Size(504, 30);
+            this.lbMain.TabIndex = 0;
+            this.lbMain.Text = "Se você conseguiu entrar aqui, significa que você é o Marco, o que também signifi" +
+    "ca que você\r\n é o motivo pelo qual esse programa existe\r\n";
+            // 
+            // tbMemoria
+            // 
+            this.tbMemoria.Location = new System.Drawing.Point(15, 88);
+            this.tbMemoria.Name = "tbMemoria";
+            this.tbMemoria.Size = new System.Drawing.Size(349, 23);
+            this.tbMemoria.TabIndex = 1;
             // 
             // love
             // 
@@ -73,6 +83,7 @@ namespace marco
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox tbAlgumaCoisa;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbMain;
+        private System.Windows.Forms.TextBox tbMemoria;
     }
 }
