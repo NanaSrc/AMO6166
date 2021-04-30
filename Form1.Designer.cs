@@ -65,6 +65,7 @@ namespace marco
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Login, my angel";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // rbSim
             // 
@@ -204,6 +205,7 @@ namespace marco
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "We are hated, but I feel loved with you";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

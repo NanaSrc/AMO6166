@@ -14,6 +14,7 @@ namespace marco
     {
         love m = new love();
         int error = 0;
+        //Form1 form = new Form1();
         public Form1()
         {
             InitializeComponent();
@@ -39,7 +40,7 @@ namespace marco
             if (ama && nomec && keyc)
             {
                 m.Show();
-                
+                //form.Close();
             }
             else
             {
@@ -61,6 +62,7 @@ namespace marco
                     {
                         switch (error)
                         {
+                            //switch de contagem de erros   
                             case 0:
                                 MessageBox.Show("É a chave do nosso inferninho, meu diabinho", "O que mais seria?");
                                 break;
@@ -113,6 +115,16 @@ namespace marco
             Form1 form2 = new Form1();
             form2.Width = 555;
             form2.Height = 633;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

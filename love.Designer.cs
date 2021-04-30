@@ -30,48 +30,59 @@ namespace marco
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbMain = new System.Windows.Forms.Label();
-            this.tbMemoria = new System.Windows.Forms.TextBox();
+            this.lbNome = new System.Windows.Forms.Label();
+            this.lbText = new System.Windows.Forms.Label();
+            this.pnFoto = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.tbMemoria);
-            this.groupBox1.Controls.Add(this.lbMain);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Controls.Add(this.pnFoto);
+            this.groupBox1.Controls.Add(this.lbText);
+            this.groupBox1.Controls.Add(this.lbNome);
+            this.groupBox1.Location = new System.Drawing.Point(13, 13);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(581, 295);
+            this.groupBox1.Size = new System.Drawing.Size(514, 281);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Memórias";
+            this.groupBox1.Text = "Profile";
             // 
-            // lbMain
+            // lbNome
             // 
-            this.lbMain.AutoSize = true;
-            this.lbMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lbMain.Location = new System.Drawing.Point(15, 35);
-            this.lbMain.Name = "lbMain";
-            this.lbMain.Size = new System.Drawing.Size(504, 30);
-            this.lbMain.TabIndex = 0;
-            this.lbMain.Text = "Se você conseguiu entrar aqui, significa que você é o Marco, o que também signifi" +
-    "ca que você\r\n é o motivo pelo qual esse programa existe\r\n";
+            this.lbNome.AutoSize = true;
+            this.lbNome.Location = new System.Drawing.Point(24, 32);
+            this.lbNome.Name = "lbNome";
+            this.lbNome.Size = new System.Drawing.Size(40, 15);
+            this.lbNome.TabIndex = 0;
+            this.lbNome.Text = "Nome";
             // 
-            // tbMemoria
+            // lbText
             // 
-            this.tbMemoria.Location = new System.Drawing.Point(15, 88);
-            this.tbMemoria.Name = "tbMemoria";
-            this.tbMemoria.Size = new System.Drawing.Size(349, 23);
-            this.tbMemoria.TabIndex = 1;
+            this.lbText.Location = new System.Drawing.Point(24, 145);
+            this.lbText.Name = "lbText";
+            this.lbText.Size = new System.Drawing.Size(264, 133);
+            this.lbText.TabIndex = 1;
+            this.lbText.Text = "Se você conseguiu entrar aqui, significa que você é o Marco, o que também signifi" +
+    "ca que você é o motivo pelo qual esse programa existe.";
+            // 
+            // pnFoto
+            // 
+            this.pnFoto.BackgroundImage = global::marco.Properties.Resources._13;
+            this.pnFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnFoto.Location = new System.Drawing.Point(343, 32);
+            this.pnFoto.Name = "pnFoto";
+            this.pnFoto.Size = new System.Drawing.Size(142, 134);
+            this.pnFoto.TabIndex = 2;
             // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(605, 545);
+            this.ClientSize = new System.Drawing.Size(539, 306);
             this.Controls.Add(this.groupBox1);
             this.Name = "love";
-            this.Text = "Entre, sente-se e relaxe...";
+            this.Text = "love.exe";
             this.Load += new System.EventHandler(this.love_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -82,8 +93,8 @@ namespace marco
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox tbAlgumaCoisa;
-        private System.Windows.Forms.Label lbMain;
-        private System.Windows.Forms.TextBox tbMemoria;
+        private System.Windows.Forms.Panel pnFoto;
+        private System.Windows.Forms.Label lbText;
+        private System.Windows.Forms.Label lbNome;
     }
 }
