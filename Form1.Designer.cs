@@ -73,10 +73,10 @@ namespace marco
             this.rbSim.BackColor = System.Drawing.SystemColors.Control;
             this.rbSim.Location = new System.Drawing.Point(104, 126);
             this.rbSim.Name = "rbSim";
-            this.rbSim.Size = new System.Drawing.Size(249, 19);
+            this.rbSim.Size = new System.Drawing.Size(263, 19);
             this.rbSim.TabIndex = 23;
             this.rbSim.TabStop = true;
-            this.rbSim.Text = "Se eu amo? Eu quero casar com vc";
+            this.rbSim.Text = "Se eu amo? Eu quero casar com você\r\n";
             this.rbSim.UseVisualStyleBackColor = false;
             // 
             // rbClaro
@@ -107,10 +107,10 @@ namespace marco
             this.rbMuito.BackColor = System.Drawing.SystemColors.Control;
             this.rbMuito.Location = new System.Drawing.Point(104, 101);
             this.rbMuito.Name = "rbMuito";
-            this.rbMuito.Size = new System.Drawing.Size(200, 19);
+            this.rbMuito.Size = new System.Drawing.Size(193, 19);
             this.rbMuito.TabIndex = 19;
             this.rbMuito.TabStop = true;
-            this.rbMuito.Text = "Muito, mas pq a pergunta?";
+            this.rbMuito.Text = "Muito, mas e a pergunta?";
             this.rbMuito.UseVisualStyleBackColor = false;
             // 
             // btCancel

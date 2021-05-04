@@ -22,29 +22,26 @@ namespace marco
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            string nome = tbNome.Text;
-            string key = tbKey.Text;
-            bool ama = false;
-            bool nomec = false;
-            bool keyc = false;
+            user user = new user();
+            user.Nome = tbNome.Text;
+            user.Key = tbKey.Text;
 
             if (rbNao.Checked != true)
-                ama = true;
+                user.Ama = true;
 
-            if (nome == "Marco" || nome == "marco" || nome == "Joselito" || nome == "joselito" || nome == "macaco")
-                nomec = true;
+            if (user.Nome == "Marco" || user.Nome == "marco" || user.Nome == "Joselito" || user.Nome == "joselito" || user.Nome == "macaco")
+                user.Nomec = true;
 
-            if (key == "12080405" || key == "04051208")
-                keyc = true;
+            if (user.Key == "12080405" || user.Key == "04051208")
+                user.Keyc = true;
 
-            if (ama && nomec && keyc)
+            if (user.Ama && user.Nomec && user.Keyc)
             {
                 m.Show();
-                //form.Close();
             }
             else
             {
-                if (tbNome.Text == "" && tbKey.Text == "" && (!ama || ama))
+                if (tbNome.Text == "" && tbKey.Text == "" && (!user.Ama || user.Ama))
                 {
                     MessageBox.Show("Não acredito que tu duvidou que eu tivesse programado essa parte", "Sério?");
                 }
@@ -54,17 +51,17 @@ namespace marco
                     if (rbNao.Checked == true)
                         MessageBox.Show("Você não me ama? :rage:");
 
-                    if (!nomec)
+                    if (!user.Nomec)
                     {
                         MessageBox.Show("Apenas Marcos são bem vindos.", "SAIA");
                     }
-                    else if (keyc == false)
+                    else if (user.Keyc == false)
                     {
                         switch (error)
                         {
                             //switch de contagem de erros   
                             case 0:
-                                MessageBox.Show("É a chave do nosso inferninho, meu diabinho", "O que mais seria?");
+                                MessageBox.Show("Não consegue pensar na chave? É a chave do nosso inferninho, meu diabinho", "Não sabe a senha?");
                                 break;
                             case 1:
                                 MessageBox.Show("A nossa chave, sabe? A senha de pra entrar no servidor", "Pensa um pouco c:");
@@ -97,7 +94,7 @@ namespace marco
         private void btCancel_Click(object sender, EventArgs e)
         {
             DialogResult resultado = MessageBox.Show("Você tem certeza de que vai me abandonar ? :(","Nãããõ", MessageBoxButtons.YesNo);
-            //mds q burra
+            //I love you to the moon and back
             if (resultado == DialogResult.Yes)
             {
                 MessageBox.Show("Ok... Adeus", "Poxa");
@@ -112,9 +109,11 @@ namespace marco
 
         private void label4_Click(object sender, EventArgs e)
         {
+            //isso  simplesmente não funciona
+            /*
             Form1 form2 = new Form1();
             form2.Width = 555;
-            form2.Height = 633;
+            form2.Height = 633;*/
         }
 
         private void Form1_Load(object sender, EventArgs e)

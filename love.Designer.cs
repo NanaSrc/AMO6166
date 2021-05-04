@@ -29,10 +29,11 @@ namespace marco
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(love));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lbNome = new System.Windows.Forms.Label();
-            this.lbText = new System.Windows.Forms.Label();
             this.pnFoto = new System.Windows.Forms.Panel();
+            this.lbText = new System.Windows.Forms.Label();
+            this.lbNome = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -48,14 +49,14 @@ namespace marco
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Profile";
             // 
-            // lbNome
+            // pnFoto
             // 
-            this.lbNome.AutoSize = true;
-            this.lbNome.Location = new System.Drawing.Point(24, 32);
-            this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(40, 15);
-            this.lbNome.TabIndex = 0;
-            this.lbNome.Text = "Nome";
+            this.pnFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnFoto.BackgroundImage")));
+            this.pnFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnFoto.Location = new System.Drawing.Point(343, 32);
+            this.pnFoto.Name = "pnFoto";
+            this.pnFoto.Size = new System.Drawing.Size(142, 134);
+            this.pnFoto.TabIndex = 2;
             // 
             // lbText
             // 
@@ -66,14 +67,14 @@ namespace marco
             this.lbText.Text = "Se você conseguiu entrar aqui, significa que você é o Marco, o que também signifi" +
     "ca que você é o motivo pelo qual esse programa existe.";
             // 
-            // pnFoto
+            // lbNome
             // 
-            this.pnFoto.BackgroundImage = global::marco.Properties.Resources._13;
-            this.pnFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pnFoto.Location = new System.Drawing.Point(343, 32);
-            this.pnFoto.Name = "pnFoto";
-            this.pnFoto.Size = new System.Drawing.Size(142, 134);
-            this.pnFoto.TabIndex = 2;
+            this.lbNome.AutoSize = true;
+            this.lbNome.Location = new System.Drawing.Point(24, 32);
+            this.lbNome.Name = "lbNome";
+            this.lbNome.Size = new System.Drawing.Size(40, 15);
+            this.lbNome.TabIndex = 0;
+            this.lbNome.Text = "Nome";
             // 
             // love
             // 
