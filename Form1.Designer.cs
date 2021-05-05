@@ -30,6 +30,7 @@ namespace marco
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.cbVer = new System.Windows.Forms.CheckBox();
             this.rbSim = new System.Windows.Forms.RadioButton();
             this.rbClaro = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,6 +49,7 @@ namespace marco
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.cbVer);
             this.groupBox1.Controls.Add(this.rbSim);
             this.groupBox1.Controls.Add(this.rbClaro);
             this.groupBox1.Controls.Add(this.label3);
@@ -67,6 +69,17 @@ namespace marco
             this.groupBox1.Text = "Login, my angel";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // cbVer
+            // 
+            this.cbVer.AutoSize = true;
+            this.cbVer.Location = new System.Drawing.Point(432, 67);
+            this.cbVer.Name = "cbVer";
+            this.cbVer.Size = new System.Drawing.Size(61, 19);
+            this.cbVer.TabIndex = 24;
+            this.cbVer.Text = ":eye:";
+            this.cbVer.UseVisualStyleBackColor = true;
+            this.cbVer.CheckedChanged += new System.EventHandler(this.cbVer_CheckedChanged);
+            // 
             // rbSim
             // 
             this.rbSim.AutoSize = true;
@@ -76,19 +89,19 @@ namespace marco
             this.rbSim.Size = new System.Drawing.Size(263, 19);
             this.rbSim.TabIndex = 23;
             this.rbSim.TabStop = true;
-            this.rbSim.Text = "Se eu amo? Eu quero casar com você\r\n";
+            this.rbSim.Text = "Se eu amo? Com você eu quero casar";
             this.rbSim.UseVisualStyleBackColor = false;
             // 
             // rbClaro
             // 
             this.rbClaro.AutoSize = true;
             this.rbClaro.BackColor = System.Drawing.SystemColors.Control;
-            this.rbClaro.Location = new System.Drawing.Point(307, 101);
+            this.rbClaro.Location = new System.Drawing.Point(310, 101);
             this.rbClaro.Name = "rbClaro";
-            this.rbClaro.Size = new System.Drawing.Size(186, 19);
+            this.rbClaro.Size = new System.Drawing.Size(172, 19);
             this.rbClaro.TabIndex = 21;
             this.rbClaro.TabStop = true;
-            this.rbClaro.Text = "Claro sua desgraçadinha";
+            this.rbClaro.Text = "Eu te amo demais Anna";
             this.rbClaro.UseVisualStyleBackColor = false;
             // 
             // label3
@@ -107,14 +120,15 @@ namespace marco
             this.rbMuito.BackColor = System.Drawing.SystemColors.Control;
             this.rbMuito.Location = new System.Drawing.Point(104, 101);
             this.rbMuito.Name = "rbMuito";
-            this.rbMuito.Size = new System.Drawing.Size(193, 19);
+            this.rbMuito.Size = new System.Drawing.Size(200, 19);
             this.rbMuito.TabIndex = 19;
             this.rbMuito.TabStop = true;
-            this.rbMuito.Text = "Muito, mas e a pergunta?";
+            this.rbMuito.Text = "Muito, mas pq a pergunta?";
             this.rbMuito.UseVisualStyleBackColor = false;
             // 
             // btCancel
             // 
+            this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancel.Location = new System.Drawing.Point(23, 201);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(470, 30);
@@ -127,16 +141,18 @@ namespace marco
             // 
             this.rbNao.AutoSize = true;
             this.rbNao.BackColor = System.Drawing.SystemColors.Control;
-            this.rbNao.Location = new System.Drawing.Point(398, 126);
+            this.rbNao.Location = new System.Drawing.Point(384, 126);
             this.rbNao.Name = "rbNao";
             this.rbNao.Size = new System.Drawing.Size(95, 19);
             this.rbNao.TabIndex = 21;
             this.rbNao.TabStop = true;
             this.rbNao.Text = "Não :rage:";
             this.rbNao.UseVisualStyleBackColor = false;
+            this.rbNao.CheckedChanged += new System.EventHandler(this.rbNao_CheckedChanged);
             // 
             // btLogin
             // 
+            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Location = new System.Drawing.Point(23, 165);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(470, 30);
@@ -155,9 +171,13 @@ namespace marco
             // tbKey
             // 
             this.tbKey.Location = new System.Drawing.Point(56, 65);
+            this.tbKey.MaxLength = 32;
             this.tbKey.Name = "tbKey";
-            this.tbKey.Size = new System.Drawing.Size(437, 21);
+            this.tbKey.PasswordChar = '♥';
+            this.tbKey.Size = new System.Drawing.Size(370, 21);
             this.tbKey.TabIndex = 16;
+            this.tbKey.Enter += new System.EventHandler(this.tbKey_Enter);
+            this.tbKey.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbKey_KeyPress);
             // 
             // label1
             // 
@@ -219,7 +239,6 @@ namespace marco
         private System.Windows.Forms.RadioButton rbMuito;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox tbKey;
         private System.Windows.Forms.TextBox tbNome;
         private System.Windows.Forms.Button btCancel;
         private System.Windows.Forms.Button btLogin;
@@ -227,6 +246,8 @@ namespace marco
         private System.Windows.Forms.RadioButton rbSim;
         private System.Windows.Forms.RadioButton rbClaro;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.CheckBox cbVer;
+        public System.Windows.Forms.TextBox tbKey;
     }
 }
 

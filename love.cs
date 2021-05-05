@@ -14,6 +14,11 @@ namespace marco
         {
             InitializeComponent();
         }
+        public love(string nome)
+        {
+            InitializeComponent();
+            lbNome.Text = nome;
+        }
 
         private void love_Load(object sender, EventArgs e)
         {
