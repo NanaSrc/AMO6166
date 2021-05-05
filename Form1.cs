@@ -124,7 +124,7 @@ namespace marco
             form2.Width = 555;
             form2.Height = 633;*/
 
-            MessageBox.Show("Ok, a senha também pode ser o grito de um MACACO", "Easter Egg 2");
+            MessageBox.Show("Ok, a senha também pode ser o grito de um primata", "Easter Egg 2");
 
         }
 
@@ -140,7 +140,7 @@ namespace marco
 
         private void btVer_Click(object sender, EventArgs e)
         {
-            
+            //Não preciso mais disso eheh ._.
         }
 
         private void btVer_KeyPress(object sender, KeyPressEventArgs e)
@@ -181,6 +181,7 @@ namespace marco
 
         private void rbNao_CheckedChanged(object sender, EventArgs e)
         {
+            //Isso foi só um atalho pra eu testar o terminalzinho, atualmente desligado c:
             Terminal term = new Terminal();
             term.Show();
         }

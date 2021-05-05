@@ -17,7 +17,7 @@ namespace marco
         public love(string nome)
         {
             InitializeComponent();
-            lbNome.Text = nome;
+            //lbNome.Text = nome;
         }
 
         private void love_Load(object sender, EventArgs e)

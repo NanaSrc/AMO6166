@@ -30,194 +30,136 @@ namespace marco
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(love));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btEnviar = new System.Windows.Forms.Button();
-            this.btNext = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.btUpload = new System.Windows.Forms.Button();
-            this.panFoto = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.lbNome = new System.Windows.Forms.Label();
-            this.label = new System.Windows.Forms.Label();
+            this.btTerminal = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.btGaleria = new System.Windows.Forms.Button();
+            this.btDiarioMarco = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox1.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.button3 = new System.Windows.Forms.Button();
+            this.btSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // btTerminal
             // 
-            this.groupBox1.Controls.Add(this.btEnviar);
-            this.groupBox1.Controls.Add(this.btNext);
-            this.groupBox1.Controls.Add(this.btVoltar);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.btUpload);
-            this.groupBox1.Controls.Add(this.panFoto);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.lbNome);
-            this.groupBox1.Controls.Add(this.label);
-            this.groupBox1.Location = new System.Drawing.Point(21, 24);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(549, 181);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Profile";
+            this.btTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btTerminal.Location = new System.Drawing.Point(12, 12);
+            this.btTerminal.Name = "btTerminal";
+            this.btTerminal.Size = new System.Drawing.Size(126, 68);
+            this.btTerminal.TabIndex = 1;
+            this.btTerminal.Text = "Terminalzinho";
+            this.btTerminal.UseVisualStyleBackColor = true;
             // 
-            // btEnviar
+            // button2
             // 
-            this.btEnviar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btEnviar.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btEnviar.Location = new System.Drawing.Point(18, 132);
-            this.btEnviar.Name = "btEnviar";
-            this.btEnviar.Size = new System.Drawing.Size(394, 25);
-            this.btEnviar.TabIndex = 15;
-            this.btEnviar.Text = "Enviar";
-            this.btEnviar.UseVisualStyleBackColor = true;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.button2.Location = new System.Drawing.Point(12, 160);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(126, 68);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Diário da Nana";
+            this.button2.UseVisualStyleBackColor = true;
             // 
-            // btNext
+            // btGaleria
             // 
-            this.btNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNext.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btNext.Location = new System.Drawing.Point(385, 61);
-            this.btNext.Name = "btNext";
-            this.btNext.Size = new System.Drawing.Size(27, 25);
-            this.btNext.TabIndex = 14;
-            this.btNext.Text = ">";
-            this.btNext.UseVisualStyleBackColor = true;
+            this.btGaleria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btGaleria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btGaleria.Location = new System.Drawing.Point(12, 308);
+            this.btGaleria.Name = "btGaleria";
+            this.btGaleria.Size = new System.Drawing.Size(126, 68);
+            this.btGaleria.TabIndex = 3;
+            this.btGaleria.Text = "Galeria";
+            this.btGaleria.UseVisualStyleBackColor = true;
             // 
-            // btVoltar
+            // btDiarioMarco
             // 
-            this.btVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btVoltar.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btVoltar.Location = new System.Drawing.Point(353, 61);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(26, 25);
-            this.btVoltar.TabIndex = 13;
-            this.btVoltar.Text = "<";
-            this.btVoltar.UseVisualStyleBackColor = true;
+            this.btDiarioMarco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btDiarioMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btDiarioMarco.Location = new System.Drawing.Point(12, 234);
+            this.btDiarioMarco.Name = "btDiarioMarco";
+            this.btDiarioMarco.Size = new System.Drawing.Size(126, 68);
+            this.btDiarioMarco.TabIndex = 4;
+            this.btDiarioMarco.Text = "Diário do Marco";
+            this.btDiarioMarco.UseVisualStyleBackColor = true;
             // 
-            // label5
+            // button1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(101, 65);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 16);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Melhor namorado do mundo";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 65);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(63, 16);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Status: ";
-            // 
-            // btUpload
-            // 
-            this.btUpload.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btUpload.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btUpload.Location = new System.Drawing.Point(429, 132);
-            this.btUpload.Name = "btUpload";
-            this.btUpload.Size = new System.Drawing.Size(99, 25);
-            this.btUpload.TabIndex = 8;
-            this.btUpload.Text = "Add foto";
-            this.btUpload.UseVisualStyleBackColor = true;
-            // 
-            // panFoto
-            // 
-            this.panFoto.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(215)))), ((int)(((byte)(215)))));
-            this.panFoto.Location = new System.Drawing.Point(429, 23);
-            this.panFoto.Name = "panFoto";
-            this.panFoto.Size = new System.Drawing.Size(99, 96);
-            this.panFoto.TabIndex = 7;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(101, 95);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(311, 21);
-            this.textBox1.TabIndex = 6;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 16);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Diga algo:";
-            // 
-            // lbNome
-            // 
-            this.lbNome.AutoSize = true;
-            this.lbNome.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbNome.Location = new System.Drawing.Point(101, 33);
-            this.lbNome.Name = "lbNome";
-            this.lbNome.Size = new System.Drawing.Size(35, 16);
-            this.lbNome.TabIndex = 4;
-            this.lbNome.Text = "Nome";
-            // 
-            // label
-            // 
-            this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(18, 33);
-            this.label.Name = "label";
-            this.label.Size = new System.Drawing.Size(49, 16);
-            this.label.TabIndex = 0;
-            this.label.Text = "Nome: ";
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.button1.Location = new System.Drawing.Point(12, 86);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 68);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "nanarco.com";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
-            this.panel1.BackgroundImage = global::marco.Properties.Resources._1;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Location = new System.Drawing.Point(12, 12);
+            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel1.Location = new System.Drawing.Point(144, 12);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(916, 538);
+            this.panel1.Size = new System.Drawing.Size(707, 538);
             this.panel1.TabIndex = 1;
+            // 
+            // button3
+            // 
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.button3.Location = new System.Drawing.Point(12, 382);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(126, 68);
+            this.button3.TabIndex = 6;
+            this.button3.Text = "I love you";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // btSair
+            // 
+            this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.btSair.Location = new System.Drawing.Point(12, 456);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(126, 94);
+            this.btSair.TabIndex = 7;
+            this.btSair.Text = "Sair";
+            this.btSair.UseVisualStyleBackColor = true;
             // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(940, 560);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(863, 563);
+            this.Controls.Add(this.btSair);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btGaleria);
+            this.Controls.Add(this.btTerminal);
+            this.Controls.Add(this.btDiarioMarco);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "love";
             this.Text = "love.exe";
             this.Load += new System.EventHandler(this.love_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label;
-        private System.Windows.Forms.Label lbNome;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button btUpload;
-        private System.Windows.Forms.Panel panFoto;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btEnviar;
-        private System.Windows.Forms.Button btNext;
-        private System.Windows.Forms.Button btVoltar;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btTerminal;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btGaleria;
+        private System.Windows.Forms.Button btDiarioMarco;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btSair;
     }
 }

@@ -14,5 +14,21 @@ namespace marco
         {
             InitializeComponent();
         }
+
+        private void tbTerminalzinho_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbTerminalzinho_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                if (tbComandos.Text.Contains("exit"))
+                {
+                    Application.Exit();
+                }
+            }
+        }
     }
 }

@@ -29,29 +29,16 @@ namespace marco
         /// </summary>
         private void InitializeComponent()
         {
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbComandos = new System.Windows.Forms.TextBox();
             this.tbTerminalzinho = new System.Windows.Forms.TextBox();
-            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tbComandos);
-            this.groupBox2.Controls.Add(this.tbTerminalzinho);
-            this.groupBox2.Location = new System.Drawing.Point(12, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(585, 590);
-            this.groupBox2.TabIndex = 18;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Terminalzinho";
             // 
             // tbComandos
             // 
             this.tbComandos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.tbComandos.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbComandos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(212)))), ((int)(((byte)(163)))));
-            this.tbComandos.Location = new System.Drawing.Point(17, 33);
+            this.tbComandos.Location = new System.Drawing.Point(12, 12);
             this.tbComandos.Multiline = true;
             this.tbComandos.Name = "tbComandos";
             this.tbComandos.ReadOnly = true;
@@ -66,31 +53,35 @@ namespace marco
             this.tbTerminalzinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
             this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tbTerminalzinho.Location = new System.Drawing.Point(17, 130);
+            this.tbTerminalzinho.Location = new System.Drawing.Point(12, 109);
             this.tbTerminalzinho.Multiline = true;
             this.tbTerminalzinho.Name = "tbTerminalzinho";
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbTerminalzinho.Size = new System.Drawing.Size(555, 414);
             this.tbTerminalzinho.TabIndex = 9;
             this.tbTerminalzinho.Text = "Nana says: TIJOLO";
+            this.tbTerminalzinho.TextChanged += new System.EventHandler(this.tbTerminalzinho_TextChanged);
+            this.tbTerminalzinho.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTerminalzinho_KeyPress);
             // 
             // Terminal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(611, 579);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(580, 537);
+            this.Controls.Add(this.tbTerminalzinho);
+            this.Controls.Add(this.tbComandos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Terminal";
+            this.Opacity = 0.9D;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Terminal";
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(11)))), ((int)(((byte)(40)))));
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox tbComandos;
         private System.Windows.Forms.TextBox tbTerminalzinho;
     }
