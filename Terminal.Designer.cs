@@ -38,12 +38,12 @@ namespace marco
             this.tbComandos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.tbComandos.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbComandos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(212)))), ((int)(((byte)(163)))));
-            this.tbComandos.Location = new System.Drawing.Point(12, 12);
+            this.tbComandos.Location = new System.Drawing.Point(1, 3);
             this.tbComandos.Multiline = true;
             this.tbComandos.Name = "tbComandos";
             this.tbComandos.ReadOnly = true;
             this.tbComandos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbComandos.Size = new System.Drawing.Size(555, 91);
+            this.tbComandos.Size = new System.Drawing.Size(576, 100);
             this.tbComandos.TabIndex = 16;
             this.tbComandos.Text = "Lista de comandos do terminalzinho:\r\ninfo\r\nlove\r\nnana\r\nmarco\r\ncls\r\nsay\r\nplaylist\r" +
     "\n";
@@ -53,13 +53,13 @@ namespace marco
             this.tbTerminalzinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
             this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tbTerminalzinho.Location = new System.Drawing.Point(12, 109);
+            this.tbTerminalzinho.Location = new System.Drawing.Point(1, 109);
             this.tbTerminalzinho.Multiline = true;
             this.tbTerminalzinho.Name = "tbTerminalzinho";
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbTerminalzinho.Size = new System.Drawing.Size(555, 414);
+            this.tbTerminalzinho.Size = new System.Drawing.Size(576, 427);
             this.tbTerminalzinho.TabIndex = 9;
-            this.tbTerminalzinho.Text = "Nana says: TIJOLO";
+            this.tbTerminalzinho.Text = "Nana says: ";
             this.tbTerminalzinho.TextChanged += new System.EventHandler(this.tbTerminalzinho_TextChanged);
             this.tbTerminalzinho.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTerminalzinho_KeyPress);
             // 
@@ -76,6 +76,7 @@ namespace marco
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Terminal";
             this.TransparencyKey = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(11)))), ((int)(((byte)(40)))));
+            this.Load += new System.EventHandler(this.Terminal_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
