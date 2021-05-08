@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace marco
+namespace amo6166
 {
     class user
     {

@@ -6,9 +6,9 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace marco
+namespace amo6166
 {
-    public partial class Terminal : Form
+    public partial class Terminal : MetroFramework.Forms.MetroForm
     {
         public Terminal()
         {

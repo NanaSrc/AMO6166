@@ -1,5 +1,5 @@
 ﻿
-namespace marco
+namespace amo6166
 {
     partial class Profile
     {
@@ -179,6 +179,7 @@ namespace marco
             this.Controls.Add(this.groupBox1);
             this.Name = "Profile";
             this.Text = "Profile";
+            this.Load += new System.EventHandler(this.Profile_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

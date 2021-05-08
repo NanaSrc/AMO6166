@@ -1,5 +1,5 @@
 ﻿
-namespace marco
+namespace amo6166
 {
     partial class love
     {
@@ -162,7 +162,6 @@ namespace marco
         private System.Windows.Forms.Button btDiarioMarco;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btLovw;
         private System.Windows.Forms.Button btSair;
         private System.Windows.Forms.Button btLove;
     }
