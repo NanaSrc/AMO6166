@@ -29,7 +29,7 @@ namespace amo6166
         /// </summary>
         private void InitializeComponent()
         {
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.lbAcesso = new MetroFramework.Controls.MetroLabel();
             this.mtShow = new MetroFramework.Controls.MetroToggle();
             this.tbSenha = new System.Windows.Forms.TextBox();
             this.tbNome = new System.Windows.Forms.TextBox();
@@ -41,20 +41,23 @@ namespace amo6166
             this.tbSim = new MetroFramework.Controls.MetroRadioButton();
             this.rbMoon = new MetroFramework.Controls.MetroRadioButton();
             this.rbSummer = new MetroFramework.Controls.MetroRadioButton();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
-            // metroLabel1
+            // lbAcesso
             // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.BackColor = System.Drawing.Color.Black;
-            this.metroLabel1.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.metroLabel1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroLabel1.Location = new System.Drawing.Point(527, 372);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(102, 19);
-            this.metroLabel1.TabIndex = 40;
-            this.metroLabel1.Text = "Feito por: Nana";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.lbAcesso.AutoSize = true;
+            this.lbAcesso.BackColor = System.Drawing.Color.Black;
+            this.lbAcesso.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbAcesso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(32)))), ((int)(((byte)(250)))));
+            this.lbAcesso.Location = new System.Drawing.Point(4, 383);
+            this.lbAcesso.Name = "lbAcesso";
+            this.lbAcesso.Size = new System.Drawing.Size(170, 19);
+            this.lbAcesso.Style = MetroFramework.MetroColorStyle.Purple;
+            this.lbAcesso.TabIndex = 40;
+            this.lbAcesso.Text = "Acessando como: Anônimo";
+            this.lbAcesso.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.lbAcesso.UseStyleColors = true;
             // 
             // mtShow
             // 
@@ -94,7 +97,7 @@ namespace amo6166
             this.lbSenha.AutoSize = true;
             this.lbSenha.BackColor = System.Drawing.Color.Black;
             this.lbSenha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbSenha.Location = new System.Drawing.Point(73, 172);
+            this.lbSenha.Location = new System.Drawing.Point(71, 172);
             this.lbSenha.Name = "lbSenha";
             this.lbSenha.Size = new System.Drawing.Size(47, 19);
             this.lbSenha.TabIndex = 34;
@@ -107,7 +110,7 @@ namespace amo6166
             this.lbNome.AutoSize = true;
             this.lbNome.BackColor = System.Drawing.Color.Black;
             this.lbNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbNome.Location = new System.Drawing.Point(71, 132);
+            this.lbNome.Location = new System.Drawing.Point(71, 128);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(49, 19);
             this.lbNome.TabIndex = 33;
@@ -128,7 +131,7 @@ namespace amo6166
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(175, 255);
+            this.btLogin.Location = new System.Drawing.Point(175, 265);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(327, 40);
             this.btLogin.Style = MetroFramework.MetroColorStyle.Purple;
@@ -136,10 +139,11 @@ namespace amo6166
             this.btLogin.Text = "Entrar";
             this.btLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btLogin.UseSelectable = true;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click);
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(175, 301);
+            this.btCancel.Location = new System.Drawing.Point(175, 311);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(327, 40);
             this.btCancel.Style = MetroFramework.MetroColorStyle.Purple;
@@ -184,16 +188,33 @@ namespace amo6166
             this.rbSummer.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbSummer.UseSelectable = true;
             // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.BackColor = System.Drawing.Color.Black;
+            this.metroLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroLabel3.Location = new System.Drawing.Point(445, 383);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(193, 19);
+            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Silver;
+            this.metroLabel3.TabIndex = 46;
+            this.metroLabel3.Text = "Desenvolvido por: AMO6166 ©";
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel3.UseCustomForeColor = true;
+            this.metroLabel3.UseStyleColors = true;
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 411);
+            this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.rbSummer);
             this.Controls.Add(this.rbMoon);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.tbSim);
-            this.Controls.Add(this.metroLabel1);
+            this.Controls.Add(this.lbAcesso);
             this.Controls.Add(this.btCancel);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.mtShow);
@@ -205,7 +226,7 @@ namespace amo6166
             this.Name = "Login";
             this.Opacity = 0.96D;
             this.Style = MetroFramework.MetroColorStyle.Purple;
-            this.Text = "AMO6166";
+            this.Text = "AMO6166™";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Login_Load);
             this.ResumeLayout(false);
@@ -215,7 +236,7 @@ namespace amo6166
 
         #endregion
 
-        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel lbAcesso;
         private MetroFramework.Controls.MetroToggle mtShow;
         private System.Windows.Forms.TextBox tbSenha;
         private System.Windows.Forms.TextBox tbNome;
@@ -228,5 +249,6 @@ namespace amo6166
         private MetroFramework.Controls.MetroRadioButton tbSim;
         private MetroFramework.Controls.MetroRadioButton rbMoon;
         private MetroFramework.Controls.MetroRadioButton rbSummer;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
     }
 }
