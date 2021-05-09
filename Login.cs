@@ -12,6 +12,7 @@ namespace amo6166
     {
         int error = 0;
         string username;
+        int hint = 1;
         public Login()
         {
             InitializeComponent();
@@ -24,7 +25,29 @@ namespace amo6166
 
         private void lbSenha_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Descobriu um easter egg :eye:. A chave é seu niver + o meu...", "Surpresa!");
+            if (hint >= 1)
+            {
+                if (VerificarAMO() == "Marco")
+                {
+                    MessageBox.Show("N + M = AMO6166 " +
+                    Environment.NewLine +
+                    "Vê se não esquece na próxima, seu desgraçadinho!", ":eye:");
+                    hint--;
+                }
+                else if (VerificarAMO() == "Nana")
+                {
+                    MessageBox.Show("N + M = AMO6166 " +
+                    Environment.NewLine +
+                    "Como assim você não lembra? Foi você que programou isso, Anna...", ":rage:");
+                    hint--;
+                }
+                else
+                {
+                    MessageBox.Show("Nada aqui pra você! Tente novamente sendo o Marco ou a Nana talvez?");
+                }
+            }
+            else
+                MessageBox.Show("Você já pegou sua dica!", ">)");
         }
 
         private void mtShow_CheckedChanged(object sender, EventArgs e)
