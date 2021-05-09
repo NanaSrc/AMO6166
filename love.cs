@@ -53,5 +53,10 @@ namespace amo6166
             Profile nanarco = new Profile();
             nanarco.Show();
         }
+
+        private void btSair_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

@@ -11,7 +11,7 @@ namespace amo6166
     public partial class Login : MetroFramework.Forms.MetroForm
     {
         int error = 0;
-        string username;
+        //string username;
         public Login()
         {
             InitializeComponent();
