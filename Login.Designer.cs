@@ -84,6 +84,7 @@ namespace amo6166
             this.tbSenha.PasswordChar = '♥';
             this.tbSenha.Size = new System.Drawing.Size(322, 23);
             this.tbSenha.TabIndex = 36;
+            this.tbSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSenha_KeyPress);
             // 
             // tbNome
             // 
@@ -91,6 +92,7 @@ namespace amo6166
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(408, 23);
             this.tbNome.TabIndex = 35;
+            this.tbNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNome_KeyPress);
             // 
             // lbSenha
             // 
@@ -151,6 +153,7 @@ namespace amo6166
             this.btCancel.Text = "Cancelar";
             this.btCancel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btCancel.UseSelectable = true;
+            this.btCancel.Click += new System.EventHandler(this.btCancel_Click);
             // 
             // tbSim
             // 
@@ -176,6 +179,7 @@ namespace amo6166
             this.rbMoon.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbMoon.UseSelectable = true;
             this.rbMoon.CheckedChanged += new System.EventHandler(this.rbMoon_CheckedChanged);
+            this.rbMoon.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rbMoon_KeyPress);
             // 
             // rbSummer
             // 
@@ -189,6 +193,7 @@ namespace amo6166
             this.rbSummer.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbSummer.UseSelectable = true;
             this.rbSummer.CheckedChanged += new System.EventHandler(this.rbSummer_CheckedChanged);
+            this.rbSummer.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.rbSummer_KeyPress);
             // 
             // metroLabel3
             // 
@@ -232,6 +237,7 @@ namespace amo6166
             this.Text = "AMO6166™";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Login_Load);
+            this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             this.ResumeLayout(false);
             this.PerformLayout();
 

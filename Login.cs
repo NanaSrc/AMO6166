@@ -80,7 +80,7 @@ namespace amo6166
             {
                 if (tbNome.Text == "" && tbSenha.Text == "" && (!user.Ama || user.Ama))
                 {
-                    MessageBox.Show("Você não vai a lugar algum se deixar os campos em branco...", "Uhh??");
+                    MessageBox.Show("Você não vai a lugar algum se deixar os campos em branco...", "Uh?");
                 }
                 else
                 {
@@ -106,7 +106,7 @@ namespace amo6166
                                     MessageBox.Show("Continua errado... Presta atenção no que digita.", "Error 2");
                                     break;
                                 case 2:
-                                    MessageBox.Show("É, " + username + ", presumo que suas mãos estejam furadas hoje, uh? ", ":rage: 3");
+                                    MessageBox.Show("É, " + username + ", presumo que suas mãos estejam furadas hoje, uh? ", "Error 3");
                                     break;
                                 case 3:
                                     if(username == "Nana")
@@ -152,6 +152,61 @@ namespace amo6166
                 return "Marco";
             else
                 return "Anônimo";
+        }
+
+        private void btCancel_Click(object sender, EventArgs e)
+        {
+            DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
+            //I love you to the moon and back
+            if (resultado == DialogResult.Yes)
+            {
+                MessageBox.Show("That's all folks!", ">(");
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("Isso nunca é um adeus", ":)");
+            }
+        }
+
+        private void tbSenha_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btLogin_Click(sender, e);
+            }
+        }
+
+        private void tbNome_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btLogin_Click(sender, e);
+            }
+        }
+
+        private void Login_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btLogin_Click(sender, e);
+            }
+        }
+
+        private void rbMoon_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btLogin_Click(sender, e);
+            }
+        }
+
+        private void rbSummer_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)13)
+            {
+                btLogin_Click(sender, e);
+            }
         }
     }
 }
