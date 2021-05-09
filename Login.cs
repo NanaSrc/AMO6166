@@ -19,7 +19,7 @@ namespace amo6166
 
         private void Login_Load(object sender, EventArgs e)
         {
-            
+            tbNome.Focus();
         }
 
         private void lbSenha_Click(object sender, EventArgs e)
@@ -44,12 +44,7 @@ namespace amo6166
             user user = new user();
             user.Nome = tbNome.Text;
             user.Key = tbSenha.Text;
-            //string nome = VerificarAMO();
-
-            /*if (user.Nome == "Nana" || user.Nome == "Marco" || user.Nome == "nana" || user.Nome == "marco" || user.Nome == "naninha" || 
-                user.Nome == "Naninha" || user.Nome == "joselito" || user.Nome == "Joselito" || user.Nome == "Anna" || user.Nome == "MarcoT" || 
-                user.Nome == "anna" || user.Nome == "marcot" || user.Nome == "marcoT")
-                user.Nomec = true;*/
+            string nome = VerificarAMO();
 
             if (VerificarAMO().Equals("Nana") || VerificarAMO().Equals("Marco"))
                 user.Nomec = true;
@@ -57,9 +52,28 @@ namespace amo6166
             if (user.Key == "12080405" || user.Key == "04051208" || user.Key == ".")
                 user.Keyc = true;
 
+            if ((rbMoon.Checked && VerificarAMO() == "Marco") || (rbSummer.Checked && VerificarAMO() == "Nana"))
+            {
+                if (nome == "Nana" && rbSummer.Checked)
+                    MessageBox.Show("Essa é a frase do Marco...", "Error 666");
+                else if (nome == "Marco" && rbMoon.Checked)
+                    MessageBox.Show("Essa é a frase da Nana...", "Error 444");
+
+                user.Ama = false;
+            }
+            else if ((rbMoon.Checked && VerificarAMO() == "Nana") || (rbSummer.Checked && VerificarAMO() == "Marco"))
+            {
+                if (VerificarAMO() == "Nana")
+                    lbAcesso.Text = "Acessando como: Nana";
+                else
+                    lbAcesso.Text = "Acessando como: Marco";
+
+                user.Ama = true;
+            }
+
             if (user.Ama && user.Nomec && user.Keyc)
             {
-                love m = new love(tbNome.Text);
+                love m = new love(username);
                 m.Show();
             }
             else
@@ -70,10 +84,7 @@ namespace amo6166
                 }
                 else
                 {
-                    //Isso é pra prevenir que outros Marcos e Nanas do mal tentem acessar o nosso programinha :rage:
-                    /*if (rbNao.Checked == true)
-                        MessageBox.Show("Você não me ama? :rage:");
-                    else*/ if (!rbMoon.Checked && !rbSummer.Checked)
+                     if (!rbMoon.Checked && !rbSummer.Checked)
                     {
                         MessageBox.Show("Esqueceu de algo?", ":eye:");
                     }
@@ -83,7 +94,7 @@ namespace amo6166
                         {
                             MessageBox.Show("Apenas Marco e Naninha podem acessar.", "Vá embora");
                         }
-                        else if (user.Keyc == false)
+                        else if (user.Keyc == false )
                         {
                             switch (error)
                             {
@@ -117,21 +128,20 @@ namespace amo6166
                             error += 1;
                         }
                     }
-
                 }
             }
         }
 
         private void rbSummer_CheckedChanged(object sender, EventArgs e)
         {
-            lbAcesso.Text = "Acessando como: Marco";
-            username = "Marco";
+            /*lbAcesso.Text = "Acessando como: Marco";
+            username = "Marco";*/
         }
 
         private void rbMoon_CheckedChanged(object sender, EventArgs e)
         {
-            lbAcesso.Text = "Acessando como: Nana";
-            username = "Nana";
+            /*lbAcesso.Text = "Acessando como: Nana";
+            username = "Nana";*/
         }
 
         private string VerificarAMO()
@@ -141,7 +151,7 @@ namespace amo6166
             if (tbNome.Text == "Marco" || tbNome.Text == "marco" || tbNome.Text == "MarcoT" || tbNome.Text == "marcot" || tbNome.Text == "marcoT" || tbNome.Text == "Marcot")
                 return "Marco";
             else
-                return "Anonimo";
+                return "Anônimo";
         }
     }
 }

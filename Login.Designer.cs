@@ -62,7 +62,7 @@ namespace amo6166
             // mtShow
             // 
             this.mtShow.AutoSize = true;
-            this.mtShow.Location = new System.Drawing.Point(481, 172);
+            this.mtShow.Location = new System.Drawing.Point(480, 157);
             this.mtShow.Name = "mtShow";
             this.mtShow.Size = new System.Drawing.Size(80, 19);
             this.mtShow.Style = MetroFramework.MetroColorStyle.Purple;
@@ -78,7 +78,7 @@ namespace amo6166
             // tbSenha
             // 
             this.tbSenha.BackColor = System.Drawing.SystemColors.Window;
-            this.tbSenha.Location = new System.Drawing.Point(153, 170);
+            this.tbSenha.Location = new System.Drawing.Point(152, 155);
             this.tbSenha.MaxLength = 30;
             this.tbSenha.Name = "tbSenha";
             this.tbSenha.PasswordChar = '♥';
@@ -87,7 +87,7 @@ namespace amo6166
             // 
             // tbNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(153, 128);
+            this.tbNome.Location = new System.Drawing.Point(152, 113);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(408, 23);
             this.tbNome.TabIndex = 35;
@@ -97,7 +97,7 @@ namespace amo6166
             this.lbSenha.AutoSize = true;
             this.lbSenha.BackColor = System.Drawing.Color.Black;
             this.lbSenha.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbSenha.Location = new System.Drawing.Point(71, 172);
+            this.lbSenha.Location = new System.Drawing.Point(70, 157);
             this.lbSenha.Name = "lbSenha";
             this.lbSenha.Size = new System.Drawing.Size(47, 19);
             this.lbSenha.TabIndex = 34;
@@ -110,7 +110,7 @@ namespace amo6166
             this.lbNome.AutoSize = true;
             this.lbNome.BackColor = System.Drawing.Color.Black;
             this.lbNome.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.lbNome.Location = new System.Drawing.Point(71, 128);
+            this.lbNome.Location = new System.Drawing.Point(70, 113);
             this.lbNome.Name = "lbNome";
             this.lbNome.Size = new System.Drawing.Size(49, 19);
             this.lbNome.TabIndex = 33;
@@ -122,7 +122,7 @@ namespace amo6166
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.BackColor = System.Drawing.Color.Black;
             this.metroLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.metroLabel2.Location = new System.Drawing.Point(73, 214);
+            this.metroLabel2.Location = new System.Drawing.Point(72, 199);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(68, 19);
             this.metroLabel2.TabIndex = 43;
@@ -131,7 +131,7 @@ namespace amo6166
             // 
             // btLogin
             // 
-            this.btLogin.Location = new System.Drawing.Point(175, 265);
+            this.btLogin.Location = new System.Drawing.Point(174, 250);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(327, 40);
             this.btLogin.Style = MetroFramework.MetroColorStyle.Purple;
@@ -143,7 +143,7 @@ namespace amo6166
             // 
             // btCancel
             // 
-            this.btCancel.Location = new System.Drawing.Point(175, 311);
+            this.btCancel.Location = new System.Drawing.Point(174, 296);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(327, 40);
             this.btCancel.Style = MetroFramework.MetroColorStyle.Purple;
@@ -167,7 +167,7 @@ namespace amo6166
             // rbMoon
             // 
             this.rbMoon.AutoSize = true;
-            this.rbMoon.Location = new System.Drawing.Point(175, 218);
+            this.rbMoon.Location = new System.Drawing.Point(174, 203);
             this.rbMoon.Name = "rbMoon";
             this.rbMoon.Size = new System.Drawing.Size(140, 15);
             this.rbMoon.Style = MetroFramework.MetroColorStyle.Red;
@@ -180,7 +180,7 @@ namespace amo6166
             // rbSummer
             // 
             this.rbSummer.AutoSize = true;
-            this.rbSummer.Location = new System.Drawing.Point(350, 218);
+            this.rbSummer.Location = new System.Drawing.Point(349, 203);
             this.rbSummer.Name = "rbSummer";
             this.rbSummer.Size = new System.Drawing.Size(152, 15);
             this.rbSummer.Style = MetroFramework.MetroColorStyle.Blue;
@@ -227,6 +227,7 @@ namespace amo6166
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Opacity = 0.96D;
+            this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "AMO6166™";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
