@@ -175,6 +175,7 @@ namespace amo6166
             this.rbMoon.Text = "to the moon and back";
             this.rbMoon.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbMoon.UseSelectable = true;
+            this.rbMoon.CheckedChanged += new System.EventHandler(this.rbMoon_CheckedChanged);
             // 
             // rbSummer
             // 
@@ -187,6 +188,7 @@ namespace amo6166
             this.rbSummer.Text = "to the summer and back";
             this.rbSummer.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbSummer.UseSelectable = true;
+            this.rbSummer.CheckedChanged += new System.EventHandler(this.rbSummer_CheckedChanged);
             // 
             // metroLabel3
             // 
@@ -243,7 +245,6 @@ namespace amo6166
         private MetroFramework.Controls.MetroLabel lbSenha;
         private MetroFramework.Controls.MetroLabel lbNome;
         private MetroFramework.Controls.MetroLabel metroLabel2;
-        //private MetroFramework.Controls.MetroRadioButton rbClaro;
         private MetroFramework.Controls.MetroButton btLogin;
         private MetroFramework.Controls.MetroButton btCancel;
         private MetroFramework.Controls.MetroRadioButton tbSim;

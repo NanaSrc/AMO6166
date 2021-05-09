@@ -11,6 +11,7 @@ namespace amo6166
     public partial class Login : MetroFramework.Forms.MetroForm
     {
         int error = 0;
+        string username;
         public Login()
         {
             InitializeComponent();
@@ -43,13 +44,17 @@ namespace amo6166
             user user = new user();
             user.Nome = tbNome.Text;
             user.Key = tbSenha.Text;
+            //string nome = VerificarAMO();
 
-            if (user.Nome == "Nana" || user.Nome == "Marco" || user.Nome == "nana" || user.Nome == "marco" || user.Nome == "naninha" || 
+            /*if (user.Nome == "Nana" || user.Nome == "Marco" || user.Nome == "nana" || user.Nome == "marco" || user.Nome == "naninha" || 
                 user.Nome == "Naninha" || user.Nome == "joselito" || user.Nome == "Joselito" || user.Nome == "Anna" || user.Nome == "MarcoT" || 
                 user.Nome == "anna" || user.Nome == "marcot" || user.Nome == "marcoT")
+                user.Nomec = true;*/
+
+            if (VerificarAMO().Equals("Nana") || VerificarAMO().Equals("Marco"))
                 user.Nomec = true;
 
-            if (user.Key == "12080405" || user.Key == "04051208" || user.Key == "MACACO")
+            if (user.Key == "12080405" || user.Key == "04051208" || user.Key == ".")
                 user.Keyc = true;
 
             if (user.Ama && user.Nomec && user.Keyc)
@@ -84,22 +89,28 @@ namespace amo6166
                             {
                                 //Isso é pra você não errar muito  
                                 case 0:
-                                    MessageBox.Show("Não consegue pensar na chave? É a chave do nosso inferninho, meu diabinho", "Não sabe a senha?");
+                                    MessageBox.Show("Acho que você escreveu errado. Tente novamente.", "Error 1");
                                     break;
                                 case 1:
-                                    MessageBox.Show("A nossa chave, sabe? A senha de pra entrar no servidor", "Pensa um pouco c:");
+                                    MessageBox.Show("Continua errado... Presta atenção no que digita.", "Error 2");
                                     break;
                                 case 2:
-                                    MessageBox.Show("Pensa, pensa, pensa :rage:", "Meu deus, Marco");
+                                    MessageBox.Show("É, " + username + ", presumo que suas mãos estejam furadas hoje, uh? ", ":rage: 3");
                                     break;
                                 case 3:
-                                    MessageBox.Show("Eu vou te bater, Marco", "Macaco do caralho");
+                                    if(username == "Nana")
+                                        MessageBox.Show("Ok, se você continuar errando eu vou assumir que você não seja a " + username, ":rage: 4");
+                                    if(username == "Marco")
+                                        MessageBox.Show("Ok, se você continuar errando eu vou assumir que você não seja o " + username, ":rage: 4");
                                     break;
                                 case 4:
-                                    MessageBox.Show("PQP eu vou fechar o programa se tu continuar errando a senha", ":rage:");
+                                    MessageBox.Show("Você não é nenhum dos AMO6166, desligue o programa antes que ele exploda.", "Autodestruição em 1");
                                     break;
                                 case 5:
-                                    MessageBox.Show("Eu avisei", "Não creio");
+                                    if (username == "Nana")
+                                        MessageBox.Show("Definitivamente você não é a " + username + ". Ao dar OK você morrerá instantaneamente. (Você foi avisado)", "Sequência de autodestruição iniciada");
+                                    if (username == "Marco")
+                                        MessageBox.Show("Definitivamente você não é o " + username + ". Ao dar OK você morrerá instantaneamente. (Você foi avisado)", "Sequência de autodestruição iniciada");
                                     Application.Exit();
                                     break;
                             }
@@ -109,6 +120,28 @@ namespace amo6166
 
                 }
             }
+        }
+
+        private void rbSummer_CheckedChanged(object sender, EventArgs e)
+        {
+            lbAcesso.Text = "Acessando como: Marco";
+            username = "Marco";
+        }
+
+        private void rbMoon_CheckedChanged(object sender, EventArgs e)
+        {
+            lbAcesso.Text = "Acessando como: Nana";
+            username = "Nana";
+        }
+
+        private string VerificarAMO()
+        {
+            if (tbNome.Text == "Nana" || tbNome.Text == "Naninha" || tbNome.Text == "nana" || tbNome.Text == "naninha" || tbNome.Text == "Anna" || tbNome.Text == "anna")
+                return "Nana";
+            if (tbNome.Text == "Marco" || tbNome.Text == "marco" || tbNome.Text == "MarcoT" || tbNome.Text == "marcot" || tbNome.Text == "marcoT" || tbNome.Text == "Marcot")
+                return "Marco";
+            else
+                return "Anonimo";
         }
     }
 }
