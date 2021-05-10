@@ -10,9 +10,11 @@ namespace amo6166
 {
     public partial class Terminal : MetroFramework.Forms.MetroForm
     {
-        public Terminal()
+        string username;
+        public Terminal(string username)
         {
             InitializeComponent();
+            this.username = username;
         }
 
         private void tbTerminalzinho_TextChanged(object sender, EventArgs e)
@@ -44,7 +46,11 @@ namespace amo6166
 
         private void Terminal_Load(object sender, EventArgs e)
         {
-
+            if (username == "Nana")
+            {
+                tbTerminalzinho.BackColor = Color.FromArgb(31, 29, 39);
+                tbTerminalzinho.ForeColor = Color.FromArgb(183, 161, 255); 
+            }
         }
     }
 }

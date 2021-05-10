@@ -35,7 +35,7 @@ namespace amo6166
             this.btNanaDiario = new MetroFramework.Controls.MetroTile();
             this.btMarcoDiario = new MetroFramework.Controls.MetroTile();
             this.btSair = new MetroFramework.Controls.MetroTile();
-            this.btNotas = new MetroFramework.Controls.MetroTile();
+            this.btMenu = new MetroFramework.Controls.MetroTile();
             this.btAMO = new MetroFramework.Controls.MetroTile();
             this.btGaleria = new MetroFramework.Controls.MetroTile();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -47,12 +47,13 @@ namespace amo6166
             // panel
             // 
             this.panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel.BackgroundImage")));
+            this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
-            this.panel.Location = new System.Drawing.Point(187, 68);
+            this.panel.Location = new System.Drawing.Point(151, 68);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(744, 581);
+            this.panel.Size = new System.Drawing.Size(620, 581);
             this.panel.Style = MetroFramework.MetroColorStyle.Purple;
             this.panel.TabIndex = 0;
             this.panel.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -70,7 +71,7 @@ namespace amo6166
             this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btTerminal.Location = new System.Drawing.Point(23, 68);
             this.btTerminal.Name = "btTerminal";
-            this.btTerminal.Size = new System.Drawing.Size(158, 78);
+            this.btTerminal.Size = new System.Drawing.Size(122, 78);
             this.btTerminal.Style = MetroFramework.MetroColorStyle.Purple;
             this.btTerminal.TabIndex = 2;
             this.btTerminal.Text = "Terminal";
@@ -94,7 +95,7 @@ namespace amo6166
             this.btNanaDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btNanaDiario.Location = new System.Drawing.Point(23, 152);
             this.btNanaDiario.Name = "btNanaDiario";
-            this.btNanaDiario.Size = new System.Drawing.Size(158, 78);
+            this.btNanaDiario.Size = new System.Drawing.Size(122, 78);
             this.btNanaDiario.Style = MetroFramework.MetroColorStyle.Purple;
             this.btNanaDiario.TabIndex = 3;
             this.btNanaDiario.Text = "Nana";
@@ -118,7 +119,7 @@ namespace amo6166
             this.btMarcoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btMarcoDiario.Location = new System.Drawing.Point(23, 236);
             this.btMarcoDiario.Name = "btMarcoDiario";
-            this.btMarcoDiario.Size = new System.Drawing.Size(158, 78);
+            this.btMarcoDiario.Size = new System.Drawing.Size(122, 78);
             this.btMarcoDiario.Style = MetroFramework.MetroColorStyle.Purple;
             this.btMarcoDiario.TabIndex = 9;
             this.btMarcoDiario.Text = "Marco";
@@ -142,7 +143,7 @@ namespace amo6166
             this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btSair.Location = new System.Drawing.Point(23, 571);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(158, 78);
+            this.btSair.Size = new System.Drawing.Size(122, 78);
             this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
             this.btSair.TabIndex = 10;
             this.btSair.Text = "Sair";
@@ -158,29 +159,29 @@ namespace amo6166
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
-            // btNotas
+            // btMenu
             // 
-            this.btNotas.ActiveControl = null;
-            this.btNotas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btNotas.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btNotas.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btNotas.Location = new System.Drawing.Point(23, 320);
-            this.btNotas.Name = "btNotas";
-            this.btNotas.Size = new System.Drawing.Size(158, 78);
-            this.btNotas.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btNotas.TabIndex = 11;
-            this.btNotas.Text = "Notas";
-            this.btNotas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btNotas.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btNotas.TileImage = ((System.Drawing.Image)(resources.GetObject("btNotas.TileImage")));
-            this.btNotas.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btNotas.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btNotas.UseCustomBackColor = true;
-            this.btNotas.UseCustomForeColor = true;
-            this.btNotas.UseSelectable = true;
-            this.btNotas.UseStyleColors = true;
-            this.btNotas.UseVisualStyleBackColor = false;
-            this.btNotas.Click += new System.EventHandler(this.btNotas_Click);
+            this.btMenu.ActiveControl = null;
+            this.btMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btMenu.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btMenu.Location = new System.Drawing.Point(23, 487);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(122, 78);
+            this.btMenu.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btMenu.TabIndex = 11;
+            this.btMenu.Text = "Menu";
+            this.btMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btMenu.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btMenu.TileImage = ((System.Drawing.Image)(resources.GetObject("btMenu.TileImage")));
+            this.btMenu.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btMenu.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btMenu.UseCustomBackColor = true;
+            this.btMenu.UseCustomForeColor = true;
+            this.btMenu.UseSelectable = true;
+            this.btMenu.UseStyleColors = true;
+            this.btMenu.UseVisualStyleBackColor = false;
+            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
             // btAMO
             // 
@@ -188,12 +189,12 @@ namespace amo6166
             this.btAMO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btAMO.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAMO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btAMO.Location = new System.Drawing.Point(23, 404);
+            this.btAMO.Location = new System.Drawing.Point(23, 403);
             this.btAMO.Name = "btAMO";
-            this.btAMO.Size = new System.Drawing.Size(158, 78);
+            this.btAMO.Size = new System.Drawing.Size(122, 78);
             this.btAMO.Style = MetroFramework.MetroColorStyle.Purple;
             this.btAMO.TabIndex = 12;
-            this.btAMO.Text = "amo6166.com";
+            this.btAMO.Text = "6166.com";
             this.btAMO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btAMO.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btAMO.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -211,9 +212,9 @@ namespace amo6166
             this.btGaleria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btGaleria.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btGaleria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btGaleria.Location = new System.Drawing.Point(23, 487);
+            this.btGaleria.Location = new System.Drawing.Point(23, 320);
             this.btGaleria.Name = "btGaleria";
-            this.btGaleria.Size = new System.Drawing.Size(158, 78);
+            this.btGaleria.Size = new System.Drawing.Size(122, 78);
             this.btGaleria.Style = MetroFramework.MetroColorStyle.Purple;
             this.btGaleria.TabIndex = 13;
             this.btGaleria.Text = "Galeria";
@@ -231,7 +232,7 @@ namespace amo6166
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(187, 30);
+            this.metroLabel1.Location = new System.Drawing.Point(325, 29);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(60, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
@@ -243,7 +244,7 @@ namespace amo6166
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(337, 30);
+            this.metroLabel2.Location = new System.Drawing.Point(475, 29);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(44, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
@@ -255,7 +256,7 @@ namespace amo6166
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
-            this.lbLogin.Location = new System.Drawing.Point(387, 30);
+            this.lbLogin.Location = new System.Drawing.Point(525, 29);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(63, 19);
             this.lbLogin.TabIndex = 16;
@@ -265,7 +266,7 @@ namespace amo6166
             // lbUser
             // 
             this.lbUser.AutoSize = true;
-            this.lbUser.Location = new System.Drawing.Point(253, 30);
+            this.lbUser.Location = new System.Drawing.Point(391, 29);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(63, 19);
             this.lbUser.TabIndex = 17;
@@ -278,13 +279,13 @@ namespace amo6166
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(954, 672);
+            this.ClientSize = new System.Drawing.Size(793, 672);
+            this.Controls.Add(this.btMenu);
             this.Controls.Add(this.lbUser);
             this.Controls.Add(this.lbLogin);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btAMO);
-            this.Controls.Add(this.btNotas);
             this.Controls.Add(this.btGaleria);
             this.Controls.Add(this.btSair);
             this.Controls.Add(this.btMarcoDiario);
@@ -313,12 +314,12 @@ namespace amo6166
         private MetroFramework.Controls.MetroTile btNanaDiario;
         private MetroFramework.Controls.MetroTile btMarcoDiario;
         private MetroFramework.Controls.MetroTile btSair;
-        private MetroFramework.Controls.MetroTile btNotas;
         private MetroFramework.Controls.MetroTile btAMO;
         private MetroFramework.Controls.MetroTile btGaleria;
         private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private MetroFramework.Controls.MetroLabel lbLogin;
         private MetroFramework.Controls.MetroLabel lbUser;
+        private MetroFramework.Controls.MetroTile btMenu;
     }
 }

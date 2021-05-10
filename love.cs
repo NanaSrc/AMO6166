@@ -35,7 +35,7 @@ namespace amo6166
         {
             DefaultColor();
             btTerminal.BackColor = Color.FromArgb(45, 41, 56);
-            Terminal term = new Terminal();
+            Terminal term = new Terminal(username);
             PanelShow(term);
         }
 
@@ -44,7 +44,7 @@ namespace amo6166
             btTerminal.BackColor = Color.FromArgb(31, 29, 39);
             btNanaDiario.BackColor = Color.FromArgb(31, 29, 39);
             btMarcoDiario.BackColor = Color.FromArgb(31, 29, 39);
-            btNotas.BackColor = Color.FromArgb(31, 29, 39);
+            btMenu.BackColor = Color.FromArgb(31, 29, 39);
             btAMO.BackColor = Color.FromArgb(31, 29, 39);
             btGaleria.BackColor = Color.FromArgb(31, 29, 39);
         }
@@ -59,14 +59,6 @@ namespace amo6166
         {
             DefaultColor();
             btMarcoDiario.BackColor = Color.FromArgb(45, 41, 56);
-        }
-
-        private void btNotas_Click(object sender, EventArgs e)
-        {
-            DefaultColor();
-            btNotas.BackColor = Color.FromArgb(45, 41, 56);
-            Terminal term = new Terminal();
-            PanelShow(term);
         }
 
         private void btAMO_Click(object sender, EventArgs e)
@@ -96,6 +88,14 @@ namespace amo6166
             this.panel.Controls.Add(form);
             form.FormBorderStyle = FormBorderStyle.None;
             form.Show();
+        }
+
+        private void btMenu_Click(object sender, EventArgs e)
+        {
+            DefaultColor();
+            btMenu.BackColor = Color.FromArgb(45, 41, 56);
+
+            panel.Controls.Clear();
         }
     }
 }
