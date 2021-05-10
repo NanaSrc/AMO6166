@@ -58,6 +58,7 @@ namespace amo6166
             this.lbAcesso.Text = "Acessando como: Anônimo";
             this.lbAcesso.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbAcesso.UseStyleColors = true;
+            this.lbAcesso.TextChanged += new System.EventHandler(this.lbAcesso_TextChanged);
             // 
             // mtShow
             // 

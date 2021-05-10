@@ -38,12 +38,12 @@ namespace amo6166
                 {
                     MessageBox.Show("N + M = AMO6166 " +
                     Environment.NewLine +
-                    "Como assim você não lembra? Foi você que programou isso, Anna...", ":rage:");
+                    "Como assim você não lembra? Foi você que programou isso, Anna", ":rage:");
                     hint--;
                 }
                 else
                 {
-                    MessageBox.Show("Nada aqui pra você! Tente novamente sendo o Marco ou a Nana talvez?");
+                    MessageBox.Show("Nada aqui pra você! Tente novamente sendo o Marco ou a Nana talvez?", ";_;");
                 }
             }
             else
@@ -157,12 +157,23 @@ namespace amo6166
 
         private void rbSummer_CheckedChanged(object sender, EventArgs e)
         {
-            /*lbAcesso.Text = "Acessando como: Marco";
-            username = "Marco";*/
+            if ((VerificarAMO() == "Marco") && rbSummer.Checked)
+            {
+                lbAcesso.Text = "Acessando como: Marco";
+            }
+            else
+                lbAcesso.Text = "Acessando como: Anônimo";
+            //username = "Marco";
         }
 
         private void rbMoon_CheckedChanged(object sender, EventArgs e)
         {
+            if ((VerificarAMO() == "Nana") && rbMoon.Checked)
+            {
+                lbAcesso.Text = "Acessando como: Nana";
+            }
+            else
+                lbAcesso.Text = "Acessando como: Anônimo";
             /*lbAcesso.Text = "Acessando como: Nana";
             username = "Nana";*/
         }
@@ -230,6 +241,16 @@ namespace amo6166
             {
                 btLogin_Click(sender, e);
             }
+        }
+
+        private void lbAcesso_TextChanged(object sender, EventArgs e)
+        {
+            if (lbAcesso.Text == "Acessando como: Nana")
+                username = "Nana";
+            else if (lbAcesso.Text == "Acessando como: Marco")
+                username = "Marco";
+            else
+                username = "pessoa anônima";
         }
     }
 }
