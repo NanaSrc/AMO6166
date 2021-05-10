@@ -16,7 +16,7 @@ namespace amo6166
         {
             InitializeComponent();
         }
-        public love(string nome)
+        public love(string nome, string login)
         {
             InitializeComponent();
             username = nome;
@@ -24,13 +24,16 @@ namespace amo6166
 
         private void love_Load(object sender, EventArgs e)
         {
-            
+            lbUser.Text = username;
+
         }
 
         private void btTerminal_Click(object sender, EventArgs e)
         {
             DefaultColor();
             btTerminal.BackColor = Color.FromArgb(45, 41, 56);
+            Terminal term = new Terminal();
+            PanelShow(term);
         }
 
         private void DefaultColor()
@@ -59,12 +62,16 @@ namespace amo6166
         {
             DefaultColor();
             btNotas.BackColor = Color.FromArgb(45, 41, 56);
+            Terminal term = new Terminal();
+            PanelShow(term);
         }
 
         private void btAMO_Click(object sender, EventArgs e)
         {
             DefaultColor();
             btAMO.BackColor = Color.FromArgb(45, 41, 56);
+            Profile profile = new Profile(username);
+            PanelShow(profile);
         }
 
         private void btGaleria_Click(object sender, EventArgs e)
@@ -76,6 +83,16 @@ namespace amo6166
         private void btSair_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void PanelShow(Form form)
+        {
+            panel.Controls.Clear();
+            form.TopLevel = false;
+            form.AutoScroll = true;
+            this.panel.Controls.Add(form);
+            form.FormBorderStyle = FormBorderStyle.None;
+            form.Show();
         }
     }
 }

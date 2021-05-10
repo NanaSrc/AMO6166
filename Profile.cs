@@ -10,14 +10,16 @@ namespace amo6166
 {
     public partial class Profile : MetroFramework.Forms.MetroForm
     {
-        public Profile()
+        string username;
+        public Profile(string user)
         {
             InitializeComponent();
+            username = user;
         }
 
         private void Profile_Load(object sender, EventArgs e)
         {
-
+            lbNome.Text = username;
         }
     }
 }

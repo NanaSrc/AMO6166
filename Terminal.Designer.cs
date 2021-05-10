@@ -29,45 +29,46 @@ namespace amo6166
         /// </summary>
         private void InitializeComponent()
         {
-            this.tbComandos = new System.Windows.Forms.TextBox();
             this.tbTerminalzinho = new System.Windows.Forms.TextBox();
+            this.tbComandos = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // tbComandos
-            // 
-            this.tbComandos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.tbComandos.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tbComandos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(212)))), ((int)(((byte)(163)))));
-            this.tbComandos.Location = new System.Drawing.Point(10, 10);
-            this.tbComandos.Multiline = true;
-            this.tbComandos.Name = "tbComandos";
-            this.tbComandos.ReadOnly = true;
-            this.tbComandos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbComandos.Size = new System.Drawing.Size(532, 100);
-            this.tbComandos.TabIndex = 16;
-            this.tbComandos.Text = "Lista de comandos do terminalzinho:\r\ninfo\r\nlove\r\nnana\r\nmarco\r\ncls\r\nsay\r\nplaylist\r" +
-    "\n";
             // 
             // tbTerminalzinho
             // 
             this.tbTerminalzinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
             this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tbTerminalzinho.Location = new System.Drawing.Point(10, 116);
+            this.tbTerminalzinho.Location = new System.Drawing.Point(0, 0);
             this.tbTerminalzinho.Multiline = true;
             this.tbTerminalzinho.Name = "tbTerminalzinho";
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbTerminalzinho.Size = new System.Drawing.Size(532, 427);
+            this.tbTerminalzinho.Size = new System.Drawing.Size(744, 582);
             this.tbTerminalzinho.TabIndex = 9;
             this.tbTerminalzinho.Text = "Nana says: ";
             this.tbTerminalzinho.TextChanged += new System.EventHandler(this.tbTerminalzinho_TextChanged);
             this.tbTerminalzinho.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbTerminalzinho_KeyPress);
             // 
+            // tbComandos
+            // 
+            this.tbComandos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
+            this.tbComandos.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbComandos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(212)))), ((int)(((byte)(163)))));
+            this.tbComandos.Location = new System.Drawing.Point(23, 559);
+            this.tbComandos.Multiline = true;
+            this.tbComandos.Name = "tbComandos";
+            this.tbComandos.ReadOnly = true;
+            this.tbComandos.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.tbComandos.Size = new System.Drawing.Size(698, 100);
+            this.tbComandos.TabIndex = 16;
+            this.tbComandos.Text = "Lista de comandos do terminalzinho:\r\ninfo\r\nlove\r\nnana\r\nmarco\r\ncls\r\nsay\r\nplaylist\r" +
+    "\n";
+            // 
             // Terminal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(555, 556);
+            this.ClientSize = new System.Drawing.Size(744, 581);
+            this.ControlBox = false;
             this.Controls.Add(this.tbTerminalzinho);
             this.Controls.Add(this.tbComandos);
             this.MaximizeBox = false;
@@ -88,7 +89,7 @@ namespace amo6166
         }
 
         #endregion
-        private System.Windows.Forms.TextBox tbComandos;
         private System.Windows.Forms.TextBox tbTerminalzinho;
+        private System.Windows.Forms.TextBox tbComandos;
     }
 }

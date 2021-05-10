@@ -62,7 +62,6 @@ namespace amo6166
             this.groupBox1.Size = new System.Drawing.Size(549, 181);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Profile";
             // 
             // btEnviar
             // 
@@ -103,9 +102,9 @@ namespace amo6166
             this.label5.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(101, 65);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(175, 16);
+            this.label5.Size = new System.Drawing.Size(196, 16);
             this.label5.TabIndex = 12;
-            this.label5.Text = "Melhor namorado do mundo";
+            this.label5.Text = "I was me but now he is gone";
             // 
             // label4
             // 
@@ -175,10 +174,20 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(572, 450);
+            this.ClientSize = new System.Drawing.Size(744, 581);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
+            this.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
+            this.Movable = false;
             this.Name = "Profile";
+            this.Resizable = false;
+            this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "Profile";
+            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Profile_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

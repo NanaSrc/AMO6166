@@ -38,11 +38,15 @@ namespace amo6166
             this.btNotas = new MetroFramework.Controls.MetroTile();
             this.btAMO = new MetroFramework.Controls.MetroTile();
             this.btGaleria = new MetroFramework.Controls.MetroTile();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
+            this.lbLogin = new MetroFramework.Controls.MetroLabel();
+            this.lbUser = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // panel
             // 
-            this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel.BackgroundImage = global::amo6166.Properties.Resources._12;
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
@@ -133,7 +137,7 @@ namespace amo6166
             // btSair
             // 
             this.btSair.ActiveControl = null;
-            this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(41)))), ((int)(((byte)(56)))));
+            this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btSair.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btSair.Location = new System.Drawing.Point(23, 571);
@@ -141,16 +145,16 @@ namespace amo6166
             this.btSair.Size = new System.Drawing.Size(158, 78);
             this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
             this.btSair.TabIndex = 10;
+            this.btSair.Text = "Sair";
             this.btSair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btSair.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btSair.TileImage = global::amo6166.Properties.Resources.sair;
+            this.btSair.TileImage = ((System.Drawing.Image)(resources.GetObject("btSair.TileImage")));
             this.btSair.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btSair.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
             this.btSair.UseCustomBackColor = true;
             this.btSair.UseCustomForeColor = true;
             this.btSair.UseSelectable = true;
             this.btSair.UseStyleColors = true;
-            this.btSair.UseTileImage = true;
             this.btSair.UseVisualStyleBackColor = false;
             this.btSair.Click += new System.EventHandler(this.btSair_Click);
             // 
@@ -224,6 +228,46 @@ namespace amo6166
             this.btGaleria.UseVisualStyleBackColor = false;
             this.btGaleria.Click += new System.EventHandler(this.btGaleria_Click);
             // 
+            // metroLabel1
+            // 
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(187, 30);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(60, 19);
+            this.metroLabel1.TabIndex = 14;
+            this.metroLabel1.Text = "Usuário: ";
+            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // metroLabel2
+            // 
+            this.metroLabel2.AutoSize = true;
+            this.metroLabel2.Location = new System.Drawing.Point(337, 30);
+            this.metroLabel2.Name = "metroLabel2";
+            this.metroLabel2.Size = new System.Drawing.Size(44, 19);
+            this.metroLabel2.TabIndex = 15;
+            this.metroLabel2.Text = "Login:";
+            this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // lbLogin
+            // 
+            this.lbLogin.AutoSize = true;
+            this.lbLogin.Location = new System.Drawing.Point(387, 30);
+            this.lbLogin.Name = "lbLogin";
+            this.lbLogin.Size = new System.Drawing.Size(63, 19);
+            this.lbLogin.TabIndex = 16;
+            this.lbLogin.Text = "Anônimo";
+            this.lbLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // lbUser
+            // 
+            this.lbUser.AutoSize = true;
+            this.lbUser.Location = new System.Drawing.Point(253, 30);
+            this.lbUser.Name = "lbUser";
+            this.lbUser.Size = new System.Drawing.Size(63, 19);
+            this.lbUser.TabIndex = 17;
+            this.lbUser.Text = "Anônimo";
+            this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -231,6 +275,10 @@ namespace amo6166
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(954, 672);
+            this.Controls.Add(this.lbUser);
+            this.Controls.Add(this.lbLogin);
+            this.Controls.Add(this.metroLabel2);
+            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.btAMO);
             this.Controls.Add(this.btNotas);
             this.Controls.Add(this.btGaleria);
@@ -250,6 +298,7 @@ namespace amo6166
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.love_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -263,5 +312,9 @@ namespace amo6166
         private MetroFramework.Controls.MetroTile btNotas;
         private MetroFramework.Controls.MetroTile btAMO;
         private MetroFramework.Controls.MetroTile btGaleria;
+        private MetroFramework.Controls.MetroLabel metroLabel1;
+        private MetroFramework.Controls.MetroLabel metroLabel2;
+        private MetroFramework.Controls.MetroLabel lbLogin;
+        private MetroFramework.Controls.MetroLabel lbUser;
     }
 }
