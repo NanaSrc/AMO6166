@@ -252,5 +252,19 @@ namespace amo6166
             else
                 username = "pessoa anônima";
         }
+
+        private void tbNome_TextChanged(object sender, EventArgs e)
+        {
+            if (VerificarAMO() == "Marco")
+            {
+                lbAcesso.Text = "Acessando como: Marco";
+            }
+            else if(VerificarAMO() == "Nana")
+            {
+                lbAcesso.Text = "Acessando como: Nana";
+            }
+            else
+                lbAcesso.Text = "Acessando como: Anônimo";
+        }
     }
 }

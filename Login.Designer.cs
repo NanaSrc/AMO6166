@@ -93,6 +93,7 @@ namespace amo6166
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(408, 23);
             this.tbNome.TabIndex = 35;
+            this.tbNome.TextChanged += new System.EventHandler(this.tbNome_TextChanged);
             this.tbNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNome_KeyPress);
             // 
             // lbSenha

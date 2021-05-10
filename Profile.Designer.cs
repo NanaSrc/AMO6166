@@ -175,7 +175,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(572, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "Profile";
             this.Text = "Profile";
