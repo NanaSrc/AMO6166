@@ -12,6 +12,7 @@ namespace amo6166
     {
         //Seria bom fazer um botão de menu
         string username;
+        string login;
         public love()
         {
             InitializeComponent();
@@ -20,11 +21,13 @@ namespace amo6166
         {
             InitializeComponent();
             username = nome;
+            this.login = login;
         }
 
         private void love_Load(object sender, EventArgs e)
         {
             lbUser.Text = username;
+            lbLogin.Text = login;
 
         }
 

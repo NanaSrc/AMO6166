@@ -57,7 +57,7 @@ namespace amo6166
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lbNome);
             this.groupBox1.Controls.Add(this.label);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(172, 20);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(549, 181);
             this.groupBox1.TabIndex = 1;

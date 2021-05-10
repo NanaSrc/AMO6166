@@ -46,7 +46,7 @@ namespace amo6166
             // 
             // panel
             // 
-            this.panel.BackgroundImage = global::amo6166.Properties.Resources._12;
+            this.panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel.BackgroundImage")));
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
@@ -234,9 +234,11 @@ namespace amo6166
             this.metroLabel1.Location = new System.Drawing.Point(187, 30);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(60, 19);
+            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLabel1.TabIndex = 14;
             this.metroLabel1.Text = "Usuário: ";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel1.UseStyleColors = true;
             // 
             // metroLabel2
             // 
@@ -244,9 +246,11 @@ namespace amo6166
             this.metroLabel2.Location = new System.Drawing.Point(337, 30);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(44, 19);
+            this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLabel2.TabIndex = 15;
             this.metroLabel2.Text = "Login:";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.UseStyleColors = true;
             // 
             // lbLogin
             // 
