@@ -30,139 +30,139 @@ namespace amo6166
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(love));
-            this.btTerminal = new System.Windows.Forms.Button();
-            this.btDiarioNana = new System.Windows.Forms.Button();
-            this.btGaleria = new System.Windows.Forms.Button();
-            this.btDiarioMarco = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btLove = new System.Windows.Forms.Button();
-            this.btSair = new System.Windows.Forms.Button();
+            this.panel = new MetroFramework.Controls.MetroPanel();
+            this.btNanaDiario = new MetroFramework.Controls.MetroButton();
+            this.btMarcoDiario = new MetroFramework.Controls.MetroButton();
+            this.btGaleria = new MetroFramework.Controls.MetroButton();
+            this.btNotas = new MetroFramework.Controls.MetroButton();
+            this.metroButton7 = new MetroFramework.Controls.MetroButton();
+            this.metroButton8 = new MetroFramework.Controls.MetroButton();
+            this.btTerminal = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
-            // btTerminal
+            // panel
             // 
-            this.btTerminal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btTerminal.Location = new System.Drawing.Point(12, 12);
-            this.btTerminal.Name = "btTerminal";
-            this.btTerminal.Size = new System.Drawing.Size(126, 68);
-            this.btTerminal.TabIndex = 1;
-            this.btTerminal.Text = "Terminalzinho";
-            this.btTerminal.UseVisualStyleBackColor = true;
-            this.btTerminal.Click += new System.EventHandler(this.btTerminal_Click);
+            this.panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel.BackgroundImage")));
+            this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panel.HorizontalScrollbarBarColor = true;
+            this.panel.HorizontalScrollbarHighlightOnWheel = false;
+            this.panel.HorizontalScrollbarSize = 10;
+            this.panel.Location = new System.Drawing.Point(187, 68);
+            this.panel.Name = "panel";
+            this.panel.Size = new System.Drawing.Size(744, 581);
+            this.panel.Style = MetroFramework.MetroColorStyle.Purple;
+            this.panel.TabIndex = 0;
+            this.panel.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.panel.UseStyleColors = true;
+            this.panel.VerticalScrollbarBarColor = true;
+            this.panel.VerticalScrollbarHighlightOnWheel = false;
+            this.panel.VerticalScrollbarSize = 10;
             // 
-            // btDiarioNana
+            // btNanaDiario
             // 
-            this.btDiarioNana.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btDiarioNana.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btDiarioNana.Location = new System.Drawing.Point(12, 160);
-            this.btDiarioNana.Name = "btDiarioNana";
-            this.btDiarioNana.Size = new System.Drawing.Size(126, 68);
-            this.btDiarioNana.TabIndex = 2;
-            this.btDiarioNana.Text = "Diário da Nana";
-            this.btDiarioNana.UseVisualStyleBackColor = true;
-            this.btDiarioNana.Click += new System.EventHandler(this.button2_Click);
+            this.btNanaDiario.Location = new System.Drawing.Point(23, 152);
+            this.btNanaDiario.Name = "btNanaDiario";
+            this.btNanaDiario.Size = new System.Drawing.Size(158, 78);
+            this.btNanaDiario.TabIndex = 2;
+            this.btNanaDiario.Text = "Diário da Nana";
+            this.btNanaDiario.UseSelectable = true;
+            // 
+            // btMarcoDiario
+            // 
+            this.btMarcoDiario.Location = new System.Drawing.Point(23, 236);
+            this.btMarcoDiario.Name = "btMarcoDiario";
+            this.btMarcoDiario.Size = new System.Drawing.Size(158, 78);
+            this.btMarcoDiario.TabIndex = 3;
+            this.btMarcoDiario.Text = "Diário do Marco";
+            this.btMarcoDiario.UseSelectable = true;
             // 
             // btGaleria
             // 
-            this.btGaleria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btGaleria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btGaleria.Location = new System.Drawing.Point(12, 308);
+            this.btGaleria.Location = new System.Drawing.Point(23, 320);
             this.btGaleria.Name = "btGaleria";
-            this.btGaleria.Size = new System.Drawing.Size(126, 68);
-            this.btGaleria.TabIndex = 3;
+            this.btGaleria.Size = new System.Drawing.Size(158, 78);
+            this.btGaleria.TabIndex = 4;
             this.btGaleria.Text = "Galeria";
-            this.btGaleria.UseVisualStyleBackColor = true;
+            this.btGaleria.UseSelectable = true;
             // 
-            // btDiarioMarco
+            // btNotas
             // 
-            this.btDiarioMarco.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btDiarioMarco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btDiarioMarco.Location = new System.Drawing.Point(12, 234);
-            this.btDiarioMarco.Name = "btDiarioMarco";
-            this.btDiarioMarco.Size = new System.Drawing.Size(126, 68);
-            this.btDiarioMarco.TabIndex = 4;
-            this.btDiarioMarco.Text = "Diário do Marco";
-            this.btDiarioMarco.UseVisualStyleBackColor = true;
+            this.btNotas.Location = new System.Drawing.Point(23, 404);
+            this.btNotas.Name = "btNotas";
+            this.btNotas.Size = new System.Drawing.Size(158, 78);
+            this.btNotas.TabIndex = 5;
+            this.btNotas.Text = "Notas";
+            this.btNotas.UseSelectable = true;
             // 
-            // button1
+            // metroButton7
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.button1.Location = new System.Drawing.Point(12, 86);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 68);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "nanarco.com";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.metroButton7.Location = new System.Drawing.Point(23, 488);
+            this.metroButton7.Name = "metroButton7";
+            this.metroButton7.Size = new System.Drawing.Size(158, 78);
+            this.metroButton7.TabIndex = 7;
+            this.metroButton7.Text = "amo6166.com";
+            this.metroButton7.UseSelectable = true;
             // 
-            // panel1
+            // metroButton8
             // 
-            this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(144, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(707, 538);
-            this.panel1.TabIndex = 1;
+            this.metroButton8.Location = new System.Drawing.Point(23, 572);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.Size = new System.Drawing.Size(158, 77);
+            this.metroButton8.TabIndex = 8;
+            this.metroButton8.Text = "Sair";
+            this.metroButton8.UseSelectable = true;
             // 
-            // btLove
+            // btTerminal
             // 
-            this.btLove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLove.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btLove.Location = new System.Drawing.Point(12, 382);
-            this.btLove.Name = "btLove";
-            this.btLove.Size = new System.Drawing.Size(126, 68);
-            this.btLove.TabIndex = 6;
-            this.btLove.Text = "I love you";
-            this.btLove.UseVisualStyleBackColor = true;
-            // 
-            // btSair
-            // 
-            this.btSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
-            this.btSair.Location = new System.Drawing.Point(12, 456);
-            this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(126, 94);
-            this.btSair.TabIndex = 7;
-            this.btSair.Text = "Sair";
-            this.btSair.UseVisualStyleBackColor = true;
-            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            this.btTerminal.ActiveControl = null;
+            this.btTerminal.Location = new System.Drawing.Point(23, 68);
+            this.btTerminal.Name = "btTerminal";
+            this.btTerminal.Size = new System.Drawing.Size(158, 78);
+            this.btTerminal.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btTerminal.TabIndex = 2;
+            this.btTerminal.Text = "Terminal";
+            this.btTerminal.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btTerminal.UseSelectable = true;
             // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(863, 563);
-            this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btLove);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.btGaleria);
+            this.ClientSize = new System.Drawing.Size(954, 672);
             this.Controls.Add(this.btTerminal);
-            this.Controls.Add(this.btDiarioMarco);
-            this.Controls.Add(this.btDiarioNana);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.metroButton8);
+            this.Controls.Add(this.metroButton7);
+            this.Controls.Add(this.btNotas);
+            this.Controls.Add(this.btGaleria);
+            this.Controls.Add(this.btMarcoDiario);
+            this.Controls.Add(this.btNanaDiario);
+            this.Controls.Add(this.panel);
             this.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "love";
-            this.Text = "love.exe";
+            this.Opacity = 0.96D;
+            this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Purple;
+            this.Text = "AMO6166™";
+            this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.love_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Button btTerminal;
-        private System.Windows.Forms.Button btDiarioNana;
-        private System.Windows.Forms.Button btGaleria;
-        private System.Windows.Forms.Button btDiarioMarco;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btSair;
-        private System.Windows.Forms.Button btLove;
+
+        private MetroFramework.Controls.MetroPanel panel;
+        private MetroFramework.Controls.MetroButton btNanaDiario;
+        private MetroFramework.Controls.MetroButton btMarcoDiario;
+        private MetroFramework.Controls.MetroButton btGaleria;
+        private MetroFramework.Controls.MetroButton btNotas;
+        private MetroFramework.Controls.MetroButton metroButton7;
+        private MetroFramework.Controls.MetroButton metroButton8;
+        private MetroFramework.Controls.MetroTile btTerminal;
     }
 }
