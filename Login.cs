@@ -96,8 +96,11 @@ namespace amo6166
 
             if (user.Ama && user.Nomec && user.Keyc)
             {
+                this.Hide();
                 love m = new love(username);
-                m.Show();
+                m.ShowDialog();
+                this.Close();
+                //m.Show();
             }
             else
             {
