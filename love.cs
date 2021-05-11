@@ -10,7 +10,6 @@ namespace amo6166
 {
     public partial class love : MetroFramework.Forms.MetroForm
     {
-        //Seria bom fazer um botão de menu
         string username;
         string login;
         public love()
@@ -33,8 +32,7 @@ namespace amo6166
 
         private void btTerminal_Click(object sender, EventArgs e)
         {
-            DefaultColor();
-            btTerminal.BackColor = Color.FromArgb(45, 41, 56);
+            Cor(btTerminal);
             Terminal term = new Terminal(username);
             PanelShow(term);
         }
@@ -51,32 +49,33 @@ namespace amo6166
 
         private void btNanaDiario_Click(object sender, EventArgs e)
         {
-            DefaultColor();
-            btNanaDiario.BackColor = Color.FromArgb(45, 41, 56);
+            Cor(btNanaDiario);
+            Nana nana = new Nana();
+            PanelShow(nana);
         }
 
         private void btMarcoDiario_Click(object sender, EventArgs e)
         {
-            DefaultColor();
-            btMarcoDiario.BackColor = Color.FromArgb(45, 41, 56);
+            Cor(btMarcoDiario);
+            Marco marco = new Marco();
+            PanelShow(marco);
         }
 
         private void btAMO_Click(object sender, EventArgs e)
         {
-            DefaultColor();
-            btAMO.BackColor = Color.FromArgb(45, 41, 56);
+            Cor(btAMO);
             Profile profile = new Profile(username);
             PanelShow(profile);
         }
 
         private void btGaleria_Click(object sender, EventArgs e)
         {
-            DefaultColor();
-            btGaleria.BackColor = Color.FromArgb(45, 41, 56);
+            Cor(btMenu);
         }
 
         private void btSair_Click(object sender, EventArgs e)
         {
+            Cor(btSair);
             Application.Exit();
         }
 
@@ -92,10 +91,19 @@ namespace amo6166
 
         private void btMenu_Click(object sender, EventArgs e)
         {
-            DefaultColor();
-            btMenu.BackColor = Color.FromArgb(45, 41, 56);
-
+            Cor(btMenu);
             panel.Controls.Clear();
+        }
+
+        private void Cor(Button bt)
+        {
+            DefaultColor();
+            bt.BackColor = Color.FromArgb(45, 41, 56);
+        }
+
+        private void btInfo_Click(object sender, EventArgs e)
+        {
+            Cor(btInfo);
         }
     }
 }

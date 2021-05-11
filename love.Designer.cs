@@ -296,6 +296,7 @@ namespace amo6166
             this.btInfo.UseSelectable = true;
             this.btInfo.UseStyleColors = true;
             this.btInfo.UseVisualStyleBackColor = false;
+            this.btInfo.Click += new System.EventHandler(this.btInfo_Click);
             // 
             // love
             // 
@@ -326,6 +327,7 @@ namespace amo6166
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "AMO6166™";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.TopMost = true;
             this.Load += new System.EventHandler(this.love_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
