@@ -51,13 +51,14 @@ namespace amo6166
             // tbTerminalzinho
             // 
             this.tbTerminalzinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
+            this.tbTerminalzinho.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tbTerminalzinho.Location = new System.Drawing.Point(23, 19);
             this.tbTerminalzinho.Multiline = true;
             this.tbTerminalzinho.Name = "tbTerminalzinho";
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbTerminalzinho.Size = new System.Drawing.Size(574, 539);
+            this.tbTerminalzinho.Size = new System.Drawing.Size(916, 623);
             this.tbTerminalzinho.TabIndex = 9;
             this.tbTerminalzinho.Text = "Nana says: ";
             this.tbTerminalzinho.TextChanged += new System.EventHandler(this.tbTerminalzinho_TextChanged);
@@ -67,7 +68,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 581);
+            this.ClientSize = new System.Drawing.Size(962, 665);
             this.ControlBox = false;
             this.Controls.Add(this.tbTerminalzinho);
             this.Controls.Add(this.tbComandos);

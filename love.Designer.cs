@@ -42,6 +42,7 @@ namespace amo6166
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.lbLogin = new MetroFramework.Controls.MetroLabel();
             this.lbUser = new MetroFramework.Controls.MetroLabel();
+            this.btInfo = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // panel
@@ -53,7 +54,7 @@ namespace amo6166
             this.panel.HorizontalScrollbarSize = 10;
             this.panel.Location = new System.Drawing.Point(151, 68);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(620, 581);
+            this.panel.Size = new System.Drawing.Size(962, 665);
             this.panel.Style = MetroFramework.MetroColorStyle.Purple;
             this.panel.TabIndex = 0;
             this.panel.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -69,7 +70,7 @@ namespace amo6166
             this.btTerminal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btTerminal.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btTerminal.Location = new System.Drawing.Point(23, 68);
+            this.btTerminal.Location = new System.Drawing.Point(23, 487);
             this.btTerminal.Name = "btTerminal";
             this.btTerminal.Size = new System.Drawing.Size(122, 78);
             this.btTerminal.Style = MetroFramework.MetroColorStyle.Purple;
@@ -141,7 +142,7 @@ namespace amo6166
             this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btSair.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btSair.Location = new System.Drawing.Point(23, 571);
+            this.btSair.Location = new System.Drawing.Point(23, 655);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(122, 78);
             this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
@@ -165,7 +166,7 @@ namespace amo6166
             this.btMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMenu.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMenu.Location = new System.Drawing.Point(23, 487);
+            this.btMenu.Location = new System.Drawing.Point(23, 68);
             this.btMenu.Name = "btMenu";
             this.btMenu.Size = new System.Drawing.Size(122, 78);
             this.btMenu.Style = MetroFramework.MetroColorStyle.Purple;
@@ -232,7 +233,7 @@ namespace amo6166
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(325, 29);
+            this.metroLabel1.Location = new System.Drawing.Point(487, 27);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(60, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
@@ -244,7 +245,7 @@ namespace amo6166
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(475, 29);
+            this.metroLabel2.Location = new System.Drawing.Point(637, 27);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(44, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
@@ -256,7 +257,7 @@ namespace amo6166
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
-            this.lbLogin.Location = new System.Drawing.Point(525, 29);
+            this.lbLogin.Location = new System.Drawing.Point(687, 27);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(63, 19);
             this.lbLogin.TabIndex = 16;
@@ -266,12 +267,35 @@ namespace amo6166
             // lbUser
             // 
             this.lbUser.AutoSize = true;
-            this.lbUser.Location = new System.Drawing.Point(391, 29);
+            this.lbUser.Location = new System.Drawing.Point(553, 27);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(63, 19);
             this.lbUser.TabIndex = 17;
             this.lbUser.Text = "Anônimo";
             this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
+            // 
+            // btInfo
+            // 
+            this.btInfo.ActiveControl = null;
+            this.btInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btInfo.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btInfo.Location = new System.Drawing.Point(23, 571);
+            this.btInfo.Name = "btInfo";
+            this.btInfo.Size = new System.Drawing.Size(122, 78);
+            this.btInfo.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btInfo.TabIndex = 11;
+            this.btInfo.Text = "Info";
+            this.btInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btInfo.TileImage = ((System.Drawing.Image)(resources.GetObject("btInfo.TileImage")));
+            this.btInfo.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btInfo.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btInfo.UseCustomBackColor = true;
+            this.btInfo.UseCustomForeColor = true;
+            this.btInfo.UseSelectable = true;
+            this.btInfo.UseStyleColors = true;
+            this.btInfo.UseVisualStyleBackColor = false;
             // 
             // love
             // 
@@ -279,7 +303,8 @@ namespace amo6166
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(793, 672);
+            this.ClientSize = new System.Drawing.Size(1136, 756);
+            this.Controls.Add(this.btInfo);
             this.Controls.Add(this.btMenu);
             this.Controls.Add(this.lbUser);
             this.Controls.Add(this.lbLogin);
@@ -296,7 +321,7 @@ namespace amo6166
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "love";
-            this.Opacity = 0.96D;
+            this.Opacity = 0.98D;
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "AMO6166™";
@@ -321,5 +346,6 @@ namespace amo6166
         private MetroFramework.Controls.MetroLabel lbLogin;
         private MetroFramework.Controls.MetroLabel lbUser;
         private MetroFramework.Controls.MetroTile btMenu;
+        private MetroFramework.Controls.MetroTile btInfo;
     }
 }

@@ -57,7 +57,7 @@ namespace amo6166
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lbNome);
             this.groupBox1.Controls.Add(this.label);
-            this.groupBox1.Location = new System.Drawing.Point(23, 27);
+            this.groupBox1.Location = new System.Drawing.Point(200, 30);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(549, 181);
             this.groupBox1.TabIndex = 1;
@@ -174,7 +174,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(620, 581);
+            this.ClientSize = new System.Drawing.Size(962, 665);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
