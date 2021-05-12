@@ -29,6 +29,7 @@ namespace amo6166
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.lbAcesso = new MetroFramework.Controls.MetroLabel();
             this.mtShow = new MetroFramework.Controls.MetroToggle();
             this.tbSenha = new System.Windows.Forms.TextBox();
@@ -231,6 +232,7 @@ namespace amo6166
             this.Controls.Add(this.tbNome);
             this.Controls.Add(this.lbSenha);
             this.Controls.Add(this.lbNome);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Login";
             this.Opacity = 0.96D;

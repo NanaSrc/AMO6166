@@ -304,7 +304,7 @@ namespace amo6166
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1136, 756);
+            this.ClientSize = new System.Drawing.Size(1136, 741);
             this.Controls.Add(this.btInfo);
             this.Controls.Add(this.btMenu);
             this.Controls.Add(this.lbUser);
