@@ -10,6 +10,7 @@ namespace amo6166
 {
     public partial class Nana : MetroFramework.Forms.MetroForm
     {
+        //Eu amo o Marco
         public Nana()
         {
             InitializeComponent();
