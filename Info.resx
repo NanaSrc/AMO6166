@@ -80,17 +80,17 @@ Servidor do Fábrica de Noobs no Discord - Por terem me apoiado e me inspirado e
     <value>This program came out of an idea that I had to thank a special person for a gift that he made for me on my birthday, but over time I decided to turn this into a program for our personal use.
 I had a lot of ideas and decided to put them into practice in order to test my skills, do something beautiful and I took advantage of my internship to develop it. Because it is something internal to us, it has no use for other people, but only for the two of us (me, Anna, and Marco).
 
-The application was developed in C # using the Visual Studio IDE from Microsoft Corporation together with the Modern UI Framework (MetroFramework, unknown developers) for the Design of the project. For the development of the program, the Git tool and GitHub were also used to make it possible to manage it.
+The application was developed in C# using the Visual Studio IDE from Microsoft Corporation together with the Modern UI Framework (MetroFramework, unknown developers) for the design of the project. For the development of the program, the Git tool and GitHub were also used to make it possible to manage it.
 Our repository can be found at: https://github.com/Nanacore/AMO6166/ | As well as some of our other projects at: https://github.com/AMO6166.
 
 Credits:
-Nana / Naninha1 / nokia / nana1666 / nokia1666 / LisA / Anna / Nanacore;
-Marco / MarcoT / marcotduenas.
+Nana/Naninha1/nokia/nana1666/nokia1666/LisA/Anna/Nanacore;
+Marco/MarcoT/marcotduenas.
 
 Special thanks:
-Babs / Bacon / Baconhyum / Barbara - For giving me the initial ideas for the program;
+Babs/Bacon/Baconhyum/Barbara - For giving me the initial ideas for the program;
 Professor Sónia - For teaching me about MetroFramework;
-Professor Mário - For teaching me everything I know about C # and forms programming in Visual Studio;
+Professor Mário - For teaching me everything I know about C# and forms programming in Visual Studio;
 StackOverflow - For helping me in times when I felt lost and without answers. I was able to resolve many errors and implement new things because of this site;
 Fábrica de Noobs Discord Server - For supporting me and inspiring me on bad days :). </value>
   </data>
