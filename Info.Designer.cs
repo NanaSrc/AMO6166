@@ -67,8 +67,8 @@ namespace amo6166
             this.cbIdioma.BackColor = System.Drawing.SystemColors.Window;
             this.cbIdioma.FormattingEnabled = true;
             this.cbIdioma.Items.AddRange(new object[] {
-            "Português (Brasil)",
-            "English"});
+            "English",
+            "Português (Brasil)"});
             this.cbIdioma.Location = new System.Drawing.Point(671, 50);
             this.cbIdioma.Name = "cbIdioma";
             this.cbIdioma.Size = new System.Drawing.Size(191, 23);

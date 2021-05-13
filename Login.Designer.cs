@@ -206,6 +206,7 @@ namespace amo6166
             // 
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Black;
+            this.metroLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.metroLabel3.Location = new System.Drawing.Point(445, 383);
@@ -250,6 +251,7 @@ namespace amo6166
             // lbInfo
             // 
             this.lbInfo.AutoSize = true;
+            this.lbInfo.Cursor = System.Windows.Forms.Cursors.Help;
             this.lbInfo.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbInfo.ForeColor = System.Drawing.Color.DarkGray;
             this.lbInfo.Location = new System.Drawing.Point(614, 29);
@@ -262,6 +264,7 @@ namespace amo6166
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
             this.label2.Location = new System.Drawing.Point(516, 33);
