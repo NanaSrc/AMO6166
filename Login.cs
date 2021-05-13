@@ -290,7 +290,7 @@ namespace amo6166
 
         private void metroLabel3_Click(object sender, EventArgs e)
         {
-            //Teste
+            //Teste1
             System.Diagnostics.Process start = new System.Diagnostics.Process();
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
