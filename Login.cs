@@ -269,5 +269,17 @@ namespace amo6166
             else
                 lbAcesso.Text = "Acessando como: Anônimo";
         }
+
+        private void lbTitulo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbInfo_Click(object sender, EventArgs e)
+        {
+            //Abrir form de info
+            Info info = new Info();
+            info.Show();
+        }
     }
 }
