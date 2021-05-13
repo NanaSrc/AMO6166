@@ -4,7 +4,7 @@ Esse programa surgiu a partir de uma ideia que tive para agradecer uma pessoa es
 Tive muitas ideias e decidi colocá-las em prática de modo a testar minhas habilidades, fazer algo bonito e aproveitei o meu estágio para desenvolver isso. Por ser algo interno nosso, não possui utilidade para outras pessoas e sim apenas para nós dois (eu, Anna, e o Marco). 
 
 O aplicativo foi desenvolvido em C# utilizando a IDE Visual Studio da Microsoft Corporation juntamente com a Framework Modern UI (MetroFramework, desenvolvedores desconhecidos) para o Design do projeto. Para o desenvolvimento do programa também foi utilizado a ferramenta Git e o GitHub para que fosse possível a gestão do mesmo.
-Nosso repositório pode ser encontrado no <a href="https://github.com/Nanacore/AMO6166/">github</a>, assim como alguns dos nossos outros projetos na organização <a href="https://github.com/AMO6166">AMO6166™</a>.
+Nosso repositório pode ser encontrado no <a href="https://github.com/Nanacore/AMO6166/">GitHub</a>, assim como alguns dos nossos outros projetos na organização <a href="https://github.com/AMO6166">AMO6166™</a>.
 
 <b>Créditos:</b>
 <br>Nana/Naninha1/nokia/nana1666/nokia1666/LisA/Anna/Nanacore; 
