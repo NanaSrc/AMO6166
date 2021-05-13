@@ -18,7 +18,7 @@ namespace amo6166
 
         private void Nana_Load(object sender, EventArgs e)
         {
-
+            
         }
     }
 }

@@ -281,5 +281,22 @@ namespace amo6166
             Info info = new Info();
             info.Show();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C start https://github.com/AMO6166";
+            process.StartInfo = startInfo;
+            process.Start();
+        }
     }
 }

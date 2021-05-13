@@ -217,6 +217,7 @@ namespace amo6166
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel3.UseCustomForeColor = true;
             this.metroLabel3.UseStyleColors = true;
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
             // 
             // panelIcon
             // 
@@ -268,6 +269,7 @@ namespace amo6166
             this.label2.Size = new System.Drawing.Size(100, 15);
             this.label2.TabIndex = 51;
             this.label2.Text = "Version: BETA 2.1.3";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Login
             // 
