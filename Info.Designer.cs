@@ -40,9 +40,10 @@ namespace amo6166
             // 
             // lbInfo
             // 
-            this.lbInfo.Location = new System.Drawing.Point(23, 117);
+            this.lbInfo.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lbInfo.Location = new System.Drawing.Point(23, 114);
             this.lbInfo.Name = "lbInfo";
-            this.lbInfo.Size = new System.Drawing.Size(839, 480);
+            this.lbInfo.Size = new System.Drawing.Size(839, 448);
             this.lbInfo.TabIndex = 0;
             this.lbInfo.Text = resources.GetString("lbInfo.Text");
             this.lbInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -74,7 +75,7 @@ namespace amo6166
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(521, 626);
+            this.metroLabel2.Location = new System.Drawing.Point(521, 575);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(341, 19);
             this.metroLabel2.TabIndex = 3;
@@ -113,7 +114,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 665);
+            this.ClientSize = new System.Drawing.Size(884, 614);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelIcon);
             this.Controls.Add(this.metroLabel2);
