@@ -113,5 +113,13 @@ namespace amo6166
             info.ControlBox = false;
             PanelShow(info);
         }
+
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login log = new Login();
+            log.ShowDialog();
+            this.Close();
+        }
     }
 }

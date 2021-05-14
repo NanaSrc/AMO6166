@@ -43,7 +43,9 @@ namespace amo6166
             this.lbLogin = new MetroFramework.Controls.MetroLabel();
             this.lbUser = new MetroFramework.Controls.MetroLabel();
             this.btInfo = new MetroFramework.Controls.MetroTile();
-            this.btLogout = new MetroFramework.Controls.MetroButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panelIcon = new MetroFramework.Controls.MetroPanel();
+            this.btLogout = new MetroFramework.Controls.MetroTile();
             this.SuspendLayout();
             // 
             // panel
@@ -235,7 +237,7 @@ namespace amo6166
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(784, 39);
+            this.metroLabel1.Location = new System.Drawing.Point(771, 50);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(63, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
@@ -248,7 +250,7 @@ namespace amo6166
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(914, 39);
+            this.metroLabel2.Location = new System.Drawing.Point(901, 50);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(46, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
@@ -261,7 +263,7 @@ namespace amo6166
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbLogin.Location = new System.Drawing.Point(966, 39);
+            this.lbLogin.Location = new System.Drawing.Point(953, 50);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(65, 19);
             this.lbLogin.TabIndex = 16;
@@ -272,7 +274,7 @@ namespace amo6166
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbUser.Location = new System.Drawing.Point(843, 39);
+            this.lbUser.Location = new System.Drawing.Point(830, 50);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(65, 19);
             this.lbUser.TabIndex = 17;
@@ -303,19 +305,57 @@ namespace amo6166
             this.btInfo.UseVisualStyleBackColor = false;
             this.btInfo.Click += new System.EventHandler(this.btInfo_Click);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(94, 36);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(138, 32);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "AMO6166™ ";
+            // 
+            // panelIcon
+            // 
+            this.panelIcon.BackgroundImage = global::amo6166.Properties.Resources.icon;
+            this.panelIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panelIcon.HorizontalScrollbarBarColor = true;
+            this.panelIcon.HorizontalScrollbarHighlightOnWheel = false;
+            this.panelIcon.HorizontalScrollbarSize = 10;
+            this.panelIcon.Location = new System.Drawing.Point(23, 18);
+            this.panelIcon.Name = "panelIcon";
+            this.panelIcon.Size = new System.Drawing.Size(65, 62);
+            this.panelIcon.Style = MetroFramework.MetroColorStyle.Purple;
+            this.panelIcon.TabIndex = 52;
+            this.panelIcon.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.panelIcon.VerticalScrollbarBarColor = true;
+            this.panelIcon.VerticalScrollbarHighlightOnWheel = false;
+            this.panelIcon.VerticalScrollbarSize = 10;
+            // 
             // btLogout
             // 
-            this.btLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.btLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLogout.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btLogout.Location = new System.Drawing.Point(1038, 36);
+            this.btLogout.ActiveControl = null;
+            this.btLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btLogout.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btLogout.Location = new System.Drawing.Point(1024, 40);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(75, 26);
+            this.btLogout.Size = new System.Drawing.Size(89, 40);
             this.btLogout.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btLogout.TabIndex = 18;
-            this.btLogout.Text = "Logout >";
+            this.btLogout.TabIndex = 12;
+            this.btLogout.Text = "Logout";
+            this.btLogout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btLogout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btLogout.TileImage = ((System.Drawing.Image)(resources.GetObject("btLogout.TileImage")));
+            this.btLogout.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btLogout.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btLogout.UseCustomBackColor = true;
+            this.btLogout.UseCustomForeColor = true;
             this.btLogout.UseSelectable = true;
+            this.btLogout.UseStyleColors = true;
+            this.btLogout.UseVisualStyleBackColor = false;
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
             // love
             // 
@@ -325,6 +365,8 @@ namespace amo6166
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1136, 784);
             this.Controls.Add(this.btLogout);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panelIcon);
             this.Controls.Add(this.btInfo);
             this.Controls.Add(this.btMenu);
             this.Controls.Add(this.lbUser);
@@ -345,9 +387,7 @@ namespace amo6166
             this.Opacity = 0.98D;
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Purple;
-            this.Text = "AMO6166™";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.TopMost = true;
             this.Load += new System.EventHandler(this.love_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -369,6 +409,8 @@ namespace amo6166
         private MetroFramework.Controls.MetroLabel lbUser;
         private MetroFramework.Controls.MetroTile btMenu;
         private MetroFramework.Controls.MetroTile btInfo;
-        private MetroFramework.Controls.MetroButton btLogout;
+        private System.Windows.Forms.Label label1;
+        private MetroFramework.Controls.MetroPanel panelIcon;
+        private MetroFramework.Controls.MetroTile btLogout;
     }
 }
