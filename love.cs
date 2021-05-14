@@ -27,7 +27,6 @@ namespace amo6166
         {
             lbUser.Text = username;
             lbLogin.Text = login;
-
         }
 
         private void btTerminal_Click(object sender, EventArgs e)
@@ -104,6 +103,15 @@ namespace amo6166
         private void btInfo_Click(object sender, EventArgs e)
         {
             Cor(btInfo);
+            Info info = new Info();
+            info.Movable = false;
+            info.MaximizeBox = false;
+            info.MinimizeBox = false;
+            info.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            info.Style = MetroFramework.MetroColorStyle.Purple;
+            info.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
+            info.ControlBox = false;
+            PanelShow(info);
         }
     }
 }
