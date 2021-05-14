@@ -135,7 +135,7 @@ namespace amo6166
             this.cbLanguage.Location = new System.Drawing.Point(693, 44);
             this.cbLanguage.Name = "cbLanguage";
             this.cbLanguage.Size = new System.Drawing.Size(157, 29);
-            this.cbLanguage.Style = MetroFramework.MetroColorStyle.Green;
+            this.cbLanguage.Style = MetroFramework.MetroColorStyle.Red;
             this.cbLanguage.TabIndex = 54;
             this.cbLanguage.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.cbLanguage.UseSelectable = true;
@@ -158,7 +158,7 @@ namespace amo6166
             this.MaximizeBox = false;
             this.Name = "Info";
             this.Opacity = 0.95D;
-            this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Style = MetroFramework.MetroColorStyle.Black;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Info_Load);
             this.ResumeLayout(false);
