@@ -53,7 +53,7 @@ namespace amo6166
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
-            this.panel.Location = new System.Drawing.Point(151, 68);
+            this.panel.Location = new System.Drawing.Point(151, 99);
             this.panel.Name = "panel";
             this.panel.Size = new System.Drawing.Size(962, 665);
             this.panel.Style = MetroFramework.MetroColorStyle.Purple;
@@ -71,7 +71,7 @@ namespace amo6166
             this.btTerminal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btTerminal.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btTerminal.Location = new System.Drawing.Point(23, 487);
+            this.btTerminal.Location = new System.Drawing.Point(23, 518);
             this.btTerminal.Name = "btTerminal";
             this.btTerminal.Size = new System.Drawing.Size(122, 78);
             this.btTerminal.Style = MetroFramework.MetroColorStyle.Purple;
@@ -95,7 +95,7 @@ namespace amo6166
             this.btNanaDiario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btNanaDiario.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btNanaDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btNanaDiario.Location = new System.Drawing.Point(23, 152);
+            this.btNanaDiario.Location = new System.Drawing.Point(23, 183);
             this.btNanaDiario.Name = "btNanaDiario";
             this.btNanaDiario.Size = new System.Drawing.Size(122, 78);
             this.btNanaDiario.Style = MetroFramework.MetroColorStyle.Purple;
@@ -119,7 +119,7 @@ namespace amo6166
             this.btMarcoDiario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMarcoDiario.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btMarcoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMarcoDiario.Location = new System.Drawing.Point(23, 236);
+            this.btMarcoDiario.Location = new System.Drawing.Point(23, 267);
             this.btMarcoDiario.Name = "btMarcoDiario";
             this.btMarcoDiario.Size = new System.Drawing.Size(122, 78);
             this.btMarcoDiario.Style = MetroFramework.MetroColorStyle.Purple;
@@ -143,7 +143,7 @@ namespace amo6166
             this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btSair.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btSair.Location = new System.Drawing.Point(23, 655);
+            this.btSair.Location = new System.Drawing.Point(23, 686);
             this.btSair.Name = "btSair";
             this.btSair.Size = new System.Drawing.Size(122, 78);
             this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
@@ -167,7 +167,7 @@ namespace amo6166
             this.btMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMenu.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMenu.Location = new System.Drawing.Point(23, 68);
+            this.btMenu.Location = new System.Drawing.Point(23, 99);
             this.btMenu.Name = "btMenu";
             this.btMenu.Size = new System.Drawing.Size(122, 78);
             this.btMenu.Style = MetroFramework.MetroColorStyle.Purple;
@@ -191,7 +191,7 @@ namespace amo6166
             this.btAMO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btAMO.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btAMO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btAMO.Location = new System.Drawing.Point(23, 403);
+            this.btAMO.Location = new System.Drawing.Point(23, 434);
             this.btAMO.Name = "btAMO";
             this.btAMO.Size = new System.Drawing.Size(122, 78);
             this.btAMO.Style = MetroFramework.MetroColorStyle.Purple;
@@ -214,7 +214,7 @@ namespace amo6166
             this.btGaleria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btGaleria.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btGaleria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btGaleria.Location = new System.Drawing.Point(23, 320);
+            this.btGaleria.Location = new System.Drawing.Point(23, 351);
             this.btGaleria.Name = "btGaleria";
             this.btGaleria.Size = new System.Drawing.Size(122, 78);
             this.btGaleria.Style = MetroFramework.MetroColorStyle.Purple;
@@ -235,7 +235,7 @@ namespace amo6166
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(792, 29);
+            this.metroLabel1.Location = new System.Drawing.Point(784, 39);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(63, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
@@ -248,7 +248,7 @@ namespace amo6166
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(922, 29);
+            this.metroLabel2.Location = new System.Drawing.Point(914, 39);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(46, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
@@ -261,7 +261,7 @@ namespace amo6166
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbLogin.Location = new System.Drawing.Point(974, 29);
+            this.lbLogin.Location = new System.Drawing.Point(966, 39);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(65, 19);
             this.lbLogin.TabIndex = 16;
@@ -272,7 +272,7 @@ namespace amo6166
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbUser.Location = new System.Drawing.Point(851, 29);
+            this.lbUser.Location = new System.Drawing.Point(843, 39);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(65, 19);
             this.lbUser.TabIndex = 17;
@@ -285,7 +285,7 @@ namespace amo6166
             this.btInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btInfo.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btInfo.Location = new System.Drawing.Point(23, 571);
+            this.btInfo.Location = new System.Drawing.Point(23, 602);
             this.btInfo.Name = "btInfo";
             this.btInfo.Size = new System.Drawing.Size(122, 78);
             this.btInfo.Style = MetroFramework.MetroColorStyle.Purple;
@@ -308,9 +308,9 @@ namespace amo6166
             this.btLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.btLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogout.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.btLogout.Location = new System.Drawing.Point(1045, 29);
+            this.btLogout.Location = new System.Drawing.Point(1038, 36);
             this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(68, 19);
+            this.btLogout.Size = new System.Drawing.Size(75, 26);
             this.btLogout.Style = MetroFramework.MetroColorStyle.Purple;
             this.btLogout.TabIndex = 18;
             this.btLogout.Text = "Logout >";
@@ -323,7 +323,7 @@ namespace amo6166
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1136, 741);
+            this.ClientSize = new System.Drawing.Size(1136, 784);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btInfo);
             this.Controls.Add(this.btMenu);
