@@ -27,6 +27,19 @@ namespace amo6166
         {
             lbUser.Text = username;
             lbLogin.Text = login;
+
+            if(username == "Nana")
+            {
+                loading.Style = MetroFramework.MetroColorStyle.Red;
+            }
+            else if (username == "Marco")
+            {
+                loading.Style = MetroFramework.MetroColorStyle.Teal;
+            }
+            else
+            {
+                loading.Style = MetroFramework.MetroColorStyle.Purple;
+            }
         }
 
         private void btTerminal_Click(object sender, EventArgs e)
@@ -48,6 +61,8 @@ namespace amo6166
 
         private void btNanaDiario_Click(object sender, EventArgs e)
         {
+            
+            loading.Value = 100;
             Cor(btNanaDiario);
             Nana nana = new Nana();
             PanelShow(nana);
