@@ -72,7 +72,7 @@ namespace amo6166
             if (VerificarAMO().Equals("Nana") || VerificarAMO().Equals("Marco"))
                 user.Nomec = true;
 
-            if (user.Key == "12080405" || user.Key == "04051208" || user.Key == ".")
+            if (user.Key == "12080405.AMO" || user.Key == "04051208.AMO" || user.Key == ".")
                 user.Keyc = true;
 
             if ((rbMoon.Checked && VerificarAMO() == "Marco") || (rbSummer.Checked && VerificarAMO() == "Nana"))
@@ -183,9 +183,9 @@ namespace amo6166
 
         private string VerificarAMO()
         {
-            if (tbNome.Text == "Nana" || tbNome.Text == "Naninha" || tbNome.Text == "nana" || tbNome.Text == "naninha" || tbNome.Text == "Anna" || tbNome.Text == "anna")
+            if (tbNome.Text == "nokia1666" || tbNome.Text == "Nokia1666" || tbNome.Text == "NOKIA166" || tbNome.Text == "nana1666" || tbNome.Text == "Nana1666" || tbNome.Text == "NANA1666")
                 return "Nana";
-            if (tbNome.Text == "Marco" || tbNome.Text == "marco" || tbNome.Text == "MarcoT" || tbNome.Text == "marcot" || tbNome.Text == "marcoT" || tbNome.Text == "Marcot")
+            if (tbNome.Text == "marco1666" || tbNome.Text == "Marco1666" || tbNome.Text == "MARCO1666" || tbNome.Text == "hated1666" || tbNome.Text == "Hated1666" || tbNome.Text == "HATED1666")
                 return "Marco";
             else
                 return "Anônimo";
