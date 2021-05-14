@@ -20,7 +20,7 @@ namespace amo6166
 
         }
 
-        private void cbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        /*private void cbIdioma_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (cbIdioma.Text == "English")
             {
@@ -30,6 +30,24 @@ namespace amo6166
                 lbLanguage.Visible = true;
             }
             else if (cbIdioma.Text == "Português (Brasil)")
+            {
+                lbText.Visible = false;
+                lbInfo.Visible = true;
+                lbIdioma.Visible = true;
+                lbLanguage.Visible = false;
+            }
+        }*/
+
+        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbLanguage.Text == "English")
+            {
+                lbText.Visible = true;
+                lbInfo.Visible = false;
+                lbIdioma.Visible = false;
+                lbLanguage.Visible = true;
+            }
+            else if (cbLanguage.Text == "Português (Brasil)")
             {
                 lbText.Visible = false;
                 lbInfo.Visible = true;
