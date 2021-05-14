@@ -90,7 +90,17 @@ namespace amo6166
         private void btSair_Click(object sender, EventArgs e)
         {
             Cor(btSair);
-            Application.Exit();
+            DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
+            //I love you to the moon and back
+            if (resultado == DialogResult.Yes)
+            {
+                MessageBox.Show("That's all folks!", ">(");
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("Isso nunca é um adeus", ":)");
+            }
         }
 
         private void PanelShow(Form form)

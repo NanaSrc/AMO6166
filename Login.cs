@@ -193,7 +193,7 @@ namespace amo6166
 
         private void btCancel_Click(object sender, EventArgs e)
         {
-            DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
+            /*DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
             //I love you to the moon and back
             if (resultado == DialogResult.Yes)
             {
@@ -203,7 +203,8 @@ namespace amo6166
             else
             {
                 MessageBox.Show("Isso nunca é um adeus", ":)");
-            }
+            }*/
+            Application.Exit();
         }
 
         private void tbSenha_KeyPress(object sender, KeyPressEventArgs e)
