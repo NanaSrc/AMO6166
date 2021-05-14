@@ -43,6 +43,7 @@ namespace amo6166
             this.lbLogin = new MetroFramework.Controls.MetroLabel();
             this.lbUser = new MetroFramework.Controls.MetroLabel();
             this.btInfo = new MetroFramework.Controls.MetroTile();
+            this.btLogout = new MetroFramework.Controls.MetroButton();
             this.SuspendLayout();
             // 
             // panel
@@ -233,9 +234,10 @@ namespace amo6166
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(487, 27);
+            this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel1.Location = new System.Drawing.Point(792, 29);
             this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(60, 19);
+            this.metroLabel1.Size = new System.Drawing.Size(63, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLabel1.TabIndex = 14;
             this.metroLabel1.Text = "Usuário: ";
@@ -245,9 +247,10 @@ namespace amo6166
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(637, 27);
+            this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel2.Location = new System.Drawing.Point(922, 29);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(44, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(46, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
             this.metroLabel2.TabIndex = 15;
             this.metroLabel2.Text = "Login:";
@@ -257,9 +260,10 @@ namespace amo6166
             // lbLogin
             // 
             this.lbLogin.AutoSize = true;
-            this.lbLogin.Location = new System.Drawing.Point(687, 27);
+            this.lbLogin.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lbLogin.Location = new System.Drawing.Point(974, 29);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(63, 19);
+            this.lbLogin.Size = new System.Drawing.Size(65, 19);
             this.lbLogin.TabIndex = 16;
             this.lbLogin.Text = "Anônimo";
             this.lbLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -267,9 +271,10 @@ namespace amo6166
             // lbUser
             // 
             this.lbUser.AutoSize = true;
-            this.lbUser.Location = new System.Drawing.Point(553, 27);
+            this.lbUser.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lbUser.Location = new System.Drawing.Point(851, 29);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(63, 19);
+            this.lbUser.Size = new System.Drawing.Size(65, 19);
             this.lbUser.TabIndex = 17;
             this.lbUser.Text = "Anônimo";
             this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -298,6 +303,20 @@ namespace amo6166
             this.btInfo.UseVisualStyleBackColor = false;
             this.btInfo.Click += new System.EventHandler(this.btInfo_Click);
             // 
+            // btLogout
+            // 
+            this.btLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.btLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLogout.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.btLogout.Location = new System.Drawing.Point(1045, 29);
+            this.btLogout.Name = "btLogout";
+            this.btLogout.Size = new System.Drawing.Size(68, 19);
+            this.btLogout.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btLogout.TabIndex = 18;
+            this.btLogout.Text = "Logout >";
+            this.btLogout.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btLogout.UseSelectable = true;
+            // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -305,6 +324,7 @@ namespace amo6166
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1136, 741);
+            this.Controls.Add(this.btLogout);
             this.Controls.Add(this.btInfo);
             this.Controls.Add(this.btMenu);
             this.Controls.Add(this.lbUser);
@@ -349,5 +369,6 @@ namespace amo6166
         private MetroFramework.Controls.MetroLabel lbUser;
         private MetroFramework.Controls.MetroTile btMenu;
         private MetroFramework.Controls.MetroTile btInfo;
+        private MetroFramework.Controls.MetroButton btLogout;
     }
 }
