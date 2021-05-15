@@ -6,6 +6,7 @@ Tive muitas ideias e decidi colocá-las em prática de modo a testar minhas habi
 O aplicativo foi desenvolvido em C# utilizando a IDE Visual Studio da Microsoft Corporation juntamente com a Framework Modern UI (MetroFramework, desenvolvedores desconhecidos) para o Design do projeto. Para o desenvolvimento do programa também foi utilizado a ferramenta Git e o GitHub para que fosse possível a gestão do mesmo.
 Nosso repositório pode ser encontrado no <a href="https://github.com/Nanacore/AMO6166/">GitHub</a>, assim como alguns dos nossos outros projetos na organização <a href="https://github.com/AMO6166">AMO6166™</a>.
 
+
 <b>Créditos:</b>
 <br>Nana/Naninha1/nokia/nana1666/nokia1666/LisA/Anna/Nanacore; 
 <br>Marco/MarcoT/marcotduenas.
