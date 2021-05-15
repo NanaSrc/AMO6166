@@ -32,12 +32,12 @@ namespace amo6166
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Info));
             this.lbInfo = new MetroFramework.Controls.MetroLabel();
             this.lbIdioma = new MetroFramework.Controls.MetroLabel();
-            this.cbIdioma = new System.Windows.Forms.ComboBox();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.panelIcon = new MetroFramework.Controls.MetroPanel();
             this.lbText = new MetroFramework.Controls.MetroLabel();
             this.lbLanguage = new MetroFramework.Controls.MetroLabel();
+            this.cbLanguage = new MetroFramework.Controls.MetroComboBox();
             this.SuspendLayout();
             // 
             // lbInfo
@@ -45,7 +45,7 @@ namespace amo6166
             this.lbInfo.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.lbInfo.Location = new System.Drawing.Point(23, 114);
             this.lbInfo.Name = "lbInfo";
-            this.lbInfo.Size = new System.Drawing.Size(839, 448);
+            this.lbInfo.Size = new System.Drawing.Size(827, 448);
             this.lbInfo.TabIndex = 0;
             this.lbInfo.Text = resources.GetString("lbInfo.Text");
             this.lbInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -55,26 +55,29 @@ namespace amo6166
             // 
             this.lbIdioma.AutoSize = true;
             this.lbIdioma.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbIdioma.Location = new System.Drawing.Point(540, 50);
+            this.lbIdioma.Location = new System.Drawing.Point(562, 50);
             this.lbIdioma.Name = "lbIdioma";
             this.lbIdioma.Size = new System.Drawing.Size(125, 19);
             this.lbIdioma.TabIndex = 1;
             this.lbIdioma.Text = "Selecione o idioma:";
             this.lbIdioma.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            // cbIdioma
-            // 
-            this.cbIdioma.BackColor = System.Drawing.SystemColors.Window;
-            this.cbIdioma.FormattingEnabled = true;
-            this.cbIdioma.Items.AddRange(new object[] {
-            "English",
-            "Português (Brasil)"});
-            this.cbIdioma.Location = new System.Drawing.Point(671, 50);
-            this.cbIdioma.Name = "cbIdioma";
-            this.cbIdioma.Size = new System.Drawing.Size(191, 23);
-            this.cbIdioma.TabIndex = 2;
-            this.cbIdioma.SelectedIndexChanged += new System.EventHandler(this.cbIdioma_SelectedIndexChanged);
-            // 
+            /*<<<<<<< HEAD
+                        // cbIdioma
+                        // 
+                        this.cbIdioma.BackColor = System.Drawing.SystemColors.Window;
+                        this.cbIdioma.FormattingEnabled = true;
+                        this.cbIdioma.Items.AddRange(new object[] {
+                        "English",
+                        "Português (Brasil)"});
+                        this.cbIdioma.Location = new System.Drawing.Point(671, 50);
+                        this.cbIdioma.Name = "cbIdioma";
+                        this.cbIdioma.Size = new System.Drawing.Size(191, 23);
+                        this.cbIdioma.TabIndex = 2;
+                        this.cbIdioma.SelectedIndexChanged += new System.EventHandler(this.cbIdioma_SelectedIndexChanged);
+                        // 
+            =======
+            >>>>>>> 55a5ac29285a6644bfc028c398e9aa608d00e867*/
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
@@ -118,7 +121,7 @@ namespace amo6166
             this.lbText.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.lbText.Location = new System.Drawing.Point(23, 114);
             this.lbText.Name = "lbText";
-            this.lbText.Size = new System.Drawing.Size(839, 448);
+            this.lbText.Size = new System.Drawing.Size(827, 448);
             this.lbText.TabIndex = 52;
             this.lbText.Text = resources.GetString("lbText.Text");
             this.lbText.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -129,7 +132,7 @@ namespace amo6166
             // 
             this.lbLanguage.AutoSize = true;
             this.lbLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbLanguage.Location = new System.Drawing.Point(534, 50);
+            this.lbLanguage.Location = new System.Drawing.Point(556, 50);
             this.lbLanguage.Name = "lbLanguage";
             this.lbLanguage.Size = new System.Drawing.Size(131, 19);
             this.lbLanguage.TabIndex = 53;
@@ -137,24 +140,41 @@ namespace amo6166
             this.lbLanguage.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbLanguage.Visible = false;
             // 
+            // cbLanguage
+            // 
+            this.cbLanguage.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.cbLanguage.FormattingEnabled = true;
+            this.cbLanguage.ItemHeight = 23;
+            this.cbLanguage.Items.AddRange(new object[] {
+            "Português (Brasil)",
+            "English"});
+            this.cbLanguage.Location = new System.Drawing.Point(693, 44);
+            this.cbLanguage.Name = "cbLanguage";
+            this.cbLanguage.Size = new System.Drawing.Size(157, 29);
+            this.cbLanguage.Style = MetroFramework.MetroColorStyle.Red;
+            this.cbLanguage.TabIndex = 54;
+            this.cbLanguage.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbLanguage.UseSelectable = true;
+            this.cbLanguage.SelectedIndexChanged += new System.EventHandler(this.cbLanguage_SelectedIndexChanged);
+            // 
             // Info
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 614);
+            this.Controls.Add(this.cbLanguage);
             this.Controls.Add(this.lbLanguage);
             this.Controls.Add(this.lbText);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panelIcon);
             this.Controls.Add(this.metroLabel2);
-            this.Controls.Add(this.cbIdioma);
             this.Controls.Add(this.lbIdioma);
             this.Controls.Add(this.lbInfo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Info";
             this.Opacity = 0.95D;
-            this.Style = MetroFramework.MetroColorStyle.Green;
+            this.Style = MetroFramework.MetroColorStyle.Black;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Info_Load);
             this.ResumeLayout(false);
@@ -166,11 +186,11 @@ namespace amo6166
 
         private MetroFramework.Controls.MetroLabel lbInfo;
         private MetroFramework.Controls.MetroLabel lbIdioma;
-        private System.Windows.Forms.ComboBox cbIdioma;
         private MetroFramework.Controls.MetroLabel metroLabel2;
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroPanel panelIcon;
         private MetroFramework.Controls.MetroLabel lbText;
         private MetroFramework.Controls.MetroLabel lbLanguage;
+        private MetroFramework.Controls.MetroComboBox cbLanguage;
     }
 }

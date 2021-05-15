@@ -123,6 +123,16 @@ namespace amo6166.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logout {
+            get {
+                object obj = ResourceManager.GetObject("logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap marco {
             get {
                 object obj = ResourceManager.GetObject("marco", resourceCulture);
@@ -146,6 +156,26 @@ namespace amo6166.Properties {
         internal static System.Drawing.Bitmap notas1 {
             get {
                 object obj = ResourceManager.GetObject("notas1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notas2 {
+            get {
+                object obj = ResourceManager.GetObject("notas2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap notas21 {
+            get {
+                object obj = ResourceManager.GetObject("notas21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

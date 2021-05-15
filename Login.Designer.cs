@@ -165,7 +165,7 @@ namespace amo6166
             // tbSim
             // 
             this.tbSim.AutoSize = true;
-            this.tbSim.Location = new System.Drawing.Point(236, -545);
+            this.tbSim.Location = new System.Drawing.Point(237, -542);
             this.tbSim.Name = "tbSim";
             this.tbSim.Size = new System.Drawing.Size(43, 15);
             this.tbSim.Style = MetroFramework.MetroColorStyle.Purple;

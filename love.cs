@@ -28,6 +28,18 @@ namespace amo6166
             lbUser.Text = username;
             lbLogin.Text = login;
 
+            if(username == "Nana")
+            {
+                loading.Style = MetroFramework.MetroColorStyle.Red;
+            }
+            else if (username == "Marco")
+            {
+                loading.Style = MetroFramework.MetroColorStyle.Teal;
+            }
+            else
+            {
+                loading.Style = MetroFramework.MetroColorStyle.Purple;
+            }
         }
 
         private void btTerminal_Click(object sender, EventArgs e)
@@ -49,6 +61,8 @@ namespace amo6166
 
         private void btNanaDiario_Click(object sender, EventArgs e)
         {
+            
+            loading.Value = 100;
             Cor(btNanaDiario);
             Nana nana = new Nana();
             PanelShow(nana);
@@ -76,7 +90,17 @@ namespace amo6166
         private void btSair_Click(object sender, EventArgs e)
         {
             Cor(btSair);
-            Application.Exit();
+            DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
+            //I love you to the moon and back
+            if (resultado == DialogResult.Yes)
+            {
+                MessageBox.Show("That's all folks!", ">(");
+                Application.Exit();
+            }
+            else
+            {
+                MessageBox.Show("Isso nunca é um adeus", ":)");
+            }
         }
 
         private void PanelShow(Form form)
@@ -104,6 +128,23 @@ namespace amo6166
         private void btInfo_Click(object sender, EventArgs e)
         {
             Cor(btInfo);
+            Info info = new Info();
+            info.Movable = false;
+            info.MaximizeBox = false;
+            info.MinimizeBox = false;
+            info.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
+            info.Style = MetroFramework.MetroColorStyle.Purple;
+            info.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
+            info.ControlBox = false;
+            PanelShow(info);
+        }
+
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login log = new Login();
+            log.ShowDialog();
+            this.Close();
         }
     }
 }

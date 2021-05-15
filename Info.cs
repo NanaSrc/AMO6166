@@ -20,16 +20,16 @@ namespace amo6166
             cbIdioma.SelectedIndex = 1;
         }
 
-        private void cbIdioma_SelectedIndexChanged(object sender, EventArgs e)
+        private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cbIdioma.Text == "English")
+            if (cbLanguage.Text == "English")
             {
                 lbText.Visible = true;
                 lbInfo.Visible = false;
                 lbIdioma.Visible = false;
                 lbLanguage.Visible = true;
             }
-            else if (cbIdioma.Text == "Português (Brasil)")
+            else if (cbLanguage.Text == "Português (Brasil)")
             {
                 lbText.Visible = false;
                 lbInfo.Visible = true;
