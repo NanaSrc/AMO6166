@@ -57,4 +57,38 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="tbTerminalzinho.Text" xml:space="preserve">
+    <value>                     |
+Nana says: ARRIBA &gt;) |
+_____________________*
+
+
+                           /\   /\            ____________________
+                          / |___\ \          | yo stoy mucho loco |
+                          |  o  o  |         *--------------------*
+                          |    *   |       _/
+                          \   ---  /          
+                          /         \
+                          |/        \|
+                          * \ _--_ / *
+                            |/    \|
+                            *      * 
+---------------------------------------------------------------------------------------------------------------
+
+Eu n sei oq escrever aqui mas to testando o formulário então vou aproveitar e listar o erros que o programa tem até agora:
+
+- Botão da "Galeria" ativa o menu e não ativa a si próprio
+- Botão do "6166.com" não ativa
+- Botão de "Info" fica eternamente ativado
+- Terminal não funciona
+- Terminal não salva o texto ao mudar de aba
+- Os formulários estão maiores que o tamanho do painel do menu
+- O tamanho do menu é problemático pois não se encaixa direito nessa resolução
+- O formulário de info fica descentralizado ao ser aberto pelo menu
+- Apesar de ter sido apenas um teste, a progress bar do menu já começa em 10% e fica eternamente em 100% após clicar no formulário "Nana"
+- Texto do info não formatado ainda
+
+São muitas coisas mas eu sei resolver 98% delas então eu vou fazer isso em breve!
+</value>
+  </data>
 </root>
