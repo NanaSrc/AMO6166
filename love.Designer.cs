@@ -48,7 +48,6 @@ namespace amo6166
             this.btLogout = new MetroFramework.Controls.MetroTile();
             this.btSite = new MetroFramework.Controls.MetroTile();
             this.label2 = new System.Windows.Forms.Label();
-            this.loading = new MetroFramework.Controls.MetroProgressBar();
             this.SuspendLayout();
             // 
             // panel
@@ -60,7 +59,7 @@ namespace amo6166
             this.panel.HorizontalScrollbarSize = 10;
             this.panel.Location = new System.Drawing.Point(151, 99);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(962, 574);
+            this.panel.Size = new System.Drawing.Size(962, 597);
             this.panel.Style = MetroFramework.MetroColorStyle.Purple;
             this.panel.TabIndex = 0;
             this.panel.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -150,7 +149,7 @@ namespace amo6166
             this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btSair.Location = new System.Drawing.Point(23, 587);
             this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(122, 86);
+            this.btSair.Size = new System.Drawing.Size(122, 109);
             this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
             this.btSair.TabIndex = 10;
             this.btSair.Text = "Sair";
@@ -394,27 +393,13 @@ namespace amo6166
             this.label2.TabIndex = 54;
             this.label2.Text = "I Am Hated, but I feel loved with you.";
             // 
-            // loading
-            // 
-            this.loading.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.loading.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.loading.Location = new System.Drawing.Point(485, 49);
-            this.loading.Name = "loading";
-            this.loading.ProgressBarStyle = System.Windows.Forms.ProgressBarStyle.Blocks;
-            this.loading.Size = new System.Drawing.Size(230, 23);
-            this.loading.Style = MetroFramework.MetroColorStyle.Teal;
-            this.loading.TabIndex = 55;
-            this.loading.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.loading.Value = 10;
-            // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1136, 696);
-            this.Controls.Add(this.loading);
+            this.ClientSize = new System.Drawing.Size(1136, 719);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btSite);
             this.Controls.Add(this.btInfo);
@@ -467,6 +452,5 @@ namespace amo6166
         private MetroFramework.Controls.MetroTile btLogout;
         private MetroFramework.Controls.MetroTile btSite;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroProgressBar loading;
     }
 }
