@@ -44,6 +44,8 @@ namespace amo6166
             btMenu.BackColor = Color.FromArgb(31, 29, 39);
             btAMO.BackColor = Color.FromArgb(31, 29, 39);
             btGaleria.BackColor = Color.FromArgb(31, 29, 39);
+            btSite.BackColor = Color.FromArgb(31, 29, 39);
+            btGame.BackColor = Color.FromArgb(31, 29, 39);
         }
 
         private void btNanaDiario_Click(object sender, EventArgs e)
