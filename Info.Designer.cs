@@ -116,12 +116,14 @@ namespace amo6166
             // 
             this.lbLanguage.AutoSize = true;
             this.lbLanguage.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lbLanguage.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.lbLanguage.Location = new System.Drawing.Point(556, 50);
             this.lbLanguage.Name = "lbLanguage";
             this.lbLanguage.Size = new System.Drawing.Size(131, 19);
             this.lbLanguage.TabIndex = 53;
             this.lbLanguage.Text = "Select the language:";
             this.lbLanguage.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.lbLanguage.UseCustomForeColor = true;
             this.lbLanguage.Visible = false;
             // 
             // cbLanguage
