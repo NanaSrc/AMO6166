@@ -58,13 +58,13 @@ namespace amo6166
             this.tbTerminalzinho.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
-            this.tbTerminalzinho.Location = new System.Drawing.Point(23, 27);
+            this.tbTerminalzinho.Location = new System.Drawing.Point(21, 25);
             this.tbTerminalzinho.Margin = new System.Windows.Forms.Padding(6, 5, 5, 5);
             this.tbTerminalzinho.Multiline = true;
             this.tbTerminalzinho.Name = "tbTerminalzinho";
             this.tbTerminalzinho.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbTerminalzinho.Size = new System.Drawing.Size(1128, 575);
+            this.tbTerminalzinho.Size = new System.Drawing.Size(1083, 575);
             this.tbTerminalzinho.TabIndex = 9;
             this.tbTerminalzinho.Text = resources.GetString("tbTerminalzinho.Text");
             this.tbTerminalzinho.TextChanged += new System.EventHandler(this.tbTerminalzinho_TextChanged);
@@ -74,7 +74,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1174, 625);
+            this.ClientSize = new System.Drawing.Size(1129, 625);
             this.ControlBox = false;
             this.Controls.Add(this.tbTerminalzinho);
             this.Controls.Add(this.tbComandos);

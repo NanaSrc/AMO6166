@@ -35,7 +35,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.ClientSize = new System.Drawing.Size(1129, 625);
             this.ControlBox = false;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
