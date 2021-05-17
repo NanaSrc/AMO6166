@@ -239,7 +239,7 @@ namespace amo6166
             this.btNanaPage.Name = "btNanaPage";
             this.btNanaPage.Size = new System.Drawing.Size(177, 46);
             this.btNanaPage.TabIndex = 59;
-            this.btNanaPage.Text = "Nana\'s computer";
+            this.btNanaPage.Text = "☆ Nana\'s computer";
             this.btNanaPage.UseVisualStyleBackColor = true;
             this.btNanaPage.Click += new System.EventHandler(this.btNanaPage_Click);
             // 
@@ -257,7 +257,7 @@ namespace amo6166
             this.btMarcoPage.Name = "btMarcoPage";
             this.btMarcoPage.Size = new System.Drawing.Size(178, 46);
             this.btMarcoPage.TabIndex = 60;
-            this.btMarcoPage.Text = "Marco\'s computer";
+            this.btMarcoPage.Text = "☆ Marco\'s computer";
             this.btMarcoPage.UseVisualStyleBackColor = true;
             this.btMarcoPage.Click += new System.EventHandler(this.btMarcoPage_Click);
             // 
@@ -275,7 +275,7 @@ namespace amo6166
             this.btGallery.Name = "btGallery";
             this.btGallery.Size = new System.Drawing.Size(179, 46);
             this.btGallery.TabIndex = 61;
-            this.btGallery.Text = "Wonderful gallery ";
+            this.btGallery.Text = "☆ Wonderful gallery ";
             this.btGallery.UseVisualStyleBackColor = true;
             this.btGallery.Click += new System.EventHandler(this.btGallery_Click);
             // 
@@ -293,7 +293,7 @@ namespace amo6166
             this.btTerm.Name = "btTerm";
             this.btTerm.Size = new System.Drawing.Size(179, 46);
             this.btTerm.TabIndex = 62;
-            this.btTerm.Text = "Console text";
+            this.btTerm.Text = "☆ Console text";
             this.btTerm.UseVisualStyleBackColor = true;
             this.btTerm.Click += new System.EventHandler(this.btTerm_Click);
             // 
@@ -311,7 +311,7 @@ namespace amo6166
             this.btGame.Name = "btGame";
             this.btGame.Size = new System.Drawing.Size(179, 46);
             this.btGame.TabIndex = 63;
-            this.btGame.Text = "A simple game";
+            this.btGame.Text = "☆ A simple game";
             this.btGame.UseVisualStyleBackColor = true;
             this.btGame.Click += new System.EventHandler(this.btGame_Click);
             // 
@@ -329,7 +329,7 @@ namespace amo6166
             this.btSite.Name = "btSite";
             this.btSite.Size = new System.Drawing.Size(179, 46);
             this.btSite.TabIndex = 64;
-            this.btSite.Text = "amo6166.com";
+            this.btSite.Text = "☆ amo6166.com";
             this.btSite.UseVisualStyleBackColor = true;
             this.btSite.Click += new System.EventHandler(this.btSite_Click);
             // 
@@ -363,7 +363,7 @@ namespace amo6166
             this.btPainting.Name = "btPainting";
             this.btPainting.Size = new System.Drawing.Size(179, 46);
             this.btPainting.TabIndex = 67;
-            this.btPainting.Text = "Painting room";
+            this.btPainting.Text = "☆ Painting room";
             this.btPainting.UseVisualStyleBackColor = true;
             this.btPainting.Click += new System.EventHandler(this.btPainting_Click);
             // 
@@ -381,7 +381,7 @@ namespace amo6166
             this.btMovie.Name = "btMovie";
             this.btMovie.Size = new System.Drawing.Size(179, 46);
             this.btMovie.TabIndex = 68;
-            this.btMovie.Text = "Movie room";
+            this.btMovie.Text = "☆ Movie room";
             this.btMovie.UseVisualStyleBackColor = true;
             this.btMovie.Click += new System.EventHandler(this.btMovie_Click);
             // 
@@ -399,7 +399,7 @@ namespace amo6166
             this.btLibrary.Name = "btLibrary";
             this.btLibrary.Size = new System.Drawing.Size(179, 46);
             this.btLibrary.TabIndex = 69;
-            this.btLibrary.Text = "A library";
+            this.btLibrary.Text = "☆ A library";
             this.btLibrary.UseVisualStyleBackColor = true;
             this.btLibrary.Click += new System.EventHandler(this.btLibrary_Click);
             // 
@@ -417,7 +417,7 @@ namespace amo6166
             this.btFireplace.Name = "btFireplace";
             this.btFireplace.Size = new System.Drawing.Size(179, 46);
             this.btFireplace.TabIndex = 70;
-            this.btFireplace.Text = "Warm fireplace";
+            this.btFireplace.Text = "☆ Warm fireplace";
             this.btFireplace.UseVisualStyleBackColor = true;
             this.btFireplace.Click += new System.EventHandler(this.btFireplace_Click);
             // 
@@ -435,7 +435,7 @@ namespace amo6166
             this.btMain.Name = "btMain";
             this.btMain.Size = new System.Drawing.Size(177, 46);
             this.btMain.TabIndex = 71;
-            this.btMain.Text = "Main hall";
+            this.btMain.Text = "☆ Main hall";
             this.btMain.UseVisualStyleBackColor = true;
             this.btMain.Click += new System.EventHandler(this.btMain_Click);
             // 
@@ -453,7 +453,7 @@ namespace amo6166
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(179, 46);
             this.btExit.TabIndex = 72;
-            this.btExit.Text = "Exit light";
+            this.btExit.Text = "☆ Exit light";
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
