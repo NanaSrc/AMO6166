@@ -106,23 +106,27 @@ namespace amo6166
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lbLogin.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lbLogin.Location = new System.Drawing.Point(1178, 53);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(65, 19);
             this.lbLogin.TabIndex = 16;
             this.lbLogin.Text = "Anônimo";
             this.lbLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.lbLogin.UseCustomForeColor = true;
             // 
             // lbUser
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.lbUser.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lbUser.Location = new System.Drawing.Point(1069, 53);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(65, 19);
             this.lbUser.TabIndex = 17;
             this.lbUser.Text = "Anônimo";
             this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.lbUser.UseCustomForeColor = true;
             // 
             // label1
             // 
