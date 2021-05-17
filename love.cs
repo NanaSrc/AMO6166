@@ -72,6 +72,8 @@ namespace amo6166
         private void btGaleria_Click(object sender, EventArgs e)
         {
             Cor(btGaleria);
+            Galeria galeria = new Galeria();
+            PanelShow(galeria);
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -146,11 +148,15 @@ namespace amo6166
         private void btSite_Click(object sender, EventArgs e)
         {
             Cor(btSite);
+            Site site = new Site();
+            PanelShow(site);
         }
 
         private void btGame_Click(object sender, EventArgs e)
         {
             Cor(btGame);
+            Game game = new Game();
+            PanelShow(game);
         }
 
         /*private void btInfo_Click(object sender, EventArgs e)
