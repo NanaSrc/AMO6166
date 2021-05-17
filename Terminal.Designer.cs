@@ -51,13 +51,18 @@ namespace amo6166
             // 
             // tbTerminalzinho
             // 
+            this.tbTerminalzinho.AcceptsReturn = true;
+            this.tbTerminalzinho.AcceptsTab = true;
+            this.tbTerminalzinho.AllowDrop = true;
             this.tbTerminalzinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(251)))), ((int)(((byte)(241)))), ((int)(((byte)(199)))));
             this.tbTerminalzinho.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.tbTerminalzinho.Location = new System.Drawing.Point(23, 27);
+            this.tbTerminalzinho.Margin = new System.Windows.Forms.Padding(6, 5, 5, 5);
             this.tbTerminalzinho.Multiline = true;
             this.tbTerminalzinho.Name = "tbTerminalzinho";
+            this.tbTerminalzinho.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.tbTerminalzinho.Size = new System.Drawing.Size(1128, 575);
             this.tbTerminalzinho.TabIndex = 9;
