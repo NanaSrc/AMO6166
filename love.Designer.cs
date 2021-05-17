@@ -31,36 +31,38 @@ namespace amo6166
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(love));
             this.panel = new MetroFramework.Controls.MetroPanel();
-            this.btTerminal = new MetroFramework.Controls.MetroTile();
+            this.btGame = new MetroFramework.Controls.MetroTile();
+            this.btMenu = new MetroFramework.Controls.MetroTile();
             this.btNanaDiario = new MetroFramework.Controls.MetroTile();
             this.btMarcoDiario = new MetroFramework.Controls.MetroTile();
-            this.btSair = new MetroFramework.Controls.MetroTile();
-            this.btMenu = new MetroFramework.Controls.MetroTile();
-            this.btAMO = new MetroFramework.Controls.MetroTile();
             this.btGaleria = new MetroFramework.Controls.MetroTile();
+            this.btAMO = new MetroFramework.Controls.MetroTile();
+            this.btTerminal = new MetroFramework.Controls.MetroTile();
+            this.btSite = new MetroFramework.Controls.MetroTile();
+            this.btSair = new MetroFramework.Controls.MetroTile();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.lbLogin = new MetroFramework.Controls.MetroLabel();
             this.lbUser = new MetroFramework.Controls.MetroLabel();
-            this.btInfo = new MetroFramework.Controls.MetroTile();
             this.label1 = new System.Windows.Forms.Label();
             this.panelIcon = new MetroFramework.Controls.MetroPanel();
-            this.btLogout = new MetroFramework.Controls.MetroTile();
-            this.btSite = new MetroFramework.Controls.MetroTile();
             this.label2 = new System.Windows.Forms.Label();
-            this.loading = new MetroFramework.Controls.MetroProgressBar();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lbInfo = new System.Windows.Forms.Label();
+            this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
+            this.btLogout = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // panel
             // 
             this.panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel.BackgroundImage")));
-            this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
             this.panel.Location = new System.Drawing.Point(151, 99);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(962, 574);
+            this.panel.Size = new System.Drawing.Size(1214, 739);
             this.panel.Style = MetroFramework.MetroColorStyle.Purple;
             this.panel.TabIndex = 0;
             this.panel.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -70,29 +72,53 @@ namespace amo6166
             this.panel.VerticalScrollbarHighlightOnWheel = false;
             this.panel.VerticalScrollbarSize = 10;
             // 
-            // btTerminal
+            // btGame
             // 
-            this.btTerminal.ActiveControl = null;
-            this.btTerminal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btTerminal.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btTerminal.Location = new System.Drawing.Point(23, 404);
-            this.btTerminal.Name = "btTerminal";
-            this.btTerminal.Size = new System.Drawing.Size(122, 55);
-            this.btTerminal.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btTerminal.TabIndex = 2;
-            this.btTerminal.Text = "Terminal";
-            this.btTerminal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btTerminal.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btTerminal.TileImage = global::amo6166.Properties.Resources.terminal;
-            this.btTerminal.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btTerminal.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btTerminal.UseCustomBackColor = true;
-            this.btTerminal.UseCustomForeColor = true;
-            this.btTerminal.UseSelectable = true;
-            this.btTerminal.UseStyleColors = true;
-            this.btTerminal.UseVisualStyleBackColor = false;
-            this.btTerminal.Click += new System.EventHandler(this.btTerminal_Click);
+            this.btGame.ActiveControl = null;
+            this.btGame.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btGame.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btGame.Location = new System.Drawing.Point(23, 465);
+            this.btGame.Name = "btGame";
+            this.btGame.Size = new System.Drawing.Size(122, 55);
+            this.btGame.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btGame.TabIndex = 12;
+            this.btGame.Text = "Game";
+            this.btGame.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btGame.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btGame.TileImage = ((System.Drawing.Image)(resources.GetObject("btGame.TileImage")));
+            this.btGame.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btGame.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btGame.UseCustomBackColor = true;
+            this.btGame.UseCustomForeColor = true;
+            this.btGame.UseSelectable = true;
+            this.btGame.UseStyleColors = true;
+            this.btGame.UseVisualStyleBackColor = false;
+            this.btGame.Click += new System.EventHandler(this.btGame_Click);
+            // 
+            // btMenu
+            // 
+            this.btMenu.ActiveControl = null;
+            this.btMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btMenu.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btMenu.Location = new System.Drawing.Point(23, 739);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(122, 99);
+            this.btMenu.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btMenu.TabIndex = 11;
+            this.btMenu.Text = "Menu";
+            this.btMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btMenu.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btMenu.TileImage = ((System.Drawing.Image)(resources.GetObject("btMenu.TileImage")));
+            this.btMenu.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btMenu.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btMenu.UseCustomBackColor = true;
+            this.btMenu.UseCustomForeColor = true;
+            this.btMenu.UseSelectable = true;
+            this.btMenu.UseStyleColors = true;
+            this.btMenu.UseVisualStyleBackColor = false;
+            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
             // 
             // btNanaDiario
             // 
@@ -100,7 +126,7 @@ namespace amo6166
             this.btNanaDiario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btNanaDiario.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btNanaDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btNanaDiario.Location = new System.Drawing.Point(23, 160);
+            this.btNanaDiario.Location = new System.Drawing.Point(23, 99);
             this.btNanaDiario.Name = "btNanaDiario";
             this.btNanaDiario.Size = new System.Drawing.Size(122, 55);
             this.btNanaDiario.Style = MetroFramework.MetroColorStyle.Purple;
@@ -124,7 +150,7 @@ namespace amo6166
             this.btMarcoDiario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMarcoDiario.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btMarcoDiario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMarcoDiario.Location = new System.Drawing.Point(23, 221);
+            this.btMarcoDiario.Location = new System.Drawing.Point(23, 160);
             this.btMarcoDiario.Name = "btMarcoDiario";
             this.btMarcoDiario.Size = new System.Drawing.Size(122, 55);
             this.btMarcoDiario.Style = MetroFramework.MetroColorStyle.Purple;
@@ -142,84 +168,13 @@ namespace amo6166
             this.btMarcoDiario.UseVisualStyleBackColor = false;
             this.btMarcoDiario.Click += new System.EventHandler(this.btMarcoDiario_Click);
             // 
-            // btSair
-            // 
-            this.btSair.ActiveControl = null;
-            this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btSair.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btSair.Location = new System.Drawing.Point(23, 587);
-            this.btSair.Name = "btSair";
-            this.btSair.Size = new System.Drawing.Size(122, 86);
-            this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btSair.TabIndex = 10;
-            this.btSair.Text = "Sair";
-            this.btSair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btSair.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btSair.TileImage = ((System.Drawing.Image)(resources.GetObject("btSair.TileImage")));
-            this.btSair.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btSair.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btSair.UseCustomBackColor = true;
-            this.btSair.UseCustomForeColor = true;
-            this.btSair.UseSelectable = true;
-            this.btSair.UseStyleColors = true;
-            this.btSair.UseVisualStyleBackColor = false;
-            this.btSair.Click += new System.EventHandler(this.btSair_Click);
-            // 
-            // btMenu
-            // 
-            this.btMenu.ActiveControl = null;
-            this.btMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btMenu.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMenu.Location = new System.Drawing.Point(23, 99);
-            this.btMenu.Name = "btMenu";
-            this.btMenu.Size = new System.Drawing.Size(122, 55);
-            this.btMenu.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btMenu.TabIndex = 11;
-            this.btMenu.Text = "Menu";
-            this.btMenu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btMenu.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btMenu.TileImage = ((System.Drawing.Image)(resources.GetObject("btMenu.TileImage")));
-            this.btMenu.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btMenu.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btMenu.UseCustomBackColor = true;
-            this.btMenu.UseCustomForeColor = true;
-            this.btMenu.UseSelectable = true;
-            this.btMenu.UseStyleColors = true;
-            this.btMenu.UseVisualStyleBackColor = false;
-            this.btMenu.Click += new System.EventHandler(this.btMenu_Click);
-            // 
-            // btAMO
-            // 
-            this.btAMO.ActiveControl = null;
-            this.btAMO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btAMO.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btAMO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btAMO.Location = new System.Drawing.Point(23, 343);
-            this.btAMO.Name = "btAMO";
-            this.btAMO.Size = new System.Drawing.Size(122, 55);
-            this.btAMO.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btAMO.TabIndex = 12;
-            this.btAMO.Text = "Profile";
-            this.btAMO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btAMO.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btAMO.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btAMO.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btAMO.UseCustomBackColor = true;
-            this.btAMO.UseCustomForeColor = true;
-            this.btAMO.UseSelectable = true;
-            this.btAMO.UseStyleColors = true;
-            this.btAMO.UseVisualStyleBackColor = false;
-            this.btAMO.Click += new System.EventHandler(this.btAMO_Click);
-            // 
             // btGaleria
             // 
             this.btGaleria.ActiveControl = null;
             this.btGaleria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btGaleria.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btGaleria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btGaleria.Location = new System.Drawing.Point(23, 282);
+            this.btGaleria.Location = new System.Drawing.Point(23, 221);
             this.btGaleria.Name = "btGaleria";
             this.btGaleria.Size = new System.Drawing.Size(122, 55);
             this.btGaleria.Style = MetroFramework.MetroColorStyle.Purple;
@@ -236,11 +191,106 @@ namespace amo6166
             this.btGaleria.UseVisualStyleBackColor = false;
             this.btGaleria.Click += new System.EventHandler(this.btGaleria_Click);
             // 
+            // btAMO
+            // 
+            this.btAMO.ActiveControl = null;
+            this.btAMO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btAMO.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btAMO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btAMO.Location = new System.Drawing.Point(23, 282);
+            this.btAMO.Name = "btAMO";
+            this.btAMO.Size = new System.Drawing.Size(122, 55);
+            this.btAMO.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btAMO.TabIndex = 12;
+            this.btAMO.Text = "Profile";
+            this.btAMO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btAMO.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btAMO.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btAMO.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btAMO.UseCustomBackColor = true;
+            this.btAMO.UseCustomForeColor = true;
+            this.btAMO.UseSelectable = true;
+            this.btAMO.UseStyleColors = true;
+            this.btAMO.UseVisualStyleBackColor = false;
+            this.btAMO.Click += new System.EventHandler(this.btAMO_Click);
+            // 
+            // btTerminal
+            // 
+            this.btTerminal.ActiveControl = null;
+            this.btTerminal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btTerminal.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btTerminal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btTerminal.Location = new System.Drawing.Point(23, 343);
+            this.btTerminal.Name = "btTerminal";
+            this.btTerminal.Size = new System.Drawing.Size(122, 55);
+            this.btTerminal.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btTerminal.TabIndex = 2;
+            this.btTerminal.Text = "Terminal";
+            this.btTerminal.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btTerminal.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btTerminal.TileImage = global::amo6166.Properties.Resources.terminal;
+            this.btTerminal.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btTerminal.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btTerminal.UseCustomBackColor = true;
+            this.btTerminal.UseCustomForeColor = true;
+            this.btTerminal.UseSelectable = true;
+            this.btTerminal.UseStyleColors = true;
+            this.btTerminal.UseVisualStyleBackColor = false;
+            this.btTerminal.Click += new System.EventHandler(this.btTerminal_Click);
+            // 
+            // btSite
+            // 
+            this.btSite.ActiveControl = null;
+            this.btSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btSite.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btSite.Location = new System.Drawing.Point(23, 404);
+            this.btSite.Name = "btSite";
+            this.btSite.Size = new System.Drawing.Size(122, 55);
+            this.btSite.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btSite.TabIndex = 12;
+            this.btSite.Text = "6166.com";
+            this.btSite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSite.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btSite.TileImage = ((System.Drawing.Image)(resources.GetObject("btSite.TileImage")));
+            this.btSite.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSite.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btSite.UseCustomBackColor = true;
+            this.btSite.UseCustomForeColor = true;
+            this.btSite.UseSelectable = true;
+            this.btSite.UseStyleColors = true;
+            this.btSite.UseVisualStyleBackColor = false;
+            this.btSite.Click += new System.EventHandler(this.btSite_Click);
+            // 
+            // btSair
+            // 
+            this.btSair.ActiveControl = null;
+            this.btSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btSair.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btSair.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btSair.Location = new System.Drawing.Point(23, 526);
+            this.btSair.Name = "btSair";
+            this.btSair.Size = new System.Drawing.Size(122, 207);
+            this.btSair.Style = MetroFramework.MetroColorStyle.Purple;
+            this.btSair.TabIndex = 10;
+            this.btSair.Text = "Sair";
+            this.btSair.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSair.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.btSair.TileImage = ((System.Drawing.Image)(resources.GetObject("btSair.TileImage")));
+            this.btSair.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btSair.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
+            this.btSair.UseCustomBackColor = true;
+            this.btSair.UseCustomForeColor = true;
+            this.btSair.UseSelectable = true;
+            this.btSair.UseStyleColors = true;
+            this.btSair.UseVisualStyleBackColor = false;
+            this.btSair.Click += new System.EventHandler(this.btSair_Click);
+            // 
             // metroLabel1
             // 
             this.metroLabel1.AutoSize = true;
             this.metroLabel1.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel1.Location = new System.Drawing.Point(751, 49);
+            this.metroLabel1.Location = new System.Drawing.Point(1033, 49);
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(63, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
@@ -253,7 +303,7 @@ namespace amo6166
             // 
             this.metroLabel2.AutoSize = true;
             this.metroLabel2.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.metroLabel2.Location = new System.Drawing.Point(873, 49);
+            this.metroLabel2.Location = new System.Drawing.Point(1155, 49);
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(46, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
@@ -266,7 +316,7 @@ namespace amo6166
             // 
             this.lbLogin.AutoSize = true;
             this.lbLogin.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbLogin.Location = new System.Drawing.Point(925, 49);
+            this.lbLogin.Location = new System.Drawing.Point(1201, 49);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(65, 19);
             this.lbLogin.TabIndex = 16;
@@ -277,36 +327,12 @@ namespace amo6166
             // 
             this.lbUser.AutoSize = true;
             this.lbUser.FontWeight = MetroFramework.MetroLabelWeight.Regular;
-            this.lbUser.Location = new System.Drawing.Point(810, 49);
+            this.lbUser.Location = new System.Drawing.Point(1092, 49);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(65, 19);
             this.lbUser.TabIndex = 17;
             this.lbUser.Text = "Anônimo";
             this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
-            // 
-            // btInfo
-            // 
-            this.btInfo.ActiveControl = null;
-            this.btInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btInfo.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btInfo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btInfo.Location = new System.Drawing.Point(23, 526);
-            this.btInfo.Name = "btInfo";
-            this.btInfo.Size = new System.Drawing.Size(122, 55);
-            this.btInfo.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btInfo.TabIndex = 11;
-            this.btInfo.Text = "Info";
-            this.btInfo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btInfo.TileImage = ((System.Drawing.Image)(resources.GetObject("btInfo.TileImage")));
-            this.btInfo.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btInfo.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btInfo.UseCustomBackColor = true;
-            this.btInfo.UseCustomForeColor = true;
-            this.btInfo.UseSelectable = true;
-            this.btInfo.UseStyleColors = true;
-            this.btInfo.UseVisualStyleBackColor = false;
-            this.btInfo.Click += new System.EventHandler(this.btInfo_Click);
             // 
             // label1
             // 
@@ -336,53 +362,6 @@ namespace amo6166
             this.panelIcon.VerticalScrollbarHighlightOnWheel = false;
             this.panelIcon.VerticalScrollbarSize = 10;
             // 
-            // btLogout
-            // 
-            this.btLogout.ActiveControl = null;
-            this.btLogout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btLogout.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btLogout.Location = new System.Drawing.Point(1024, 36);
-            this.btLogout.Name = "btLogout";
-            this.btLogout.Size = new System.Drawing.Size(89, 40);
-            this.btLogout.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btLogout.TabIndex = 12;
-            this.btLogout.Text = "Logout";
-            this.btLogout.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btLogout.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btLogout.TileImage = ((System.Drawing.Image)(resources.GetObject("btLogout.TileImage")));
-            this.btLogout.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btLogout.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btLogout.UseCustomBackColor = true;
-            this.btLogout.UseCustomForeColor = true;
-            this.btLogout.UseSelectable = true;
-            this.btLogout.UseStyleColors = true;
-            this.btLogout.UseVisualStyleBackColor = false;
-            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
-            // 
-            // btSite
-            // 
-            this.btSite.ActiveControl = null;
-            this.btSite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btSite.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btSite.Location = new System.Drawing.Point(23, 465);
-            this.btSite.Name = "btSite";
-            this.btSite.Size = new System.Drawing.Size(122, 55);
-            this.btSite.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btSite.TabIndex = 12;
-            this.btSite.Text = "6166.com";
-            this.btSite.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btSite.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.btSite.TileImage = ((System.Drawing.Image)(resources.GetObject("btSite.TileImage")));
-            this.btSite.TileImageAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btSite.TileTextFontWeight = MetroFramework.MetroTileTextWeight.Regular;
-            this.btSite.UseCustomBackColor = true;
-            this.btSite.UseCustomForeColor = true;
-            this.btSite.UseSelectable = true;
-            this.btSite.UseStyleColors = true;
-            this.btSite.UseVisualStyleBackColor = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -394,44 +373,90 @@ namespace amo6166
             this.label2.TabIndex = 54;
             this.label2.Text = "I Am Hated, but I feel loved with you.";
             // 
-            // loading
+            // label3
             // 
-            this.loading.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.loading.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.loading.Location = new System.Drawing.Point(485, 49);
-            this.loading.Name = "loading";
-            this.loading.ProgressBarStyle = System.Windows.Forms.ProgressBarStyle.Blocks;
-            this.loading.Size = new System.Drawing.Size(230, 23);
-            this.loading.Style = MetroFramework.MetroColorStyle.Teal;
-            this.loading.TabIndex = 55;
-            this.loading.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.loading.Value = 10;
+            this.label3.AutoSize = true;
+            this.label3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.DarkGray;
+            this.label3.Location = new System.Drawing.Point(23, 845);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 15);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "Version: BETA 2.1.3";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
+            // 
+            // lbInfo
+            // 
+            this.lbInfo.AutoSize = true;
+            this.lbInfo.Cursor = System.Windows.Forms.Cursors.Help;
+            this.lbInfo.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbInfo.ForeColor = System.Drawing.Color.DarkGray;
+            this.lbInfo.Location = new System.Drawing.Point(121, 841);
+            this.lbInfo.Name = "lbInfo";
+            this.lbInfo.Size = new System.Drawing.Size(24, 21);
+            this.lbInfo.TabIndex = 55;
+            this.lbInfo.Text = "ⓘ";
+            this.lbInfo.Click += new System.EventHandler(this.lbInfo_Click);
+            // 
+            // metroLabel3
+            // 
+            this.metroLabel3.AutoSize = true;
+            this.metroLabel3.BackColor = System.Drawing.Color.Black;
+            this.metroLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.metroLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.metroLabel3.Location = new System.Drawing.Point(1172, 845);
+            this.metroLabel3.Name = "metroLabel3";
+            this.metroLabel3.Size = new System.Drawing.Size(193, 19);
+            this.metroLabel3.Style = MetroFramework.MetroColorStyle.Silver;
+            this.metroLabel3.TabIndex = 57;
+            this.metroLabel3.Text = "Desenvolvido por: AMO6166 ©";
+            this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel3.UseCustomForeColor = true;
+            this.metroLabel3.UseStyleColors = true;
+            this.metroLabel3.Click += new System.EventHandler(this.metroLabel3_Click);
+            // 
+            // btLogout
+            // 
+            this.btLogout.AutoSize = true;
+            this.btLogout.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btLogout.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btLogout.Location = new System.Drawing.Point(1294, 49);
+            this.btLogout.Name = "btLogout";
+            this.btLogout.Size = new System.Drawing.Size(49, 17);
+            this.btLogout.TabIndex = 58;
+            this.btLogout.Text = "Logout";
+            this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1136, 696);
-            this.Controls.Add(this.loading);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.btSite);
-            this.Controls.Add(this.btInfo);
-            this.Controls.Add(this.btAMO);
-            this.Controls.Add(this.btNanaDiario);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ClientSize = new System.Drawing.Size(1401, 880);
             this.Controls.Add(this.btLogout);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.panelIcon);
+            this.Controls.Add(this.metroLabel3);
+            this.Controls.Add(this.btGame);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.btMenu);
+            this.Controls.Add(this.lbInfo);
+            this.Controls.Add(this.btNanaDiario);
+            this.Controls.Add(this.btMarcoDiario);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.btGaleria);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.btAMO);
+            this.Controls.Add(this.panelIcon);
+            this.Controls.Add(this.btTerminal);
             this.Controls.Add(this.lbUser);
+            this.Controls.Add(this.btSite);
             this.Controls.Add(this.lbLogin);
+            this.Controls.Add(this.btSair);
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
-            this.Controls.Add(this.btGaleria);
-            this.Controls.Add(this.btSair);
-            this.Controls.Add(this.btMarcoDiario);
-            this.Controls.Add(this.btTerminal);
             this.Controls.Add(this.panel);
             this.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -461,12 +486,14 @@ namespace amo6166
         private MetroFramework.Controls.MetroLabel lbLogin;
         private MetroFramework.Controls.MetroLabel lbUser;
         private MetroFramework.Controls.MetroTile btMenu;
-        private MetroFramework.Controls.MetroTile btInfo;
         private System.Windows.Forms.Label label1;
         private MetroFramework.Controls.MetroPanel panelIcon;
-        private MetroFramework.Controls.MetroTile btLogout;
         private MetroFramework.Controls.MetroTile btSite;
         private System.Windows.Forms.Label label2;
-        private MetroFramework.Controls.MetroProgressBar loading;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lbInfo;
+        private MetroFramework.Controls.MetroLabel metroLabel3;
+        private MetroFramework.Controls.MetroTile btGame;
+        private System.Windows.Forms.Label btLogout;
     }
 }

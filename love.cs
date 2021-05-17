@@ -27,19 +27,6 @@ namespace amo6166
         {
             lbUser.Text = username;
             lbLogin.Text = login;
-
-            if(username == "Nana")
-            {
-                loading.Style = MetroFramework.MetroColorStyle.Red;
-            }
-            else if (username == "Marco")
-            {
-                loading.Style = MetroFramework.MetroColorStyle.Teal;
-            }
-            else
-            {
-                loading.Style = MetroFramework.MetroColorStyle.Purple;
-            }
         }
 
         private void btTerminal_Click(object sender, EventArgs e)
@@ -57,12 +44,12 @@ namespace amo6166
             btMenu.BackColor = Color.FromArgb(31, 29, 39);
             btAMO.BackColor = Color.FromArgb(31, 29, 39);
             btGaleria.BackColor = Color.FromArgb(31, 29, 39);
+            btSite.BackColor = Color.FromArgb(31, 29, 39);
+            btGame.BackColor = Color.FromArgb(31, 29, 39);
         }
 
         private void btNanaDiario_Click(object sender, EventArgs e)
         {
-            
-            loading.Value = 100;
             Cor(btNanaDiario);
             Nana nana = new Nana();
             PanelShow(nana);
@@ -84,7 +71,7 @@ namespace amo6166
 
         private void btGaleria_Click(object sender, EventArgs e)
         {
-            Cor(btMenu);
+            Cor(btGaleria);
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -125,7 +112,48 @@ namespace amo6166
             bt.BackColor = Color.FromArgb(45, 41, 56);
         }
 
-        private void btInfo_Click(object sender, EventArgs e)
+        private void btLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login log = new Login();
+            log.ShowDialog();
+            this.Close();
+        }
+
+        private void metroLabel3_Click(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process start = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = "/C start https://github.com/AMO6166";
+            start.StartInfo = startInfo;
+            start.Start();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+        }
+
+        private void lbInfo_Click(object sender, EventArgs e)
+        {
+            Info info = new Info();
+            info.Show();
+        }
+
+        private void btSite_Click(object sender, EventArgs e)
+        {
+            Cor(btSite);
+        }
+
+        private void btGame_Click(object sender, EventArgs e)
+        {
+            Cor(btGame);
+        }
+
+        /*private void btInfo_Click(object sender, EventArgs e)
         {
             Cor(btInfo);
             Info info = new Info();
@@ -137,14 +165,6 @@ namespace amo6166
             info.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             info.ControlBox = false;
             PanelShow(info);
-        }
-
-        private void btLogout_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            Login log = new Login();
-            log.ShowDialog();
-            this.Close();
-        }
+        }*/
     }
 }

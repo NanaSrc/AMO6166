@@ -17,7 +17,8 @@ namespace amo6166
 
         private void Info_Load(object sender, EventArgs e)
         {
-
+            //cbIdioma.SelectedIndex = 1;
+            cbLanguage.SelectedIndex = 1;
         }
 
         private void cbLanguage_SelectedIndexChanged(object sender, EventArgs e)

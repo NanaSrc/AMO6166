@@ -165,7 +165,7 @@ namespace amo6166
             // tbSim
             // 
             this.tbSim.AutoSize = true;
-            this.tbSim.Location = new System.Drawing.Point(236, -545);
+            this.tbSim.Location = new System.Drawing.Point(237, -542);
             this.tbSim.Name = "tbSim";
             this.tbSim.Size = new System.Drawing.Size(43, 15);
             this.tbSim.Style = MetroFramework.MetroColorStyle.Purple;
@@ -251,7 +251,7 @@ namespace amo6166
             // lbInfo
             // 
             this.lbInfo.AutoSize = true;
-            this.lbInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbInfo.Cursor = System.Windows.Forms.Cursors.Help;
             this.lbInfo.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbInfo.ForeColor = System.Drawing.Color.DarkGray;
             this.lbInfo.Location = new System.Drawing.Point(614, 29);
@@ -264,7 +264,7 @@ namespace amo6166
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Cursor = System.Windows.Forms.Cursors.Help;
+            this.label2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.label2.Font = new System.Drawing.Font("Segoe UI Light", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.DarkGray;
             this.label2.Location = new System.Drawing.Point(516, 33);
