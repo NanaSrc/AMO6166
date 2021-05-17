@@ -35,7 +35,7 @@ namespace amo6166
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(962, 597);
+            this.ClientSize = new System.Drawing.Size(1174, 625);
             this.Name = "ProgressBar";
             this.Text = "ProgressBar";
             this.Load += new System.EventHandler(this.ProgressBar_Load);
