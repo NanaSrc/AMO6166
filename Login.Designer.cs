@@ -140,6 +140,7 @@ namespace amo6166
             // 
             // btLogin
             // 
+            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Location = new System.Drawing.Point(173, 261);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(327, 36);
@@ -152,6 +153,7 @@ namespace amo6166
             // 
             // btCancel
             // 
+            this.btCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btCancel.Location = new System.Drawing.Point(173, 303);
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(327, 36);
