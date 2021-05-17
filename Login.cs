@@ -29,14 +29,14 @@ namespace amo6166
             {
                 if (VerificarAMO() == "Marco")
                 {
-                    MessageBox.Show("N + M = AMO6166 " +
+                    MessageBox.Show("N + M . AMO " +
                     Environment.NewLine +
                     "Vê se não esquece na próxima, seu desgraçadinho!", ":eye:");
                     hint--;
                 }
                 else if (VerificarAMO() == "Nana")
                 {
-                    MessageBox.Show("N + M = AMO6166 " +
+                    MessageBox.Show("N + M . AMO " +
                     Environment.NewLine +
                     "Como assim você não lembra? Foi você que programou isso, Anna", ":rage:");
                     hint--;
@@ -183,9 +183,9 @@ namespace amo6166
 
         private string VerificarAMO()
         {
-            if (tbNome.Text == "nokia1666" || tbNome.Text == "Nokia1666" || tbNome.Text == "NOKIA166" || tbNome.Text == "nana1666" || tbNome.Text == "Nana1666" || tbNome.Text == "NANA1666")
+            if (tbNome.Text == "nokia1666" || tbNome.Text == "Nokia1666" || tbNome.Text == "LisA" || tbNome.Text == "nana1666" || tbNome.Text == "Nana1666" || tbNome.Text == "Naninha1")
                 return "Nana";
-            if (tbNome.Text == "marco1666" || tbNome.Text == "Marco1666" || tbNome.Text == "MARCO1666" || tbNome.Text == "hated1666" || tbNome.Text == "Hated1666" || tbNome.Text == "HATED1666")
+            if (tbNome.Text == "marco1666" || tbNome.Text == "Marco1666" || tbNome.Text == "IAmHated" || tbNome.Text == "hated1666" || tbNome.Text == "Hated1666" || tbNome.Text == "MarcoT")
                 return "Marco";
             else
                 return "Anônimo";
