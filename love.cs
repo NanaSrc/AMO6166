@@ -28,14 +28,8 @@ namespace amo6166
             lbUser.Text = username;
             lbLogin.Text = login;
         }
-
-        private void btTerminal_Click(object sender, EventArgs e)
-        {
-            Cor(btTerminal);
-            Terminal term = new Terminal(username);
-            PanelShow(term);
-        }
-
+        
+        /*
         private void DefaultColor()
         {
             btTerminal.BackColor = Color.FromArgb(31, 29, 39);
@@ -47,38 +41,11 @@ namespace amo6166
             btSite.BackColor = Color.FromArgb(31, 29, 39);
             btGame.BackColor = Color.FromArgb(31, 29, 39);
         }
-
-        private void btNanaDiario_Click(object sender, EventArgs e)
-        {
-            Cor(btNanaDiario);
-            Nana nana = new Nana();
-            PanelShow(nana);
-        }
-
-        private void btMarcoDiario_Click(object sender, EventArgs e)
-        {
-            Cor(btMarcoDiario);
-            Marco marco = new Marco();
-            PanelShow(marco);
-        }
-
-        private void btAMO_Click(object sender, EventArgs e)
-        {
-            Cor(btAMO);
-            Profile profile = new Profile(username);
-            PanelShow(profile);
-        }
-
-        private void btGaleria_Click(object sender, EventArgs e)
-        {
-            Cor(btGaleria);
-            Galeria galeria = new Galeria();
-            PanelShow(galeria);
-        }
+        */
 
         private void btSair_Click(object sender, EventArgs e)
         {
-            Cor(btSair);
+            //Cor(btSair);
             DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
             //I love you to the moon and back
             if (resultado == DialogResult.Yes)
@@ -104,15 +71,17 @@ namespace amo6166
 
         private void btMenu_Click(object sender, EventArgs e)
         {
-            Cor(btMenu);
+            //Cor(btMenu);
             panel.Controls.Clear();
         }
 
+        /*
         private void Cor(Button bt)
         {
             DefaultColor();
             bt.BackColor = Color.FromArgb(45, 41, 56);
         }
+        */
 
         private void btLogout_Click(object sender, EventArgs e)
         {
@@ -145,18 +114,9 @@ namespace amo6166
             info.Show();
         }
 
-        private void btSite_Click(object sender, EventArgs e)
+        private void btNanaPage_Click(object sender, EventArgs e)
         {
-            Cor(btSite);
-            Site site = new Site();
-            PanelShow(site);
-        }
 
-        private void btGame_Click(object sender, EventArgs e)
-        {
-            Cor(btGame);
-            Game game = new Game();
-            PanelShow(game);
         }
 
         /*private void btInfo_Click(object sender, EventArgs e)
