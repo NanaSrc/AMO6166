@@ -49,12 +49,12 @@ namespace amo6166
             this.btGame = new System.Windows.Forms.Button();
             this.btSite = new System.Windows.Forms.Button();
             this.btProfile = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btPainting = new System.Windows.Forms.Button();
+            this.btMovie = new System.Windows.Forms.Button();
+            this.btLibrary = new System.Windows.Forms.Button();
+            this.btFireplace = new System.Windows.Forms.Button();
+            this.btMain = new System.Windows.Forms.Button();
+            this.btExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // panel
@@ -156,7 +156,7 @@ namespace amo6166
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(225, 55);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(222, 17);
@@ -223,11 +223,15 @@ namespace amo6166
             // btNanaPage
             // 
             this.btNanaPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btNanaPage.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btNanaPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btNanaPage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btNanaPage.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btNanaPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btNanaPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btNanaPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btNanaPage.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btNanaPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btNanaPage.Location = new System.Drawing.Point(22, 103);
+            this.btNanaPage.Location = new System.Drawing.Point(20, 155);
             this.btNanaPage.Name = "btNanaPage";
             this.btNanaPage.Size = new System.Drawing.Size(177, 46);
             this.btNanaPage.TabIndex = 59;
@@ -237,72 +241,99 @@ namespace amo6166
             // 
             // btMarcoPage
             // 
-            this.btMarcoPage.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btMarcoPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMarcoPage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btMarcoPage.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btMarcoPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btMarcoPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btMarcoPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btMarcoPage.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btMarcoPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btMarcoPage.Location = new System.Drawing.Point(21, 155);
+            this.btMarcoPage.Location = new System.Drawing.Point(19, 207);
             this.btMarcoPage.Name = "btMarcoPage";
             this.btMarcoPage.Size = new System.Drawing.Size(178, 46);
             this.btMarcoPage.TabIndex = 60;
             this.btMarcoPage.Text = "Marco\'s computer";
             this.btMarcoPage.UseVisualStyleBackColor = true;
+            this.btMarcoPage.Click += new System.EventHandler(this.btMarcoPage_Click);
             // 
             // btGallery
             // 
-            this.btGallery.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btGallery.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btGallery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btGallery.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btGallery.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btGallery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btGallery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btGallery.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btGallery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btGallery.Location = new System.Drawing.Point(20, 311);
+            this.btGallery.Location = new System.Drawing.Point(18, 363);
             this.btGallery.Name = "btGallery";
             this.btGallery.Size = new System.Drawing.Size(179, 46);
             this.btGallery.TabIndex = 61;
             this.btGallery.Text = "Wonderful gallery ";
             this.btGallery.UseVisualStyleBackColor = true;
+            this.btGallery.Click += new System.EventHandler(this.btGallery_Click);
             // 
             // btTerm
             // 
-            this.btTerm.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btTerm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btTerm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btTerm.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btTerm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btTerm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btTerm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btTerm.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btTerm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btTerm.Location = new System.Drawing.Point(20, 259);
+            this.btTerm.Location = new System.Drawing.Point(18, 311);
             this.btTerm.Name = "btTerm";
             this.btTerm.Size = new System.Drawing.Size(179, 46);
             this.btTerm.TabIndex = 62;
             this.btTerm.Text = "Console text";
             this.btTerm.UseVisualStyleBackColor = true;
+            this.btTerm.Click += new System.EventHandler(this.btTerm_Click);
             // 
             // btGame
             // 
-            this.btGame.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btGame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btGame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btGame.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btGame.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btGame.Location = new System.Drawing.Point(20, 207);
+            this.btGame.Location = new System.Drawing.Point(18, 259);
             this.btGame.Name = "btGame";
             this.btGame.Size = new System.Drawing.Size(179, 46);
             this.btGame.TabIndex = 63;
             this.btGame.Text = "A simple game";
             this.btGame.UseVisualStyleBackColor = true;
+            this.btGame.Click += new System.EventHandler(this.btGame_Click);
             // 
             // btSite
             // 
-            this.btSite.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btSite.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSite.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btSite.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btSite.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btSite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btSite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSite.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btSite.Location = new System.Drawing.Point(20, 363);
+            this.btSite.Location = new System.Drawing.Point(18, 623);
             this.btSite.Name = "btSite";
             this.btSite.Size = new System.Drawing.Size(179, 46);
             this.btSite.TabIndex = 64;
             this.btSite.Text = "amo6166.com";
             this.btSite.UseVisualStyleBackColor = true;
+            this.btSite.Click += new System.EventHandler(this.btSite_Click);
             // 
             // btProfile
             // 
             this.btProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
             this.btProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btProfile.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
@@ -312,84 +343,115 @@ namespace amo6166
             this.btProfile.TabIndex = 65;
             this.btProfile.Text = "Profile";
             this.btProfile.UseVisualStyleBackColor = true;
+            this.btProfile.Click += new System.EventHandler(this.btProfile_Click);
             // 
-            // button2
+            // btPainting
             // 
-            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button2.Location = new System.Drawing.Point(20, 415);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(179, 46);
-            this.button2.TabIndex = 67;
-            this.button2.Text = "Painting room";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btPainting.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btPainting.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btPainting.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btPainting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btPainting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btPainting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btPainting.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btPainting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btPainting.Location = new System.Drawing.Point(18, 415);
+            this.btPainting.Name = "btPainting";
+            this.btPainting.Size = new System.Drawing.Size(179, 46);
+            this.btPainting.TabIndex = 67;
+            this.btPainting.Text = "Painting room";
+            this.btPainting.UseVisualStyleBackColor = true;
+            this.btPainting.Click += new System.EventHandler(this.btPainting_Click);
             // 
-            // button3
+            // btMovie
             // 
-            this.button3.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button3.Location = new System.Drawing.Point(20, 467);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(179, 46);
-            this.button3.TabIndex = 68;
-            this.button3.Text = "Movie room";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btMovie.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMovie.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btMovie.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btMovie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btMovie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMovie.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btMovie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btMovie.Location = new System.Drawing.Point(18, 467);
+            this.btMovie.Name = "btMovie";
+            this.btMovie.Size = new System.Drawing.Size(179, 46);
+            this.btMovie.TabIndex = 68;
+            this.btMovie.Text = "Movie room";
+            this.btMovie.UseVisualStyleBackColor = true;
+            this.btMovie.Click += new System.EventHandler(this.btMovie_Click);
             // 
-            // button4
+            // btLibrary
             // 
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button4.Location = new System.Drawing.Point(20, 520);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(179, 46);
-            this.button4.TabIndex = 69;
-            this.button4.Text = "A library";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btLibrary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btLibrary.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btLibrary.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btLibrary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btLibrary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLibrary.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btLibrary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btLibrary.Location = new System.Drawing.Point(18, 519);
+            this.btLibrary.Name = "btLibrary";
+            this.btLibrary.Size = new System.Drawing.Size(179, 46);
+            this.btLibrary.TabIndex = 69;
+            this.btLibrary.Text = "A library";
+            this.btLibrary.UseVisualStyleBackColor = true;
+            this.btLibrary.Click += new System.EventHandler(this.btLibrary_Click);
             // 
-            // button5
+            // btFireplace
             // 
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button5.Location = new System.Drawing.Point(20, 574);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(179, 46);
-            this.button5.TabIndex = 70;
-            this.button5.Text = "Warm fireplace";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btFireplace.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btFireplace.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btFireplace.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btFireplace.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btFireplace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btFireplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFireplace.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btFireplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btFireplace.Location = new System.Drawing.Point(18, 571);
+            this.btFireplace.Name = "btFireplace";
+            this.btFireplace.Size = new System.Drawing.Size(179, 46);
+            this.btFireplace.TabIndex = 70;
+            this.btFireplace.Text = "Warm fireplace";
+            this.btFireplace.UseVisualStyleBackColor = true;
+            this.btFireplace.Click += new System.EventHandler(this.btFireplace_Click);
             // 
-            // button6
+            // btMain
             // 
-            this.button6.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button6.Location = new System.Drawing.Point(20, 628);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(179, 46);
-            this.button6.TabIndex = 71;
-            this.button6.Text = "Main hall";
-            this.button6.UseVisualStyleBackColor = true;
+            this.btMain.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMain.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btMain.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btMain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btMain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMain.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btMain.Location = new System.Drawing.Point(20, 103);
+            this.btMain.Name = "btMain";
+            this.btMain.Size = new System.Drawing.Size(177, 46);
+            this.btMain.TabIndex = 71;
+            this.btMain.Text = "Main hall";
+            this.btMain.UseVisualStyleBackColor = true;
+            this.btMain.Click += new System.EventHandler(this.btMain_Click);
             // 
-            // button7
+            // btExit
             // 
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.button7.Location = new System.Drawing.Point(20, 682);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(179, 46);
-            this.button7.TabIndex = 72;
-            this.button7.Text = "Exit light";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btExit.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btExit.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btExit.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btExit.Location = new System.Drawing.Point(18, 682);
+            this.btExit.Name = "btExit";
+            this.btExit.Size = new System.Drawing.Size(179, 46);
+            this.btExit.TabIndex = 72;
+            this.btExit.Text = "Exit light";
+            this.btExit.UseVisualStyleBackColor = true;
+            this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
             // love
             // 
@@ -398,14 +460,14 @@ namespace amo6166
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1366, 768);
-            this.Controls.Add(this.button7);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.btProfile);
+            this.Controls.Add(this.btExit);
+            this.Controls.Add(this.btMain);
             this.Controls.Add(this.btSite);
+            this.Controls.Add(this.btFireplace);
+            this.Controls.Add(this.btLibrary);
+            this.Controls.Add(this.btMovie);
+            this.Controls.Add(this.btPainting);
+            this.Controls.Add(this.btProfile);
             this.Controls.Add(this.btGame);
             this.Controls.Add(this.btTerm);
             this.Controls.Add(this.btGallery);
@@ -458,11 +520,11 @@ namespace amo6166
         private System.Windows.Forms.Button btGame;
         private System.Windows.Forms.Button btSite;
         private System.Windows.Forms.Button btProfile;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btPainting;
+        private System.Windows.Forms.Button btMovie;
+        private System.Windows.Forms.Button btLibrary;
+        private System.Windows.Forms.Button btFireplace;
+        private System.Windows.Forms.Button btMain;
+        private System.Windows.Forms.Button btExit;
     }
 }

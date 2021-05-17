@@ -116,7 +116,7 @@ namespace amo6166
 
         private void btNanaPage_Click(object sender, EventArgs e)
         {
-
+            Active(btNanaPage);
         }
 
         /*private void btInfo_Click(object sender, EventArgs e)
@@ -132,5 +132,142 @@ namespace amo6166
             info.ControlBox = false;
             PanelShow(info);
         }*/
+
+        private void Active(Button bt)
+        {
+            DefaultColor();
+            bt.FlatAppearance.BorderColor = Color.FromArgb(152, 63, 104);
+            bt.ForeColor = Color.FromArgb(183, 161, 255);
+            bt.FlatAppearance.BorderSize = 2;
+
+        }
+
+        private void DefaultColor()
+        {
+            Color cor = new Color();
+            cor = Color.FromArgb(206, 191, 255); 
+            Color corB = new Color();
+            corB = Color.FromArgb(183, 161, 255);
+
+            btNanaPage.FlatAppearance.BorderColor = corB;
+            btNanaPage.ForeColor = cor;
+            btNanaPage.FlatAppearance.BorderSize = 1;
+
+            btMarcoPage.FlatAppearance.BorderColor = corB;
+            btMarcoPage.ForeColor = cor;
+            btMarcoPage.FlatAppearance.BorderSize = 1;
+
+            btGame.FlatAppearance.BorderColor = corB;
+            btGame.ForeColor = cor;
+            btGame.FlatAppearance.BorderSize = 1;
+
+            btTerm.FlatAppearance.BorderColor = corB;
+            btTerm.ForeColor = cor;
+            btTerm.FlatAppearance.BorderSize = 1;
+
+            btGallery.FlatAppearance.BorderColor = corB;
+            btGallery.ForeColor = cor; 
+            btGallery.FlatAppearance.BorderSize = 1;
+
+            btSite.FlatAppearance.BorderColor = corB;
+            btSite.ForeColor = cor;
+            btSite.FlatAppearance.BorderSize = 1;
+
+            btPainting.FlatAppearance.BorderColor = corB;
+            btPainting.ForeColor = cor;
+            btPainting.FlatAppearance.BorderSize = 1;
+
+            btMovie.FlatAppearance.BorderColor = corB;
+            btMovie.ForeColor = cor;
+            btMovie.FlatAppearance.BorderSize = 1;
+
+            btLibrary.FlatAppearance.BorderColor = corB;
+            btLibrary.ForeColor = cor; 
+            btLibrary.FlatAppearance.BorderSize = 1;
+
+            btFireplace.FlatAppearance.BorderColor = corB;
+            btFireplace.ForeColor = cor;
+            btFireplace.FlatAppearance.BorderSize = 1;
+
+            btMain.FlatAppearance.BorderColor = corB;
+            btMain.ForeColor = cor;
+            btMain.FlatAppearance.BorderSize = 1;
+
+            btExit.FlatAppearance.BorderColor = corB;
+            btExit.ForeColor = cor;
+            btExit.FlatAppearance.BorderSize = 1;
+
+            btProfile.FlatAppearance.BorderColor = cor;
+            btProfile.ForeColor = corB;
+            btExit.FlatAppearance.BorderSize = 1;
+        }
+
+        private void btMarcoPage_Click(object sender, EventArgs e)
+        {
+            Active(btMarcoPage);
+        }
+
+        private void btGame_Click(object sender, EventArgs e)
+        {
+            Active(btGame);
+        }
+
+        private void btTerm_Click(object sender, EventArgs e)
+        {
+            Active(btTerm);
+        }
+
+        private void btGallery_Click(object sender, EventArgs e)
+        {
+            Active(btGallery);
+        }
+
+        private void btSite_Click(object sender, EventArgs e)
+        {
+            Active(btSite);
+        }
+
+        private void btPainting_Click(object sender, EventArgs e)
+        {
+            Active(btPainting);
+        }
+
+        private void btMovie_Click(object sender, EventArgs e)
+        {
+            Active(btMovie);
+        }
+
+        private void btLibrary_Click(object sender, EventArgs e)
+        {
+            Active(btLibrary);
+        }
+
+        private void btFireplace_Click(object sender, EventArgs e)
+        {
+            Active(btFireplace);
+        }
+
+        private void btMain_Click(object sender, EventArgs e)
+        {
+            Active(btMain);
+            panel.Controls.Clear();
+        }
+
+        private void btExit_Click(object sender, EventArgs e)
+        {
+            Active(btExit);
+            DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
+            //I love you to the moon and back
+            if (resultado == DialogResult.Yes)
+            {
+                MessageBox.Show("That's all folks!", ">(");
+                Application.Exit();
+            }
+        }
+
+        private void btProfile_Click(object sender, EventArgs e)
+        {
+            Active(btProfile);
+        }
     }
 }
