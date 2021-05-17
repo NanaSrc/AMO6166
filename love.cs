@@ -117,6 +117,8 @@ namespace amo6166
         private void btNanaPage_Click(object sender, EventArgs e)
         {
             Active(btNanaPage);
+            Nana nana = new Nana();
+            PanelShow(nana);
         }
 
         /*private void btInfo_Click(object sender, EventArgs e)
@@ -205,46 +207,60 @@ namespace amo6166
         private void btMarcoPage_Click(object sender, EventArgs e)
         {
             Active(btMarcoPage);
+            Marco marco = new Marco();
+            PanelShow(marco);
         }
 
         private void btGame_Click(object sender, EventArgs e)
         {
             Active(btGame);
+            Game game = new Game();
+            PanelShow(game);
         }
 
         private void btTerm_Click(object sender, EventArgs e)
         {
             Active(btTerm);
+            Terminal term = new Terminal(username);
+            PanelShow(term);
         }
 
         private void btGallery_Click(object sender, EventArgs e)
         {
             Active(btGallery);
+            Galeria gallery = new Galeria();
+            PanelShow(gallery);
         }
 
         private void btSite_Click(object sender, EventArgs e)
         {
             Active(btSite);
+            Site site = new Site();
+            PanelShow(site);
         }
 
         private void btPainting_Click(object sender, EventArgs e)
         {
             Active(btPainting);
+            panel.Controls.Clear();
         }
 
         private void btMovie_Click(object sender, EventArgs e)
         {
             Active(btMovie);
+            panel.Controls.Clear();
         }
 
         private void btLibrary_Click(object sender, EventArgs e)
         {
             Active(btLibrary);
+            panel.Controls.Clear();
         }
 
         private void btFireplace_Click(object sender, EventArgs e)
         {
             Active(btFireplace);
+            panel.Controls.Clear();
         }
 
         private void btMain_Click(object sender, EventArgs e)
@@ -268,6 +284,8 @@ namespace amo6166
         private void btProfile_Click(object sender, EventArgs e)
         {
             Active(btProfile);
+            Profile profile = new Profile(username);
+            PanelShow(profile);
         }
     }
 }
