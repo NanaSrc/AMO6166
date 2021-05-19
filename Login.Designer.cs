@@ -304,7 +304,7 @@ namespace amo6166
             this.Opacity = 0.96D;
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Purple;
-            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
+            this.Text = "6166";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.Login_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
