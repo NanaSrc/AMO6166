@@ -343,5 +343,30 @@ namespace amo6166
                     break;
             }
         }
+
+        private void rbDark_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
+        }
+
+        private void ChangeTheme(MetroFramework.MetroThemeStyle theme)
+        {
+            Theme = theme;
+            rbDark.Theme = theme;
+            rbLight.Theme = theme;
+            metroLabel1.Theme = theme;
+            metroLabel2.Theme = theme;
+            metroLabel3.Theme = theme;
+            metroLabel4.Theme = theme;
+            lbLogin.Theme = theme; ;
+            lbUser.Theme = theme;
+            cbTheme.Theme = theme;
+            UpdateStyles();
+        }
+
+        private void rbLight_CheckedChanged(object sender, EventArgs e)
+        {
+            ChangeTheme(MetroFramework.MetroThemeStyle.Light);
+        }
     }
 }
