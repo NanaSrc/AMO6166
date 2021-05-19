@@ -27,6 +27,7 @@ namespace amo6166
         {
             lbUser.Text = username;
             lbLogin.Text = login;
+            Active(btMain);
         }
         
         /*
