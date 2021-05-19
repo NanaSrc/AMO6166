@@ -57,6 +57,8 @@ namespace amo6166
             this.btExit = new System.Windows.Forms.Button();
             this.cbTheme = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
+            this.rbLight = new MetroFramework.Controls.MetroRadioButton();
+            this.rbDark = new MetroFramework.Controls.MetroRadioButton();
             this.SuspendLayout();
             // 
             // panel
@@ -477,9 +479,9 @@ namespace amo6166
             "Teal",
             "White",
             "Yellow"});
-            this.cbTheme.Location = new System.Drawing.Point(735, 49);
+            this.cbTheme.Location = new System.Drawing.Point(750, 49);
             this.cbTheme.Name = "cbTheme";
-            this.cbTheme.Size = new System.Drawing.Size(154, 29);
+            this.cbTheme.Size = new System.Drawing.Size(139, 29);
             this.cbTheme.Style = MetroFramework.MetroColorStyle.Purple;
             this.cbTheme.TabIndex = 0;
             this.cbTheme.Theme = MetroFramework.MetroThemeStyle.Dark;
@@ -491,7 +493,7 @@ namespace amo6166
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.metroLabel4.Location = new System.Drawing.Point(688, 53);
+            this.metroLabel4.Location = new System.Drawing.Point(703, 53);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(41, 19);
             this.metroLabel4.Style = MetroFramework.MetroColorStyle.Purple;
@@ -500,6 +502,35 @@ namespace amo6166
             this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel4.UseCustomForeColor = true;
             // 
+            // rbLight
+            // 
+            this.rbLight.AutoSize = true;
+            this.rbLight.Location = new System.Drawing.Point(580, 57);
+            this.rbLight.Name = "rbLight";
+            this.rbLight.Size = new System.Drawing.Size(50, 15);
+            this.rbLight.Style = MetroFramework.MetroColorStyle.Purple;
+            this.rbLight.TabIndex = 74;
+            this.rbLight.Text = "Light";
+            this.rbLight.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.rbLight.UseSelectable = true;
+            this.rbLight.UseStyleColors = true;
+            this.rbLight.CheckedChanged += new System.EventHandler(this.rbLight_CheckedChanged);
+            // 
+            // rbDark
+            // 
+            this.rbDark.AutoSize = true;
+            this.rbDark.Location = new System.Drawing.Point(636, 57);
+            this.rbDark.Name = "rbDark";
+            this.rbDark.Size = new System.Drawing.Size(47, 15);
+            this.rbDark.Style = MetroFramework.MetroColorStyle.Purple;
+            this.rbDark.TabIndex = 75;
+            this.rbDark.Text = "Dark";
+            this.rbDark.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.rbDark.UseSelectable = true;
+            this.rbDark.UseStyleColors = true;
+            this.rbDark.UseVisualStyleBackColor = false;
+            this.rbDark.CheckedChanged += new System.EventHandler(this.rbDark_CheckedChanged);
+            // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -507,6 +538,8 @@ namespace amo6166
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.rbDark);
+            this.Controls.Add(this.rbLight);
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.cbTheme);
             this.Controls.Add(this.btExit);
@@ -577,5 +610,7 @@ namespace amo6166
         private System.Windows.Forms.Button btExit;
         private MetroFramework.Controls.MetroComboBox cbTheme;
         private MetroFramework.Controls.MetroLabel metroLabel4;
+        private MetroFramework.Controls.MetroRadioButton rbLight;
+        private MetroFramework.Controls.MetroRadioButton rbDark;
     }
 }
