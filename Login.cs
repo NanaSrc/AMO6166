@@ -13,11 +13,17 @@ namespace amo6166
         int error = 0;
         string username;
         int hint = 1;
+        public love lov;
+        public Login log;
+        public Login(Login log)
+        {
+            InitializeComponent();
+            this.log = log;
+        }
         public Login()
         {
             InitializeComponent();
         }
-
         private void Login_Load(object sender, EventArgs e)
         {
             tbNome.Focus();
@@ -97,8 +103,8 @@ namespace amo6166
             if (user.Ama && user.Nomec && user.Keyc)
             {
                 this.Hide();
-                love m = new love(username, user.Nome);
-                m.ShowDialog();
+                lov = new love(username, user.Nome);
+                lov.ShowDialog();
                 this.Close();
                 //m.Show();
             }
