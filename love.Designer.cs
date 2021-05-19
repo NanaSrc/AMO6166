@@ -88,7 +88,7 @@ namespace amo6166
             this.metroLabel1.Name = "metroLabel1";
             this.metroLabel1.Size = new System.Drawing.Size(63, 19);
             this.metroLabel1.Style = MetroFramework.MetroColorStyle.Purple;
-            this.metroLabel1.TabIndex = 14;
+            this.metroLabel1.TabIndex = 0;
             this.metroLabel1.Text = "Usuário: ";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel1.UseStyleColors = true;
@@ -101,7 +101,7 @@ namespace amo6166
             this.metroLabel2.Name = "metroLabel2";
             this.metroLabel2.Size = new System.Drawing.Size(46, 19);
             this.metroLabel2.Style = MetroFramework.MetroColorStyle.Purple;
-            this.metroLabel2.TabIndex = 15;
+            this.metroLabel2.TabIndex = 0;
             this.metroLabel2.Text = "Login:";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel2.UseStyleColors = true;
@@ -114,7 +114,7 @@ namespace amo6166
             this.lbLogin.Location = new System.Drawing.Point(1178, 53);
             this.lbLogin.Name = "lbLogin";
             this.lbLogin.Size = new System.Drawing.Size(65, 19);
-            this.lbLogin.TabIndex = 16;
+            this.lbLogin.TabIndex = 0;
             this.lbLogin.Text = "Anônimo";
             this.lbLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbLogin.UseCustomForeColor = true;
@@ -127,7 +127,7 @@ namespace amo6166
             this.lbUser.Location = new System.Drawing.Point(1069, 53);
             this.lbUser.Name = "lbUser";
             this.lbUser.Size = new System.Drawing.Size(65, 19);
-            this.lbUser.TabIndex = 17;
+            this.lbUser.TabIndex = 0;
             this.lbUser.Text = "Anônimo";
             this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbUser.UseCustomForeColor = true;
@@ -224,7 +224,7 @@ namespace amo6166
             this.btLogout.Location = new System.Drawing.Point(1271, 53);
             this.btLogout.Name = "btLogout";
             this.btLogout.Size = new System.Drawing.Size(49, 17);
-            this.btLogout.TabIndex = 58;
+            this.btLogout.TabIndex = 17;
             this.btLogout.Text = "Logout";
             this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
@@ -242,7 +242,7 @@ namespace amo6166
             this.btNanaPage.Location = new System.Drawing.Point(20, 155);
             this.btNanaPage.Name = "btNanaPage";
             this.btNanaPage.Size = new System.Drawing.Size(177, 46);
-            this.btNanaPage.TabIndex = 59;
+            this.btNanaPage.TabIndex = 2;
             this.btNanaPage.Text = "☆ Nana\'s computer";
             this.btNanaPage.UseVisualStyleBackColor = true;
             this.btNanaPage.Click += new System.EventHandler(this.btNanaPage_Click);
@@ -260,7 +260,7 @@ namespace amo6166
             this.btMarcoPage.Location = new System.Drawing.Point(19, 207);
             this.btMarcoPage.Name = "btMarcoPage";
             this.btMarcoPage.Size = new System.Drawing.Size(178, 46);
-            this.btMarcoPage.TabIndex = 60;
+            this.btMarcoPage.TabIndex = 3;
             this.btMarcoPage.Text = "☆ Marco\'s computer";
             this.btMarcoPage.UseVisualStyleBackColor = true;
             this.btMarcoPage.Click += new System.EventHandler(this.btMarcoPage_Click);
@@ -278,7 +278,7 @@ namespace amo6166
             this.btGallery.Location = new System.Drawing.Point(18, 363);
             this.btGallery.Name = "btGallery";
             this.btGallery.Size = new System.Drawing.Size(179, 46);
-            this.btGallery.TabIndex = 61;
+            this.btGallery.TabIndex = 6;
             this.btGallery.Text = "☆ Wonderful gallery ";
             this.btGallery.UseVisualStyleBackColor = true;
             this.btGallery.Click += new System.EventHandler(this.btGallery_Click);
@@ -296,7 +296,7 @@ namespace amo6166
             this.btTerm.Location = new System.Drawing.Point(18, 311);
             this.btTerm.Name = "btTerm";
             this.btTerm.Size = new System.Drawing.Size(179, 46);
-            this.btTerm.TabIndex = 62;
+            this.btTerm.TabIndex = 5;
             this.btTerm.Text = "☆ Console text";
             this.btTerm.UseVisualStyleBackColor = true;
             this.btTerm.Click += new System.EventHandler(this.btTerm_Click);
@@ -314,7 +314,7 @@ namespace amo6166
             this.btGame.Location = new System.Drawing.Point(18, 259);
             this.btGame.Name = "btGame";
             this.btGame.Size = new System.Drawing.Size(179, 46);
-            this.btGame.TabIndex = 63;
+            this.btGame.TabIndex = 4;
             this.btGame.Text = "☆ A simple game";
             this.btGame.UseVisualStyleBackColor = true;
             this.btGame.Click += new System.EventHandler(this.btGame_Click);
@@ -332,7 +332,7 @@ namespace amo6166
             this.btSite.Location = new System.Drawing.Point(18, 623);
             this.btSite.Name = "btSite";
             this.btSite.Size = new System.Drawing.Size(179, 46);
-            this.btSite.TabIndex = 64;
+            this.btSite.TabIndex = 11;
             this.btSite.Text = "☆ amo6166.com";
             this.btSite.UseVisualStyleBackColor = true;
             this.btSite.Click += new System.EventHandler(this.btSite_Click);
@@ -348,7 +348,7 @@ namespace amo6166
             this.btProfile.Location = new System.Drawing.Point(915, 50);
             this.btProfile.Name = "btProfile";
             this.btProfile.Size = new System.Drawing.Size(89, 26);
-            this.btProfile.TabIndex = 65;
+            this.btProfile.TabIndex = 16;
             this.btProfile.Text = "Profile";
             this.btProfile.UseVisualStyleBackColor = true;
             this.btProfile.Click += new System.EventHandler(this.btProfile_Click);
@@ -366,7 +366,7 @@ namespace amo6166
             this.btPainting.Location = new System.Drawing.Point(18, 415);
             this.btPainting.Name = "btPainting";
             this.btPainting.Size = new System.Drawing.Size(179, 46);
-            this.btPainting.TabIndex = 67;
+            this.btPainting.TabIndex = 7;
             this.btPainting.Text = "☆ Painting room";
             this.btPainting.UseVisualStyleBackColor = true;
             this.btPainting.Click += new System.EventHandler(this.btPainting_Click);
@@ -384,7 +384,7 @@ namespace amo6166
             this.btMovie.Location = new System.Drawing.Point(18, 467);
             this.btMovie.Name = "btMovie";
             this.btMovie.Size = new System.Drawing.Size(179, 46);
-            this.btMovie.TabIndex = 68;
+            this.btMovie.TabIndex = 8;
             this.btMovie.Text = "☆ Movie room";
             this.btMovie.UseVisualStyleBackColor = true;
             this.btMovie.Click += new System.EventHandler(this.btMovie_Click);
@@ -402,7 +402,7 @@ namespace amo6166
             this.btLibrary.Location = new System.Drawing.Point(18, 519);
             this.btLibrary.Name = "btLibrary";
             this.btLibrary.Size = new System.Drawing.Size(179, 46);
-            this.btLibrary.TabIndex = 69;
+            this.btLibrary.TabIndex = 9;
             this.btLibrary.Text = "☆ A library";
             this.btLibrary.UseVisualStyleBackColor = true;
             this.btLibrary.Click += new System.EventHandler(this.btLibrary_Click);
@@ -420,7 +420,7 @@ namespace amo6166
             this.btFireplace.Location = new System.Drawing.Point(18, 571);
             this.btFireplace.Name = "btFireplace";
             this.btFireplace.Size = new System.Drawing.Size(179, 46);
-            this.btFireplace.TabIndex = 70;
+            this.btFireplace.TabIndex = 10;
             this.btFireplace.Text = "☆ Warm fireplace";
             this.btFireplace.UseVisualStyleBackColor = true;
             this.btFireplace.Click += new System.EventHandler(this.btFireplace_Click);
@@ -438,7 +438,7 @@ namespace amo6166
             this.btMain.Location = new System.Drawing.Point(20, 103);
             this.btMain.Name = "btMain";
             this.btMain.Size = new System.Drawing.Size(177, 46);
-            this.btMain.TabIndex = 71;
+            this.btMain.TabIndex = 1;
             this.btMain.Text = "☆ Main hall";
             this.btMain.UseVisualStyleBackColor = true;
             this.btMain.Click += new System.EventHandler(this.btMain_Click);
@@ -456,7 +456,7 @@ namespace amo6166
             this.btExit.Location = new System.Drawing.Point(18, 682);
             this.btExit.Name = "btExit";
             this.btExit.Size = new System.Drawing.Size(179, 46);
-            this.btExit.TabIndex = 72;
+            this.btExit.TabIndex = 12;
             this.btExit.Text = "☆ Exit light";
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
@@ -483,7 +483,7 @@ namespace amo6166
             this.cbTheme.Name = "cbTheme";
             this.cbTheme.Size = new System.Drawing.Size(139, 29);
             this.cbTheme.Style = MetroFramework.MetroColorStyle.Purple;
-            this.cbTheme.TabIndex = 0;
+            this.cbTheme.TabIndex = 15;
             this.cbTheme.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.cbTheme.UseSelectable = true;
             this.cbTheme.SelectedIndexChanged += new System.EventHandler(this.cbTheme_SelectedIndexChanged);
@@ -509,7 +509,7 @@ namespace amo6166
             this.rbLight.Name = "rbLight";
             this.rbLight.Size = new System.Drawing.Size(50, 15);
             this.rbLight.Style = MetroFramework.MetroColorStyle.Purple;
-            this.rbLight.TabIndex = 74;
+            this.rbLight.TabIndex = 13;
             this.rbLight.Text = "Light";
             this.rbLight.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbLight.UseSelectable = true;
@@ -523,7 +523,7 @@ namespace amo6166
             this.rbDark.Name = "rbDark";
             this.rbDark.Size = new System.Drawing.Size(47, 15);
             this.rbDark.Style = MetroFramework.MetroColorStyle.Purple;
-            this.rbDark.TabIndex = 75;
+            this.rbDark.TabIndex = 14;
             this.rbDark.Text = "Dark";
             this.rbDark.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbDark.UseSelectable = true;

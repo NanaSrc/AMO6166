@@ -89,7 +89,7 @@ namespace amo6166
             this.tbSenha.Name = "tbSenha";
             this.tbSenha.PasswordChar = '♥';
             this.tbSenha.Size = new System.Drawing.Size(322, 23);
-            this.tbSenha.TabIndex = 36;
+            this.tbSenha.TabIndex = 2;
             this.tbSenha.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbSenha_KeyPress);
             // 
             // tbNome
@@ -97,7 +97,7 @@ namespace amo6166
             this.tbNome.Location = new System.Drawing.Point(151, 122);
             this.tbNome.Name = "tbNome";
             this.tbNome.Size = new System.Drawing.Size(408, 23);
-            this.tbNome.TabIndex = 35;
+            this.tbNome.TabIndex = 1;
             this.tbNome.TextChanged += new System.EventHandler(this.tbNome_TextChanged);
             this.tbNome.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbNome_KeyPress);
             // 
@@ -145,7 +145,7 @@ namespace amo6166
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(327, 36);
             this.btLogin.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btLogin.TabIndex = 38;
+            this.btLogin.TabIndex = 5;
             this.btLogin.Text = "Entrar";
             this.btLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btLogin.UseSelectable = true;
@@ -158,7 +158,7 @@ namespace amo6166
             this.btCancel.Name = "btCancel";
             this.btCancel.Size = new System.Drawing.Size(327, 36);
             this.btCancel.Style = MetroFramework.MetroColorStyle.Purple;
-            this.btCancel.TabIndex = 39;
+            this.btCancel.TabIndex = 6;
             this.btCancel.Text = "Cancelar";
             this.btCancel.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.btCancel.UseSelectable = true;
@@ -183,7 +183,7 @@ namespace amo6166
             this.rbMoon.Name = "rbMoon";
             this.rbMoon.Size = new System.Drawing.Size(140, 15);
             this.rbMoon.Style = MetroFramework.MetroColorStyle.Red;
-            this.rbMoon.TabIndex = 44;
+            this.rbMoon.TabIndex = 3;
             this.rbMoon.Text = "to the moon and back";
             this.rbMoon.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbMoon.UseSelectable = true;
@@ -197,7 +197,7 @@ namespace amo6166
             this.rbSummer.Name = "rbSummer";
             this.rbSummer.Size = new System.Drawing.Size(152, 15);
             this.rbSummer.Style = MetroFramework.MetroColorStyle.Blue;
-            this.rbSummer.TabIndex = 45;
+            this.rbSummer.TabIndex = 4;
             this.rbSummer.Text = "to the summer and back";
             this.rbSummer.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbSummer.UseSelectable = true;
