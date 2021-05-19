@@ -574,6 +574,7 @@ namespace amo6166
             this.Opacity = 0.98D;
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Black;
+            this.Text = " ☆";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.love_Load);
             this.ResumeLayout(false);

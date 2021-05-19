@@ -31,20 +31,6 @@ namespace amo6166
             cbTheme.SelectedIndex = 0;
         }
 
-        /*
-        private void DefaultColor()
-        {
-            btTerminal.BackColor = Color.FromArgb(31, 29, 39);
-            btNanaDiario.BackColor = Color.FromArgb(31, 29, 39);
-            btMarcoDiario.BackColor = Color.FromArgb(31, 29, 39);
-            btMenu.BackColor = Color.FromArgb(31, 29, 39);
-            btAMO.BackColor = Color.FromArgb(31, 29, 39);
-            btGaleria.BackColor = Color.FromArgb(31, 29, 39);
-            btSite.BackColor = Color.FromArgb(31, 29, 39);
-            btGame.BackColor = Color.FromArgb(31, 29, 39);
-        }
-        */
-
         private void btSair_Click(object sender, EventArgs e)
         {
             //Cor(btSair);
@@ -71,19 +57,10 @@ namespace amo6166
             form.Show();
         }
 
-        private void btMenu_Click(object sender, EventArgs e)
+        /*private void btMenu_Click(object sender, EventArgs e)
         {
-            //Cor(btMenu);
             panel.Controls.Clear();
-        }
-
-        /*
-        private void Cor(Button bt)
-        {
-            DefaultColor();
-            bt.BackColor = Color.FromArgb(45, 41, 56);
-        }
-        */
+        }*/
 
         private void btLogout_Click(object sender, EventArgs e)
         {
@@ -118,9 +95,13 @@ namespace amo6166
 
         private void btNanaPage_Click(object sender, EventArgs e)
         {
-            Active(btNanaPage);
-            Nana nana = new Nana();
-            PanelShow(nana);
+            if (btNanaPage.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btNanaPage);
+                Nana nana = new Nana();
+                PanelShow(nana);
+                // SelectText(btNanaPage);
+            }
         }
 
         /*private void btInfo_Click(object sender, EventArgs e)
@@ -143,7 +124,7 @@ namespace amo6166
             bt.FlatAppearance.BorderColor = Color.FromArgb(152, 63, 104);
             bt.ForeColor = Color.FromArgb(183, 161, 255);
             bt.FlatAppearance.BorderSize = 2;
-
+            bt.Text = bt.Text + " ☆";
         }
 
         private void DefaultColor()
@@ -156,124 +137,180 @@ namespace amo6166
             btNanaPage.FlatAppearance.BorderColor = corB;
             btNanaPage.ForeColor = cor;
             btNanaPage.FlatAppearance.BorderSize = 1;
+            btNanaPage.Text = "☆ Nana's computer";
 
             btMarcoPage.FlatAppearance.BorderColor = corB;
             btMarcoPage.ForeColor = cor;
             btMarcoPage.FlatAppearance.BorderSize = 1;
+            btMarcoPage.Text = "☆ Marco's computer";
 
             btGame.FlatAppearance.BorderColor = corB;
             btGame.ForeColor = cor;
             btGame.FlatAppearance.BorderSize = 1;
+            btGame.Text = "☆ A simple game";
 
             btTerm.FlatAppearance.BorderColor = corB;
             btTerm.ForeColor = cor;
             btTerm.FlatAppearance.BorderSize = 1;
+            btTerm.Text = "☆ Console text";
 
             btGallery.FlatAppearance.BorderColor = corB;
             btGallery.ForeColor = cor;
             btGallery.FlatAppearance.BorderSize = 1;
+            btGallery.Text = "☆ Wonderful gallery";
 
             btSite.FlatAppearance.BorderColor = corB;
             btSite.ForeColor = cor;
             btSite.FlatAppearance.BorderSize = 1;
+            btSite.Text = "☆ amo6166.com";
 
             btPainting.FlatAppearance.BorderColor = corB;
             btPainting.ForeColor = cor;
             btPainting.FlatAppearance.BorderSize = 1;
+            btPainting.Text = "☆ Painting room";
 
             btMovie.FlatAppearance.BorderColor = corB;
             btMovie.ForeColor = cor;
             btMovie.FlatAppearance.BorderSize = 1;
+            btMovie.Text = "☆ Movie room";
 
             btLibrary.FlatAppearance.BorderColor = corB;
             btLibrary.ForeColor = cor;
             btLibrary.FlatAppearance.BorderSize = 1;
+            btLibrary.Text = "☆ A library";
 
             btFireplace.FlatAppearance.BorderColor = corB;
             btFireplace.ForeColor = cor;
             btFireplace.FlatAppearance.BorderSize = 1;
+            btFireplace.Text = "☆ Warm fireplace";
 
             btMain.FlatAppearance.BorderColor = corB;
             btMain.ForeColor = cor;
             btMain.FlatAppearance.BorderSize = 1;
+            btMain.Text = "☆ Main hall";
 
             btExit.FlatAppearance.BorderColor = corB;
             btExit.ForeColor = cor;
             btExit.FlatAppearance.BorderSize = 1;
+            btExit.Text = "☆ Exit light";
 
             btProfile.FlatAppearance.BorderColor = cor;
             btProfile.ForeColor = corB;
-            btExit.FlatAppearance.BorderSize = 1;
+            btProfile.FlatAppearance.BorderSize = 1;
+            btProfile.Text = "Profile";
         }
 
         private void btMarcoPage_Click(object sender, EventArgs e)
         {
-            Active(btMarcoPage);
-            Marco marco = new Marco();
-            PanelShow(marco);
+            if (btMarcoPage.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                btMarcoPage.Text = "Marco's computer";
+                Active(btMarcoPage);
+                Marco marco = new Marco();
+                PanelShow(marco);
+                //SelectText(btMarcoPage);
+            }
         }
 
         private void btGame_Click(object sender, EventArgs e)
         {
-            Active(btGame);
-            Game game = new Game();
-            PanelShow(game);
+            if (btGame.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btGame);
+                Game game = new Game();
+                PanelShow(game);
+                //SelectText(btGame);
+            }
         }
 
         private void btTerm_Click(object sender, EventArgs e)
         {
-            Active(btTerm);
-            Terminal term = new Terminal(username);
-            PanelShow(term);
+            if (btTerm.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btTerm);
+                Terminal term = new Terminal(username);
+                PanelShow(term);
+                //SelectText(btTerm);
+            }
         }
 
         private void btGallery_Click(object sender, EventArgs e)
         {
-            Active(btGallery);
-            Galeria gallery = new Galeria();
-            PanelShow(gallery);
+            if (btGallery.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btGallery);
+                Galeria gallery = new Galeria();
+                PanelShow(gallery);
+                //SelectText(btGallery);
+            }
         }
 
         private void btSite_Click(object sender, EventArgs e)
         {
-            Active(btSite);
-            Site site = new Site();
-            PanelShow(site);
+            if (btSite.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btSite);
+                Site site = new Site();
+                PanelShow(site);
+                //SelectText(btSite);
+            }
         }
 
         private void btPainting_Click(object sender, EventArgs e)
         {
-            Active(btPainting);
-            panel.Controls.Clear();
+            if (btPainting.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btPainting);
+                panel.Controls.Clear();
+                //SelectText(btPainting);
+            }
         }
 
         private void btMovie_Click(object sender, EventArgs e)
         {
-            Active(btMovie);
-            panel.Controls.Clear();
+            if (btMovie.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btMovie);
+                panel.Controls.Clear();
+                //SelectText(btMovie);
+            }
         }
 
         private void btLibrary_Click(object sender, EventArgs e)
         {
-            Active(btLibrary);
-            panel.Controls.Clear();
+            if (btLibrary.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btLibrary);
+                panel.Controls.Clear();
+                //SelectText(btLibrary);
+            }
         }
 
         private void btFireplace_Click(object sender, EventArgs e)
         {
-            Active(btFireplace);
-            panel.Controls.Clear();
+            if (btFireplace.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                Active(btFireplace);
+                panel.Controls.Clear();
+                //SelectText(btFireplace);
+            }
         }
 
         private void btMain_Click(object sender, EventArgs e)
         {
-            Active(btMain);
-            panel.Controls.Clear();
+            if(btMain.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255))
+            {
+                btMain.Text = "Main hall";
+                Active(btMain);
+                panel.Controls.Clear();
+                //SelectText(btMain);
+            }
         }
 
         private void btExit_Click(object sender, EventArgs e)
         {
             Active(btExit);
+            //SelectText(btMain);
             DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
             //I love you to the moon and back
             if (resultado == DialogResult.Yes)
@@ -285,9 +322,12 @@ namespace amo6166
 
         private void btProfile_Click(object sender, EventArgs e)
         {
-            Active(btProfile);
-            Profile profile = new Profile(username);
-            PanelShow(profile);
+            if (btProfile.FlatAppearance.BorderColor == Color.FromArgb(206, 191, 255))
+            {
+                Active(btProfile);
+                Profile profile = new Profile(username);
+                PanelShow(profile);
+            }
         }
 
         private void cbTheme_SelectedIndexChanged(object sender, EventArgs e)
@@ -368,6 +408,11 @@ namespace amo6166
         private void rbLight_CheckedChanged(object sender, EventArgs e)
         {
             ChangeTheme(MetroFramework.MetroThemeStyle.Light);
+        }
+
+        private void SelectText(Button bt)
+        {
+            bt.Text = bt.Text + " ☆";
         }
     }
 }
