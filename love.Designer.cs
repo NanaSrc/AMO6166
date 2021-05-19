@@ -55,6 +55,8 @@ namespace amo6166
             this.btFireplace = new System.Windows.Forms.Button();
             this.btMain = new System.Windows.Forms.Button();
             this.btExit = new System.Windows.Forms.Button();
+            this.cbTheme = new MetroFramework.Controls.MetroComboBox();
+            this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.SuspendLayout();
             // 
             // panel
@@ -457,6 +459,47 @@ namespace amo6166
             this.btExit.UseVisualStyleBackColor = true;
             this.btExit.Click += new System.EventHandler(this.btExit_Click);
             // 
+            // cbTheme
+            // 
+            this.cbTheme.ItemHeight = 23;
+            this.cbTheme.Items.AddRange(new object[] {
+            "Black",
+            "Blue",
+            "Brown",
+            "Green",
+            "Lime",
+            "Magenta",
+            "Orange",
+            "Pink",
+            "Purple",
+            "Red",
+            "Silver",
+            "Teal",
+            "White",
+            "Yellow"});
+            this.cbTheme.Location = new System.Drawing.Point(735, 49);
+            this.cbTheme.Name = "cbTheme";
+            this.cbTheme.Size = new System.Drawing.Size(154, 29);
+            this.cbTheme.Style = MetroFramework.MetroColorStyle.Purple;
+            this.cbTheme.TabIndex = 0;
+            this.cbTheme.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbTheme.UseSelectable = true;
+            this.cbTheme.SelectedIndexChanged += new System.EventHandler(this.cbTheme_SelectedIndexChanged);
+            // 
+            // metroLabel4
+            // 
+            this.metroLabel4.AutoSize = true;
+            this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
+            this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.metroLabel4.Location = new System.Drawing.Point(688, 53);
+            this.metroLabel4.Name = "metroLabel4";
+            this.metroLabel4.Size = new System.Drawing.Size(41, 19);
+            this.metroLabel4.Style = MetroFramework.MetroColorStyle.Purple;
+            this.metroLabel4.TabIndex = 73;
+            this.metroLabel4.Text = "Style:";
+            this.metroLabel4.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel4.UseCustomForeColor = true;
+            // 
             // love
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -464,6 +507,8 @@ namespace amo6166
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(1366, 768);
+            this.Controls.Add(this.metroLabel4);
+            this.Controls.Add(this.cbTheme);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btMain);
             this.Controls.Add(this.btSite);
@@ -530,5 +575,7 @@ namespace amo6166
         private System.Windows.Forms.Button btFireplace;
         private System.Windows.Forms.Button btMain;
         private System.Windows.Forms.Button btExit;
+        private MetroFramework.Controls.MetroComboBox cbTheme;
+        private MetroFramework.Controls.MetroLabel metroLabel4;
     }
 }

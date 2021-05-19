@@ -29,7 +29,7 @@ namespace amo6166
             lbLogin.Text = login;
             Active(btMain);
         }
-        
+
         /*
         private void DefaultColor()
         {
@@ -148,7 +148,7 @@ namespace amo6166
         private void DefaultColor()
         {
             Color cor = new Color();
-            cor = Color.FromArgb(206, 191, 255); 
+            cor = Color.FromArgb(206, 191, 255);
             Color corB = new Color();
             corB = Color.FromArgb(183, 161, 255);
 
@@ -169,7 +169,7 @@ namespace amo6166
             btTerm.FlatAppearance.BorderSize = 1;
 
             btGallery.FlatAppearance.BorderColor = corB;
-            btGallery.ForeColor = cor; 
+            btGallery.ForeColor = cor;
             btGallery.FlatAppearance.BorderSize = 1;
 
             btSite.FlatAppearance.BorderColor = corB;
@@ -185,7 +185,7 @@ namespace amo6166
             btMovie.FlatAppearance.BorderSize = 1;
 
             btLibrary.FlatAppearance.BorderColor = corB;
-            btLibrary.ForeColor = cor; 
+            btLibrary.ForeColor = cor;
             btLibrary.FlatAppearance.BorderSize = 1;
 
             btFireplace.FlatAppearance.BorderColor = corB;
@@ -287,6 +287,61 @@ namespace amo6166
             Active(btProfile);
             Profile profile = new Profile(username);
             PanelShow(profile);
+        }
+
+        private void cbTheme_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string theme = cbTheme.Text;
+            DetectStyle(theme);
+            UpdateStyles();
+        }
+        public void DetectStyle(string theme)
+        {
+            switch (theme)
+            {
+                case "Green":
+                    Style = MetroFramework.MetroColorStyle.Green;
+                    break;
+                case "Black":
+                    Style = MetroFramework.MetroColorStyle.Black;
+                    break;
+                case "White":
+                    Style = MetroFramework.MetroColorStyle.White;
+                    break;
+                case "Blue":
+                    Style = MetroFramework.MetroColorStyle.Blue;
+                    break;
+                case "Yellow":
+                    Style = MetroFramework.MetroColorStyle.Yellow;
+                    break;
+                case "Red":
+                    Style = MetroFramework.MetroColorStyle.Red;
+                    break;
+                case "Orange":
+                    Style = MetroFramework.MetroColorStyle.Orange;
+                    break;
+                case "Teal":
+                    Style = MetroFramework.MetroColorStyle.Teal;
+                    break;
+                case "Lime":
+                    Style = MetroFramework.MetroColorStyle.Lime;
+                    break;
+                case "Silver":
+                    Style = MetroFramework.MetroColorStyle.Magenta;
+                    break;
+                case "Pink":
+                    Style = MetroFramework.MetroColorStyle.Pink;
+                    break;
+                case "Brown":
+                    Style = MetroFramework.MetroColorStyle.Brown;
+                    break;
+                case "Purple":
+                    Style = MetroFramework.MetroColorStyle.Purple;
+                    break;
+                case "Magenta":
+                    Style = MetroFramework.MetroColorStyle.Magenta;
+                    break;
+            }
         }
     }
 }
