@@ -95,11 +95,7 @@ namespace amo6166
 
         private void btNanaPage_Click(object sender, EventArgs e)
         {
-            if (btNanaPage.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btNanaPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btNanaPage);
                 Nana nana = new Nana();
@@ -216,11 +212,7 @@ namespace amo6166
 
         private void btMarcoPage_Click(object sender, EventArgs e)
         {
-            if (btMarcoPage.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btMarcoPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 btMarcoPage.Text = "Marco's computer";
                 Active(btMarcoPage);
@@ -232,11 +224,7 @@ namespace amo6166
 
         private void btGame_Click(object sender, EventArgs e)
         {
-            if (btGame.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-                
-            }
-            else
+            if (btGame.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btGame);
                 Game game = new Game();
@@ -247,11 +235,7 @@ namespace amo6166
 
         private void btTerm_Click(object sender, EventArgs e)
         {
-            if (btTerm.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btTerm.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btTerm);
                 Terminal term = new Terminal(username);
@@ -262,11 +246,7 @@ namespace amo6166
 
         private void btGallery_Click(object sender, EventArgs e)
         {
-            if (btGallery.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btGallery.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btGallery);
                 Galeria gallery = new Galeria();
@@ -277,11 +257,7 @@ namespace amo6166
 
         private void btSite_Click(object sender, EventArgs e)
         {
-            if (btSite.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btSite.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btSite);
                 Site site = new Site();
@@ -292,11 +268,7 @@ namespace amo6166
 
         private void btPainting_Click(object sender, EventArgs e)
         {
-            if (btPainting.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btPainting.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btPainting);
                 panel.Controls.Clear();
@@ -306,11 +278,7 @@ namespace amo6166
 
         private void btMovie_Click(object sender, EventArgs e)
         {
-            if (btMovie.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btMovie.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btMovie);
                 panel.Controls.Clear();
@@ -320,11 +288,7 @@ namespace amo6166
 
         private void btLibrary_Click(object sender, EventArgs e)
         {
-            if (btLibrary.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btLibrary.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btLibrary);
                 panel.Controls.Clear();
@@ -334,7 +298,7 @@ namespace amo6166
 
         private void btFireplace_Click(object sender, EventArgs e)
         {
-            if (btFireplace.FlatAppearance.BorderColor == Color.FromArgb(183, 161, 255) || btMain.FlatAppearance.BorderColor == Color.FromArgb(31, 29, 39))
+            if (btFireplace.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btFireplace);
                 panel.Controls.Clear();
@@ -344,11 +308,7 @@ namespace amo6166
 
         private void btMain_Click(object sender, EventArgs e)
         {
-            if (btMain.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btMain.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 btMain.Text = "Main hall";
                 Active(btMain);
@@ -372,11 +332,7 @@ namespace amo6166
 
         private void btProfile_Click(object sender, EventArgs e)
         {
-            if (btSite.FlatAppearance.BorderColor == Color.FromArgb(152, 63, 104))
-            {
-
-            }
-            else
+            if (btSite.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btProfile);
                 Profile profile = new Profile(username);
@@ -441,57 +397,8 @@ namespace amo6166
 
         private void rbDark_CheckedChanged(object sender, EventArgs e)
         {
-            ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
-            //metroLabel1.ForeColor = Color.FromArgb(31, 29, 39);
-            //metroLabel2.ForeColor = Color.FromArgb(31, 29, 39);
-            metroLabel3.ForeColor = default;
-            metroLabel4.ForeColor = default;
-            label1.ForeColor = default;
-            label2.ForeColor = default;
-            label3.ForeColor = default;
-            btMain.ForeColor = default;
-            btMain.FlatAppearance.BorderColor = default;
-
-            btNanaPage.ForeColor = default;
-            btNanaPage.FlatAppearance.BorderColor = default;
-
-            btMarcoPage.ForeColor = default;
-            btMarcoPage.FlatAppearance.BorderColor = default;
-
-            btTerm.ForeColor = default;
-            btTerm.FlatAppearance.BorderColor = default;
-
-            btPainting.ForeColor = default;
-            btPainting.FlatAppearance.BorderColor = default;
-
-            btMovie.ForeColor = default;
-            btMovie.FlatAppearance.BorderColor = default;
-
-            btGallery.ForeColor = default;
-            btGallery.FlatAppearance.BorderColor = default;
-
-            btGame.ForeColor = default;
-            btGallery.FlatAppearance.BorderColor = default;
-
-            btSite.ForeColor = default;
-            btSite.FlatAppearance.BorderColor = default;
-
-            btLibrary.ForeColor = default;
-            btLibrary.FlatAppearance.BorderColor = default;
-
-            btFireplace.ForeColor = default;
-            btFireplace.FlatAppearance.BorderColor = default;
-
-            btExit.ForeColor = default;
-            btExit.FlatAppearance.BorderColor = default;
-
-            btProfile.ForeColor = default;
-            btProfile.FlatAppearance.BorderColor = default;
-
-            lbUser.ForeColor = default;
-            lbLogin.ForeColor = default;
-            lbInfo.ForeColor = default;
-            btLogout.ForeColor = default;
+            //if (!rbDark.Checked)
+                ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
         }
 
         private void ChangeTheme(MetroFramework.MetroThemeStyle theme)
@@ -507,61 +414,117 @@ namespace amo6166
             lbUser.Theme = theme;
             cbTheme.Theme = theme;
             UpdateStyles();
+
+            if(theme == MetroFramework.MetroThemeStyle.Light)
+            {
+                metroLabel3.ForeColor = Color.Black;
+                metroLabel4.ForeColor = Color.FromArgb(31, 29, 39);
+                label1.ForeColor = Color.Black;
+                label2.ForeColor = Color.FromArgb(31, 29, 39);
+                label3.ForeColor = Color.Black;
+                btMain.ForeColor = Color.FromArgb(31, 29, 39);
+                btMain.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btNanaPage.ForeColor = Color.FromArgb(31, 29, 39);
+                btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btMarcoPage.ForeColor = Color.FromArgb(31, 29, 39);
+                btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btTerm.ForeColor = Color.FromArgb(31, 29, 39);
+                btTerm.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btPainting.ForeColor = Color.FromArgb(31, 29, 39);
+                btPainting.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btMovie.ForeColor = Color.FromArgb(31, 29, 39);
+                btMovie.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btGallery.ForeColor = Color.FromArgb(31, 29, 39);
+                btGallery.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btGame.ForeColor = Color.FromArgb(31, 29, 39);
+                btGame.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btSite.ForeColor = Color.FromArgb(31, 29, 39);
+                btSite.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btLibrary.ForeColor = Color.FromArgb(31, 29, 39);
+                btLibrary.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btFireplace.ForeColor = Color.FromArgb(31, 29, 39);
+                btFireplace.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btExit.ForeColor = Color.FromArgb(31, 29, 39);
+                btExit.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                btProfile.ForeColor = Color.FromArgb(31, 29, 39);
+                btProfile.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+
+                lbUser.ForeColor = Color.FromArgb(31, 29, 39);
+                lbLogin.ForeColor = Color.FromArgb(31, 29, 39);
+                lbInfo.ForeColor = Color.Black;
+                btLogout.ForeColor = Color.FromArgb(152, 32, 250);
+            }
+            else if (theme == MetroFramework.MetroThemeStyle.Dark)
+            {
+                //metroLabel1.ForeColor = Color.FromArgb(31, 29, 39);
+                //metroLabel2.ForeColor = Color.FromArgb(31, 29, 39);
+                metroLabel3.ForeColor = Color.FromArgb(64, 64, 64);
+                metroLabel4.ForeColor = Color.FromArgb(183, 161, 255);
+                label1.ForeColor = Color.White;
+                label2.ForeColor = Color.FromArgb(183, 161, 255);
+                label3.ForeColor = Color.DarkGray;
+                btMain.ForeColor = Color.FromArgb(224, 215, 255);
+                btMain.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btNanaPage.ForeColor = Color.FromArgb(224, 215, 255);
+                btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btMarcoPage.ForeColor = Color.FromArgb(224, 215, 255);
+                btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btTerm.ForeColor = Color.FromArgb(224, 215, 255);
+                btTerm.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btPainting.ForeColor = Color.FromArgb(224, 215, 255);
+                btPainting.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btMovie.ForeColor = Color.FromArgb(224, 215, 255);
+                btMovie.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btGallery.ForeColor = Color.FromArgb(224, 215, 255);
+                btGallery.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btGame.ForeColor = Color.FromArgb(224, 215, 255);
+                btGame.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btSite.ForeColor = Color.FromArgb(224, 215, 255);
+                btSite.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btLibrary.ForeColor = Color.FromArgb(224, 215, 255);
+                btLibrary.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btFireplace.ForeColor = Color.FromArgb(224, 215, 255);
+                btFireplace.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btExit.ForeColor = Color.FromArgb(224, 215, 255);
+                btExit.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+
+                btProfile.ForeColor = Color.FromArgb(183, 161, 255);
+                btProfile.FlatAppearance.BorderColor = Color.FromArgb(206, 191, 255);
+
+                lbUser.ForeColor = Color.White;
+                lbLogin.ForeColor = Color.White;
+                lbInfo.ForeColor = Color.DarkGray;
+                btLogout.ForeColor = Color.FromArgb(183, 161, 255);
+            }
         }
 
         private void rbLight_CheckedChanged(object sender, EventArgs e)
         {
-            ChangeTheme(MetroFramework.MetroThemeStyle.Light);
-            //metroLabel1.ForeColor = Color.FromArgb(31, 29, 39);
-            //metroLabel2.ForeColor = Color.FromArgb(31, 29, 39);
-            metroLabel3.ForeColor = Color.Black;
-            metroLabel4.ForeColor = Color.FromArgb(31, 29, 39);
-            label1.ForeColor = Color.Black; 
-            label2.ForeColor = Color.FromArgb(31, 29, 39);
-            label3.ForeColor = Color.Black;
-            btMain.ForeColor = Color.FromArgb(31, 29, 39);
-            btMain.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56); 
-
-            btNanaPage.ForeColor = Color.FromArgb(31, 29, 39);
-            btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btMarcoPage.ForeColor = Color.FromArgb(31, 29, 39);
-            btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btTerm.ForeColor = Color.FromArgb(31, 29, 39);
-            btTerm.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btPainting.ForeColor = Color.FromArgb(31, 29, 39);
-            btPainting.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btMovie.ForeColor = Color.FromArgb(31, 29, 39);
-            btMovie.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btGallery.ForeColor = Color.FromArgb(31, 29, 39);
-            btGallery.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btGame.ForeColor = Color.FromArgb(31, 29, 39);
-            btGallery.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btSite.ForeColor = Color.FromArgb(31, 29, 39);
-            btSite.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btLibrary.ForeColor = Color.FromArgb(31, 29, 39);
-            btLibrary.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btFireplace.ForeColor = Color.FromArgb(31, 29, 39);
-            btFireplace.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btExit.ForeColor = Color.FromArgb(31, 29, 39);
-            btExit.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            btProfile.ForeColor = Color.FromArgb(31, 29, 39);
-            btProfile.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-
-            lbUser.ForeColor = Color.FromArgb(31, 29, 39);
-            lbLogin.ForeColor = Color.FromArgb(31, 29, 39);
-            lbInfo.ForeColor = Color.Black;
-            btLogout.ForeColor = Color.FromArgb(152, 32, 250);
+            //if (!rbLight.Checked)
+                ChangeTheme(MetroFramework.MetroThemeStyle.Light);
         }
 
         private void SelectText(Button bt)
