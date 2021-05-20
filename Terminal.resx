@@ -98,13 +98,13 @@ That's all folks!
    Comecei a escrever esse relatório no meio da semana pois tentei implementar coisas novas e acabei por complicar muito o programa. Então, a fim de listar tudo e colocar em ordem o as coisas (que eu sei que consigo resolver), vou relatar por tópicos algumas das coisas que precisam de atenção e resolução agora. No momento eu tenho trabalhado apenas no design do programa, ou seja, deixar dinâmico, dar a possibilidade de trocar o tema, as cores e personalizar de acordo com o gosto do usuário, apesar de ser apenas para duas pessoas, achei que poderia ser interessante e desafiador implementar isso tudo, visto que é um programa com muitas labels e botões. 
 Implementei a opção de trocar o tema de "dark" para "light", inclusive com uma referência a uma música famosa do Metallica, e essa função estava funcionando, porém as cores dos botões e das labels mal apareciam, por isso decidi trocar todas as cores de acordo com o tema. Entretanto, os botões só ativam se tiverem de uma determinada cor e ao clicar neles, todos voltam às cores originais, por isso tive que mexer aí também e então aconteceu:
 
-- No tema claro todos os botões e labels ficam escuros;
-- Ao voltar para o tema escuro ou apenas clicar no RadioButton dele, o programa fica todo escuro mesclando as cores e não dando para enxergar as coisas corretamente;
-- No tema claro, os botões não são ativados pois estão escuros;
-- A cor da borda do botão selecionado não muda no tema claro nem no tema escuro quando todos os botões estão escuros;
+- No tema claro todos os botões e labels ficam escuros; - Solved
+- Ao voltar para o tema escuro ou apenas clicar no RadioButton dele, o programa fica todo escuro mesclando as cores e não dando para enxergar as coisas corretamente; - Solved
+- No tema claro, os botões não são ativados pois estão escuros; - Solved
+- A cor da borda do botão selecionado não muda no tema claro nem no tema escuro quando todos os botões estão escuros; - Solved
 - A cor de click permanece escura para os dois temas;
 - A cor de passar o mouse em cima não fica boa no tema claro;
-- Ao clicar em algum botão, todos os outros ficam de cores diferentes se for no tema claro.
+- Ao clicar em algum botão, todos os outros ficam de cores diferentes se for no tema claro. - Solved
 
 Preciso resolver essas coisas o mais rápido possível ou irei desistir de implementar o tema claro no programa.
 That's all folks!
