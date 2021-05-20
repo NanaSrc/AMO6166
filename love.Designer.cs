@@ -571,7 +571,7 @@ namespace amo6166
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "love";
-            this.Opacity = 0.98D;
+            this.Opacity = 0.96D;
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Black;
             this.Text = " ☆";
