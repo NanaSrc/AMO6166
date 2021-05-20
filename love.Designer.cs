@@ -63,7 +63,7 @@ namespace amo6166
             // 
             // panel
             // 
-            this.panel.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel.BackgroundImage")));
+            this.panel.BackgroundImage = global::amo6166.Properties.Resources.US2;
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;

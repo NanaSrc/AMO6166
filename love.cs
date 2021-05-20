@@ -417,57 +417,88 @@ namespace amo6166
 
             if(theme == MetroFramework.MetroThemeStyle.Light)
             {
+                panel.BackgroundImage = Properties.Resources.Light_Theme;
                 metroLabel3.ForeColor = Color.Black;
                 metroLabel4.ForeColor = Color.FromArgb(31, 29, 39);
                 label1.ForeColor = Color.Black;
                 label2.ForeColor = Color.FromArgb(31, 29, 39);
                 label3.ForeColor = Color.Black;
+
                 btMain.ForeColor = Color.FromArgb(31, 29, 39);
                 btMain.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btMain.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btMain.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btNanaPage.ForeColor = Color.FromArgb(31, 29, 39);
                 btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btNanaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btNanaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btMarcoPage.ForeColor = Color.FromArgb(31, 29, 39);
                 btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btMarcoPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btMarcoPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btTerm.ForeColor = Color.FromArgb(31, 29, 39);
                 btTerm.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btTerm.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btTerm.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btPainting.ForeColor = Color.FromArgb(31, 29, 39);
                 btPainting.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btPainting.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btPainting.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btMovie.ForeColor = Color.FromArgb(31, 29, 39);
                 btMovie.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btMovie.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btMovie.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btGallery.ForeColor = Color.FromArgb(31, 29, 39);
                 btGallery.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btGallery.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btGallery.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btGame.ForeColor = Color.FromArgb(31, 29, 39);
                 btGame.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btGame.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btGame.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btSite.ForeColor = Color.FromArgb(31, 29, 39);
                 btSite.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btSite.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btSite.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btLibrary.ForeColor = Color.FromArgb(31, 29, 39);
                 btLibrary.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btLibrary.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btLibrary.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btFireplace.ForeColor = Color.FromArgb(31, 29, 39);
                 btFireplace.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btFireplace.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btFireplace.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btExit.ForeColor = Color.FromArgb(31, 29, 39);
                 btExit.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btExit.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btProfile.ForeColor = Color.FromArgb(31, 29, 39);
                 btProfile.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btProfile.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btProfile.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 lbUser.ForeColor = Color.FromArgb(31, 29, 39);
                 lbLogin.ForeColor = Color.FromArgb(31, 29, 39);
                 lbInfo.ForeColor = Color.Black;
                 btLogout.ForeColor = Color.FromArgb(152, 32, 250);
+
+                //Light theme
             }
             else if (theme == MetroFramework.MetroThemeStyle.Dark)
             {
+                panel.BackgroundImage = Properties.Resources.US2;
                 //metroLabel1.ForeColor = Color.FromArgb(31, 29, 39);
                 //metroLabel2.ForeColor = Color.FromArgb(31, 29, 39);
                 metroLabel3.ForeColor = Color.FromArgb(64, 64, 64);
@@ -475,49 +506,78 @@ namespace amo6166
                 label1.ForeColor = Color.White;
                 label2.ForeColor = Color.FromArgb(183, 161, 255);
                 label3.ForeColor = Color.DarkGray;
+
                 btMain.ForeColor = Color.FromArgb(224, 215, 255);
                 btMain.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btMain.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btMain.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btNanaPage.ForeColor = Color.FromArgb(224, 215, 255);
                 btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btNanaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btNanaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btMarcoPage.ForeColor = Color.FromArgb(224, 215, 255);
                 btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btMarcoPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btMarcoPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btTerm.ForeColor = Color.FromArgb(224, 215, 255);
                 btTerm.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btTerm.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btTerm.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btPainting.ForeColor = Color.FromArgb(224, 215, 255);
                 btPainting.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btPainting.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btPainting.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btMovie.ForeColor = Color.FromArgb(224, 215, 255);
                 btMovie.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btMovie.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btMovie.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btGallery.ForeColor = Color.FromArgb(224, 215, 255);
                 btGallery.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btGallery.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btGallery.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btGame.ForeColor = Color.FromArgb(224, 215, 255);
                 btGame.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btGame.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btGame.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btSite.ForeColor = Color.FromArgb(224, 215, 255);
                 btSite.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btSite.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btSite.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btLibrary.ForeColor = Color.FromArgb(224, 215, 255);
                 btLibrary.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btLibrary.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btLibrary.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btFireplace.ForeColor = Color.FromArgb(224, 215, 255);
                 btFireplace.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btFireplace.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btFireplace.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btExit.ForeColor = Color.FromArgb(224, 215, 255);
                 btExit.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btExit.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btExit.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btProfile.ForeColor = Color.FromArgb(183, 161, 255);
                 btProfile.FlatAppearance.BorderColor = Color.FromArgb(206, 191, 255);
+                btProfile.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btProfile.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 lbUser.ForeColor = Color.White;
                 lbLogin.ForeColor = Color.White;
                 lbInfo.ForeColor = Color.DarkGray;
                 btLogout.ForeColor = Color.FromArgb(183, 161, 255);
+
+                //Dark theme
             }
         }
 
@@ -525,6 +585,7 @@ namespace amo6166
         {
             //if (!rbLight.Checked)
                 ChangeTheme(MetroFramework.MetroThemeStyle.Light);
+
         }
 
         private void SelectText(Button bt)
