@@ -479,7 +479,7 @@ namespace amo6166
             "Teal",
             "White",
             "Yellow"});
-            this.cbTheme.Location = new System.Drawing.Point(688, 50);
+            this.cbTheme.Location = new System.Drawing.Point(735, 49);
             this.cbTheme.Name = "cbTheme";
             this.cbTheme.Size = new System.Drawing.Size(139, 29);
             this.cbTheme.Style = MetroFramework.MetroColorStyle.Purple;
@@ -493,7 +493,7 @@ namespace amo6166
             this.metroLabel4.AutoSize = true;
             this.metroLabel4.FontWeight = MetroFramework.MetroLabelWeight.Regular;
             this.metroLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.metroLabel4.Location = new System.Drawing.Point(641, 54);
+            this.metroLabel4.Location = new System.Drawing.Point(688, 53);
             this.metroLabel4.Name = "metroLabel4";
             this.metroLabel4.Size = new System.Drawing.Size(41, 19);
             this.metroLabel4.Style = MetroFramework.MetroColorStyle.Purple;
@@ -505,12 +505,12 @@ namespace amo6166
             // rbLight
             // 
             this.rbLight.AutoSize = true;
-            this.rbLight.Location = new System.Drawing.Point(518, 58);
+            this.rbLight.Location = new System.Drawing.Point(495, 57);
             this.rbLight.Name = "rbLight";
-            this.rbLight.Size = new System.Drawing.Size(50, 15);
+            this.rbLight.Size = new System.Drawing.Size(72, 15);
             this.rbLight.Style = MetroFramework.MetroColorStyle.Purple;
             this.rbLight.TabIndex = 13;
-            this.rbLight.Text = "Light";
+            this.rbLight.Text = "Exit Light";
             this.rbLight.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbLight.UseSelectable = true;
             this.rbLight.UseStyleColors = true;
@@ -519,12 +519,12 @@ namespace amo6166
             // rbDark
             // 
             this.rbDark.AutoSize = true;
-            this.rbDark.Location = new System.Drawing.Point(574, 58);
+            this.rbDark.Location = new System.Drawing.Point(573, 57);
             this.rbDark.Name = "rbDark";
-            this.rbDark.Size = new System.Drawing.Size(47, 15);
+            this.rbDark.Size = new System.Drawing.Size(83, 15);
             this.rbDark.Style = MetroFramework.MetroColorStyle.Purple;
             this.rbDark.TabIndex = 14;
-            this.rbDark.Text = "Dark";
+            this.rbDark.Text = "Enter Night";
             this.rbDark.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbDark.UseSelectable = true;
             this.rbDark.UseStyleColors = true;
