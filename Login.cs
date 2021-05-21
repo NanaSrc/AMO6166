@@ -104,9 +104,10 @@ namespace amo6166
             {
                 this.Hide();
                 lov = new love(username, user.Nome);
-                lov.ShowDialog();
+                ProgressBar pog = new ProgressBar(username, user.Nome);
+                pog.ShowDialog();
+                //lov.ShowDialog();
                 this.Close();
-                //m.Show();
             }
             else
             {
