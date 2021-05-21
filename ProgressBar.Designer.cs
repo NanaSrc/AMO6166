@@ -37,23 +37,23 @@ namespace amo6166
             // 
             // lbLoading
             // 
-            this.lbLoading.AutoSize = true;
-            this.lbLoading.Font = new System.Drawing.Font("Cascadia Code SemiLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbLoading.Font = new System.Drawing.Font("Cascadia Code SemiLight", 16.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbLoading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(179)))), ((int)(((byte)(255)))));
-            this.lbLoading.Location = new System.Drawing.Point(636, 452);
+            this.lbLoading.Location = new System.Drawing.Point(533, 397);
             this.lbLoading.Name = "lbLoading";
-            this.lbLoading.Size = new System.Drawing.Size(132, 28);
+            this.lbLoading.Size = new System.Drawing.Size(339, 71);
             this.lbLoading.TabIndex = 0;
             this.lbLoading.Text = "Loading...";
+            this.lbLoading.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbBar
             // 
             this.lbBar.AutoSize = true;
-            this.lbBar.Font = new System.Drawing.Font("Cascadia Code SemiLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbBar.Font = new System.Drawing.Font("Cascadia Code SemiLight", 20.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(179)))), ((int)(((byte)(255)))));
-            this.lbBar.Location = new System.Drawing.Point(542, 413);
+            this.lbBar.Location = new System.Drawing.Point(511, 360);
             this.lbBar.Name = "lbBar";
-            this.lbBar.Size = new System.Drawing.Size(288, 28);
+            this.lbBar.Size = new System.Drawing.Size(385, 37);
             this.lbBar.TabIndex = 1;
             this.lbBar.Text = "<                     >";
             this.lbBar.TextChanged += new System.EventHandler(this.lbBar_TextChanged);
@@ -73,6 +73,7 @@ namespace amo6166
             this.Opacity = 0.93D;
             this.Resizable = false;
             this.Style = MetroFramework.MetroColorStyle.Black;
+            this.TextAlign = MetroFramework.Forms.MetroFormTextAlign.Center;
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.ProgressBar_Load);
             this.ResumeLayout(false);
