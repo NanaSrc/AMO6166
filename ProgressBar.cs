@@ -40,63 +40,74 @@ namespace amo6166
                 //0
                 case "<                     >":
                     lbBar.Text = "<//                   >";
-                    lbLoading.Text = "Hiding the bricks.";
+                    lbLoading.Text = "☆ Drink water." /*+
+                        Environment.NewLine +
+                        Environment.NewLine +
+                        "After Eating Fish"*/;
+                    label2.Visible = true;
                     break;
                 //10
                 case "<//                   >":
                     lbBar.Text = "<////                 >";
-                    lbLoading.Text = "Hiding the bricks..";
+                    lbLoading.Text = "☆ Drink water..";
+                    label1.Visible = true;
                     break;
                 //20
                 case "<////                 >":
                     lbBar.Text = "<//////               >";
-                    lbLoading.Text = "Feeding monkeys...";
+                    lbLoading.Text = "☆ Feeding monkeys...";
+                    label1.Visible = false;
+                    label2.Visible = false;
                     break;
                 //30
                 case "<//////               >":
                     lbBar.Text = "<////////             >";
-                    lbLoading.Text = "Feeding monkeys.";
+                    lbLoading.Text = "☆ Feeding monkeys.";
                     break;
                 //40
                 case "<////////             >":
                     lbBar.Text = "<//////////           >";
-                    lbLoading.Text = "Loving Marco..";
+                    lbLoading.Text = "☆ Loving Marco..";
                     break;
                 //50
                 case "<//////////           >":
                     lbBar.Text = "<////////////         >";
-                    lbLoading.Text = "Loving Nana...";
+                    lbLoading.Text = "☆ Loving Nana...";
                     break;
                 //60
                 case "<////////////         >":
                     lbBar.Text = "<//////////////       >";
-                    lbLoading.Text = "Cleaning windows.";
+                    lbLoading.Text = "☆ Cleaning Windows.";
                     break;
                 //70
                 case "<//////////////       >":
                     lbBar.Text = "<////////////////     >";
-                    lbLoading.Text = "Cleaning windows.. " +
+                    lbLoading.Text = "☆ Cleaning Windows.. "/* +
                         Environment.NewLine +
-                        "(yes I said windows b****)";
+                        "(yes I said windows b****)"*/;
+                    label1.TextAlign = ContentAlignment.MiddleCenter;
+                    label1.Text = "yes I said windows b****";
+                    label1.Visible = true;
                     break;
                 //80
                 case "<////////////////     >":
                     lbBar.Text = "<//////////////////   >";
-                    lbLoading.Text = "Hating linux...";
+                    lbLoading.Text = "☆ Hating Linux...";
+                    label1.Visible = false;
                     break;
                 //90
                 case "<//////////////////   >":
                     lbBar.Text = "<//////////////////// >";
-                    lbLoading.Text = "Opening doors.";
+                    lbLoading.Text = "☆ Opening doors.";
                     break;
                 //99
                 case "<//////////////////// >":
                     lbBar.Text = "</////////////////////>";
-                    lbLoading.Text = "Opening doors..";
+                    lbLoading.Text = "☆ Opening doors..";
                     break;
                 //100
                 case "</////////////////////>":
-                    lbLoading.Text = "Opening doors...";
+                    lbLoading.Text = "☆ Opening doors...";
                     break;
             }
         }
@@ -119,6 +130,11 @@ namespace amo6166
                 lov.BringToFront();
                 //Hide();
             }
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Congrats! Now you have a fish in ur stomach :)");
         }
     }
 }
