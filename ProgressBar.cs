@@ -44,6 +44,7 @@ namespace amo6166
                         Environment.NewLine +
                         Environment.NewLine +
                         "After Eating Fish"*/;
+                    fish1.Visible = true;
                     label2.Visible = true;
                     break;
                 //10
@@ -51,6 +52,8 @@ namespace amo6166
                     lbBar.Text = "<////                 >";
                     lbLoading.Text = "☆ Drink water..";
                     label1.Visible = true;
+                    fish2.Visible = true;
+                    fish1.Visible = false;
                     break;
                 //20
                 case "<////                 >":
@@ -58,26 +61,35 @@ namespace amo6166
                     lbLoading.Text = "☆ Feeding monkeys...";
                     label1.Visible = false;
                     label2.Visible = false;
+                    fish2.Visible = false;
+                    fish3.Visible = true;
                     break;
                 //30
                 case "<//////               >":
                     lbBar.Text = "<////////             >";
                     lbLoading.Text = "☆ Feeding monkeys.";
+                    fish3.Visible = false;
+                    fish4.Visible = true;
                     break;
                 //40
                 case "<////////             >":
                     lbBar.Text = "<//////////           >";
                     lbLoading.Text = "☆ Loving Marco..";
+                    fish4.Visible = false;
+                    fish5.Visible = true;
                     break;
                 //50
                 case "<//////////           >":
                     lbBar.Text = "<////////////         >";
                     lbLoading.Text = "☆ Loving Nana...";
+                    fish5.Visible = false;
+                    fish6.Visible = true;
                     break;
                 //60
                 case "<////////////         >":
                     lbBar.Text = "<//////////////       >";
                     lbLoading.Text = "☆ Cleaning Windows.";
+                    fish6.Visible = false;
                     break;
                 //70
                 case "<//////////////       >":
