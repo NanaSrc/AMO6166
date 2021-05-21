@@ -29,8 +29,10 @@ namespace amo6166
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lbLoading = new System.Windows.Forms.Label();
             this.lbBar = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // lbLoading
@@ -38,7 +40,7 @@ namespace amo6166
             this.lbLoading.AutoSize = true;
             this.lbLoading.Font = new System.Drawing.Font("Cascadia Code SemiLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbLoading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(179)))), ((int)(((byte)(255)))));
-            this.lbLoading.Location = new System.Drawing.Point(543, 394);
+            this.lbLoading.Location = new System.Drawing.Point(636, 452);
             this.lbLoading.Name = "lbLoading";
             this.lbLoading.Size = new System.Drawing.Size(132, 28);
             this.lbLoading.TabIndex = 0;
@@ -49,11 +51,12 @@ namespace amo6166
             this.lbBar.AutoSize = true;
             this.lbBar.Font = new System.Drawing.Font("Cascadia Code SemiLight", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbBar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(179)))), ((int)(((byte)(255)))));
-            this.lbBar.Location = new System.Drawing.Point(459, 355);
+            this.lbBar.Location = new System.Drawing.Point(542, 413);
             this.lbBar.Name = "lbBar";
             this.lbBar.Size = new System.Drawing.Size(288, 28);
             this.lbBar.TabIndex = 1;
-            this.lbBar.Text = "</////////////////////>\r\n";
+            this.lbBar.Text = "<                     >";
+            this.lbBar.TextChanged += new System.EventHandler(this.lbBar_TextChanged);
             // 
             // ProgressBar
             // 
@@ -81,5 +84,6 @@ namespace amo6166
 
         private System.Windows.Forms.Label lbLoading;
         private System.Windows.Forms.Label lbBar;
+        private System.Windows.Forms.Timer timer1;
     }
 }
