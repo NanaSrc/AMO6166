@@ -64,7 +64,7 @@ namespace amo6166
             this.tbTerminalzinho.Name = "tbTerminalzinho";
             this.tbTerminalzinho.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tbTerminalzinho.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.tbTerminalzinho.Size = new System.Drawing.Size(1083, 575);
+            this.tbTerminalzinho.Size = new System.Drawing.Size(1083, 547);
             this.tbTerminalzinho.TabIndex = 9;
             this.tbTerminalzinho.Text = resources.GetString("tbTerminalzinho.Text");
             this.tbTerminalzinho.TextChanged += new System.EventHandler(this.tbTerminalzinho_TextChanged);
