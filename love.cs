@@ -29,6 +29,7 @@ namespace amo6166
             lbLogin.Text = login;
             Active(btMain);
             cbTheme.SelectedIndex = 0;
+            UpdateStyles();
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -64,10 +65,11 @@ namespace amo6166
 
         private void btLogout_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             Login log = new Login();
             log.ShowDialog();
-            this.Close();
+            log.BringToFront();
+            Close();
         }
 
         private void metroLabel3_Click(object sender, EventArgs e)
@@ -100,7 +102,6 @@ namespace amo6166
                 Active(btNanaPage);
                 Nana nana = new Nana();
                 PanelShow(nana);
-                // SelectText(btNanaPage);
             }
         }
 
