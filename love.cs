@@ -271,7 +271,8 @@ namespace amo6166
             if (btPainting.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btPainting);
-                panel.Controls.Clear();
+                Painting paint = new Painting();
+                PanelShow(paint);
                 //SelectText(btPainting);
             }
         }
@@ -281,7 +282,8 @@ namespace amo6166
             if (btMovie.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btMovie);
-                panel.Controls.Clear();
+                Movie movie = new Movie();
+                PanelShow(movie);
                 //SelectText(btMovie);
             }
         }
@@ -291,7 +293,8 @@ namespace amo6166
             if (btLibrary.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btLibrary);
-                panel.Controls.Clear();
+                Library lib = new Library();
+                PanelShow(lib);
                 //SelectText(btLibrary);
             }
         }
@@ -301,7 +304,8 @@ namespace amo6166
             if (btFireplace.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btFireplace);
-                panel.Controls.Clear();
+                Fireplace fire = new Fireplace();
+                PanelShow(fire);
                 //SelectText(btFireplace);
             }
         }
