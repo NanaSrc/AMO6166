@@ -147,6 +147,7 @@ namespace amo6166
         private void label1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Congrats! Now you have a fish in ur stomach :)");
+            
         }
     }
 }
