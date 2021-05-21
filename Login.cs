@@ -15,6 +15,7 @@ namespace amo6166
         int hint = 1;
         public love lov;
         public Login log;
+        ProgressBar pog;
         public Login(Login log)
         {
             InitializeComponent();
@@ -27,6 +28,8 @@ namespace amo6166
         private void Login_Load(object sender, EventArgs e)
         {
             tbNome.Focus();
+            Focus();
+            BringToFront();
         }
 
         private void lbSenha_Click(object sender, EventArgs e)
@@ -103,8 +106,8 @@ namespace amo6166
             if (user.Ama && user.Nomec && user.Keyc)
             {
                 this.Hide();
-                lov = new love(username, user.Nome);
-                ProgressBar pog = new ProgressBar(username, user.Nome);
+                //lov = new love(username, user.Nome);
+                pog = new ProgressBar(username, user.Nome);
                 pog.ShowDialog();
                 //lov.ShowDialog();
                 this.Close();
