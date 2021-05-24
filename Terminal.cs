@@ -13,12 +13,17 @@ namespace amo6166
     {
         string username;
         string content;
-        string path = "C:/Users/annas/OneDrive/Documentos/slingshot/AMO6166/AMO6166/notes/nana.txt";
+        string path;
         int count = 0;
         public Terminal(string username)
         {
             InitializeComponent();
             this.username = username;
+
+            if (username == "Nana")
+                path = "C:/Users/annas/OneDrive/Documentos/slingshot/AMO6166/AMO6166/notes/nana.txt";
+            else
+                path = "C:/Users/annas/OneDrive/Documentos/slingshot/AMO6166/AMO6166/notes/marco.txt";
         }
 
         private void tbTerminalzinho_TextChanged(object sender, EventArgs e)
