@@ -1,4 +1,4 @@
-	
+------------------------------------------------------------------------------------------------------------------------------------	
 	
 	17/05/2021 - Updates about the program
                                            
@@ -7,16 +7,20 @@
 	Lista de coisas que eu quero implementar:
 
 	- Computador da Nana
+
  		* Email box
  		* Pings
  		* Profile
  		* Notes
  		* To do
+
 	- Computador do Marco
+
 	 	* Mesmo que o meu
+
 	- Joguinho com o Jamoncito
 	- Salvar o texto do terminal ao mudar de formulário
-	- Implementar comandos no terminal
+	- Comandos no terminal
 	- Galeria 
 	- Lugar de desenhar (se possível)
 	- Lugar de guardar filmes 
@@ -34,8 +38,8 @@
 	20/05/2021 - Relatório de bugs com urgência
 
 
-   	Comecei a escrever esse relatório no meio da semana pois tentei implementar coisas novas e acabei por complicar muito o 		programa. Então, a fim de listar tudo e colocar em ordem o as coisas (que eu sei que consigo resolver), vou relatar por 		tópicos algumas das coisas que precisam de atenção e resolução agora. No momento eu tenho trabalhado apenas no design do 		programa, ou seja, deixar dinâmico, dar a possibilidade de trocar o tema, as cores e personalizar de acordo com o gosto do 		usuário, apesar de ser apenas para duas pessoas, achei que poderia ser interessante e desafiador implementar isso tudo, 		visto que é um programa com muitas labels e botões. 
-	Implementei a opção de trocar o tema de "dark" para "light", inclusive com uma referência a uma música famosa do Metallica, 		e essa função estava funcionando, porém as cores dos botões e das labels mal apareciam, por isso decidi trocar todas as 		cores de acordo com o tema. Entretanto, os botões só ativam se tiverem de uma determinada cor e ao clicar neles, todos 		voltam às cores originais, por isso tive que mexer aí também e então aconteceu:
+   		Comecei a escrever esse relatório no meio da semana pois tentei implementar coisas novas e acabei por complicar 		muito o programa. Então, a fim de listar tudo e colocar em ordem o as coisas (que eu sei que consigo resolver), vou relatar 		por tópicos algumas das coisas que precisam de atenção e resolução agora. No momento eu tenho trabalhado apenas no design do 	programa, ou seja, deixar dinâmico, dar a possibilidade de trocar o tema, as cores e personalizar de acordo com o gosto do 		usuário, apesar de ser apenas para duas pessoas, achei que poderia ser interessante e desafiador implementar isso tudo, 		visto que é um programa com muitas labels e botões. 
+	Implementei a opção de trocar o tema de "dark" para "light", inclusive com uma referência a uma música famosa do Metallica, 		e essa função estava funcionando, porém as cores dos botões e das labels mal apareciam, por isso decidi trocar todas as 		cores de acordo com o tema. Entretanto, os botões só ativam se tiverem de uma determinada cor e ao clicar neles, todos 			voltam às cores originais, por isso tive que mexer aí também e então aconteceu:
 
 	- No tema claro todos os botões e labels ficam escuros; - Solved
 	- Ao voltar para o tema escuro ou apenas clicar no RadioButton dele, o programa fica todo escuro mesclando as cores e não 		dando para enxergar as coisas corretamente; - Solved
@@ -85,11 +89,17 @@
 			Guardar o Login
 			Fazer o path universal 
 	
-	De qualquer maneira eu duvido que eu consiga fazer tudo isso apenas hoje, por isso são só ideias que vagam pela 		minha mente agora e talvez até o fim dessa semana eu tenha conseguido implementar todas elas, pelo menos assim espero :)
+	De qualquer maneira eu duvido que eu consiga fazer tudo isso apenas hoje, por isso são só ideias que vagam pela 			minha mente agora e talvez até o fim dessa semana eu tenha conseguido implementar todas elas, pelo menos assim espero :)
 
 			
 														That's all folks!
 
 ------------------------------------------------------------------------------------------------------------------------------------
 
+	24/05/2021
 	
+		Desabafos: Já são 17:20 e é como se fosse uma eternidade mesmo que faltem apenas 40 minutos pra terminar o estágio 		de hoje. Minha calça tá muito apertada e tá marcando minhas coxas muito forte, eu to sentindo uma dor terrível, fome e sono, 	só quero ir pra casa... Sinto como se essa calça estivesse cortando minha perna, tenho que me lembrar de nunca mais usar ela 	sem meia calça por baixo. Definitivamente tortura.
+	Desse jeito eu não consigo mais fazer nada e ou só esperar terminar e amanhã eu faço mais coisas.
+	
+														That hurts a lot!
+
