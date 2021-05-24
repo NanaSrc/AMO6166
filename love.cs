@@ -30,6 +30,13 @@ namespace amo6166
             Active(btMain);
             cbTheme.SelectedIndex = 0;
             UpdateStyles();
+            Focus();
+            BringToFront();
+
+            if (username == "Marco")
+                ChangeTheme(MetroFramework.MetroThemeStyle.Light);
+            else if (username == "Nana")
+                ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -337,7 +344,7 @@ namespace amo6166
 
         private void btProfile_Click(object sender, EventArgs e)
         {
-            if (btSite.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btProfile.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btProfile);
                 Profile profile = new Profile(username);

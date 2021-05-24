@@ -30,6 +30,8 @@ namespace amo6166
             tbNome.Focus();
             Focus();
             BringToFront();
+
+            //public static void SetEnvironmentVariable(string variable, string? value, EnvironmentVariableTarget target);
         }
 
         private void lbSenha_Click(object sender, EventArgs e)
