@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Text;
 using System.Windows.Forms;
 
@@ -11,6 +12,9 @@ namespace amo6166
     public partial class Terminal : MetroFramework.Forms.MetroForm
     {
         string username;
+        string content;
+        string path = "C:/Users/annas/OneDrive/Documentos/slingshot/AMO6166/AMO6166/notes/nana.txt";
+        int count = 0;
         public Terminal(string username)
         {
             InitializeComponent();
@@ -19,15 +23,54 @@ namespace amo6166
 
         private void tbTerminalzinho_TextChanged(object sender, EventArgs e)
         {
+            content = tbTerminalzinho.Text;
 
+            if (count > 0)
+            {
+                if (File.Exists(path))
+                {
+                    File.WriteAllText(path, String.Empty);
+                    FileStream fs = new FileStream(path, FileMode.Append, FileAccess.Write);
+                    StreamWriter sw = new StreamWriter(fs);
+
+                    //Fazer o file deletar tudo do arquivo 
+
+                    sw.Write(content);
+
+                    sw.Close();
+                    fs.Close();
+                }
+            }
+
+            
+
+            /*try 
+            {
+                fs = new FileStream("text.txt", FileMode.OpenOrCreate, FileAccess.Write);
+                sw = new StreamWriter(fs);
+                sw.Write(content);
+
+                sw.Close();
+                fs.Close();
+            }
+            catch (System.IO.IOException)
+            {
+
+            }
+            finally
+            {
+
+            }*/
+
+            //}
         }
 
         private void tbTerminalzinho_KeyPress(object sender, KeyPressEventArgs e)
         {
-            string comando = tbTerminalzinho.Text;
-            if (e.KeyChar == (char)13)
-            {
-                if (tbTerminalzinho.Text.Contains("/exit"))
+            //string comando = tbTerminalzinho.Text;
+            //if (e.KeyChar == (char)13)
+            //{
+                /*if (tbTerminalzinho.Text.Contains("/exit"))
                 {
                     Application.Exit();
                 }
@@ -40,17 +83,35 @@ namespace amo6166
                 if (comando.Contains("cls"))
                 {
                     tbTerminalzinho.Text = "";
-                }    
-            }
+                }*/
+
+            //}
         }
 
         private void Terminal_Load(object sender, EventArgs e)
         {
+            tbTerminalzinho.Focus();
+
             if (username == "Nana")
             {
                 tbTerminalzinho.BackColor = Color.FromArgb(31, 29, 39);
                 tbTerminalzinho.ForeColor = Color.FromArgb(183, 161, 255); 
             }
+
+            FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
+            StreamReader sr = new StreamReader(fs);
+
+            if (sr.Peek() != -1)
+            {
+                content = sr.ReadToEnd();
+            }
+
+            tbTerminalzinho.Text = content;
+
+            sr.Close();
+            fs.Close();
+
+            count++;
         }
     }
 }
