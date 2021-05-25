@@ -134,6 +134,10 @@ namespace amo6166
                     {
                         content = sr.ReadToEnd();
                     }
+                    else
+                    {
+                        content = string.Empty;
+                    } 
 
                     tbTerminalzinho.Text = content;
 
