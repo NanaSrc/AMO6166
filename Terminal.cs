@@ -21,9 +21,11 @@ namespace amo6166
             this.username = username;
 
             if (username == "Nana")
-                path = "C:/Users/annas/OneDrive/Documentos/slingshot/AMO6166/AMO6166/notes/nana.txt";
+                path = "../../../notes/nana.txt";
             else
-                path = "C:/Users/annas/OneDrive/Documentos/slingshot/AMO6166/AMO6166/notes/marco.txt";
+                path = "../../../notes/marco.txt";
+
+            tbPath.Text = path;
         }
 
         private void tbTerminalzinho_TextChanged(object sender, EventArgs e)
@@ -37,8 +39,6 @@ namespace amo6166
                     File.WriteAllText(path, String.Empty);
                     FileStream fs = new FileStream(path, FileMode.Append, FileAccess.Write);
                     StreamWriter sw = new StreamWriter(fs);
-
-                    //Fazer o file deletar tudo do arquivo 
 
                     sw.Write(content);
 
@@ -73,24 +73,11 @@ namespace amo6166
         private void tbTerminalzinho_KeyPress(object sender, KeyPressEventArgs e)
         {
             //string comando = tbTerminalzinho.Text;
-            //if (e.KeyChar == (char)13)
-            //{
-                /*if (tbTerminalzinho.Text.Contains("/exit"))
-                {
-                    Application.Exit();
-                }
-
-                if (comando.Contains("/love"))
-                {
-                    tbTerminalzinho.Text = comando + string.Format("{0}I love you to the moon and back {0}Nana says:", Environment.NewLine);
-                }
-
-                if (comando.Contains("cls"))
-                {
-                    tbTerminalzinho.Text = "";
-                }*/
-
-            //}
+            /*if (e.KeyChar == (char)13)
+            {
+                content += ((char)11);
+                content.Replace(" ", "\t");
+            }*/
         }
 
         private void Terminal_Load(object sender, EventArgs e)
@@ -101,6 +88,11 @@ namespace amo6166
             {
                 tbTerminalzinho.BackColor = Color.FromArgb(31, 29, 39);
                 tbTerminalzinho.ForeColor = Color.FromArgb(183, 161, 255); 
+            }
+            else
+            {
+                tbPath.BackColor = Color.FromArgb(251, 241, 199);
+                tbPath.ForeColor = Color.FromArgb(40, 40, 40);
             }
 
             FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
@@ -117,6 +109,40 @@ namespace amo6166
             fs.Close();
 
             count++;
+        }
+
+        private void btOpenFile_Click(object sender, EventArgs e)
+        {
+            count--;
+
+            OpenFileDialog dlg = new OpenFileDialog();
+            dlg.FileName = tbPath.Text;
+            dlg.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+            dlg.FilterIndex = 1;
+
+            if (dlg.ShowDialog() == DialogResult.OK)
+            {
+                path = dlg.FileName;
+                tbPath.Text = path;
+
+                if (File.Exists(path))
+                {
+                    FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read);
+                    StreamReader sr = new StreamReader(fs);
+
+                    if (sr.Peek() != -1)
+                    {
+                        content = sr.ReadToEnd();
+                    }
+
+                    tbTerminalzinho.Text = content;
+
+                    sr.Close();
+                    fs.Close();
+
+                    count++;
+                }
+            }
         }
     }
 }
