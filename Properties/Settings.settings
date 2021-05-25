@@ -6,10 +6,10 @@
       <Value Profile="(Default)" />
     </Setting>
     <Setting Name="theme" Type="MetroFramework.MetroThemeStyle" Scope="User">
-      <Value Profile="(Default)">Dark</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="style" Type="MetroFramework.MetroColorStyle" Scope="User">
-      <Value Profile="(Default)">Black</Value>
+      <Value Profile="(Default)" />
     </Setting>
     <Setting Name="user" Type="System.String" Scope="User">
       <Value Profile="(Default)" />

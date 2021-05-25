@@ -37,7 +37,6 @@ namespace amo6166.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Dark")]
         public global::MetroFramework.MetroThemeStyle theme {
             get {
                 return ((global::MetroFramework.MetroThemeStyle)(this["theme"]));
@@ -49,7 +48,6 @@ namespace amo6166.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Black")]
         public global::MetroFramework.MetroColorStyle style {
             get {
                 return ((global::MetroFramework.MetroColorStyle)(this["style"]));
