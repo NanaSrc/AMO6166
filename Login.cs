@@ -130,12 +130,13 @@ namespace amo6166
 
             if (user.Ama && user.Nomec && user.Keyc)
             {
-                this.Hide();
+                Hide();
                 //lov = new love(username, user.Nome);
                 pog = new ProgressBar(username, user.Nome);
                 pog.ShowDialog();
-                //lov.ShowDialog();
-                this.Close();
+            
+                Remember();
+                Close();
             }
             else
             {
@@ -145,7 +146,7 @@ namespace amo6166
                 }
                 else
                 {
-                     if (!rbMoon.Checked && !rbSummer.Checked)
+                    if (!rbMoon.Checked && !rbSummer.Checked)
                     {
                         MessageBox.Show("Esqueceu de algo?", ":eye:");
                     }
@@ -162,21 +163,26 @@ namespace amo6166
                                 //Isso é pra você não errar muito  
                                 case 0:
                                     MessageBox.Show("Acho que você escreveu errado. Tente novamente.", "Error 1");
+                                    Clean();
                                     break;
                                 case 1:
                                     MessageBox.Show("Continua errado... Presta atenção no que digita.", "Error 2");
+                                    Clean();
                                     break;
                                 case 2:
                                     MessageBox.Show("É, " + username + ", presumo que suas mãos estejam furadas hoje, uh? ", "Error 3");
+                                    Clean();
                                     break;
                                 case 3:
                                     if(username == "Nana")
                                         MessageBox.Show("Ok, se você continuar errando eu vou assumir que você não seja a " + username, ":rage: 4");
                                     if(username == "Marco")
                                         MessageBox.Show("Ok, se você continuar errando eu vou assumir que você não seja o " + username, ":rage: 4");
+                                    Clean();
                                     break;
                                 case 4:
                                     MessageBox.Show("Você não é nenhum dos AMO6166, desligue o programa antes que ele exploda.", "Autodestruição em 1");
+                                    Clean();
                                     break;
                                 case 5:
                                     if (username == "Nana")
@@ -191,6 +197,11 @@ namespace amo6166
                     }
                 }
             }
+        }
+
+        private void Clean()
+        {
+            tbSenha.Text = "";
         }
 
         private void rbSummer_CheckedChanged(object sender, EventArgs e)
@@ -340,8 +351,18 @@ namespace amo6166
         {   
 
         }
-
+                                
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            
+        }
+
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Remember();
+        }
+
+        private void Remember()
         {
             if (cbLembrar.Checked)
             {

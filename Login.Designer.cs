@@ -322,6 +322,7 @@ namespace amo6166
             this.Text = "6166";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
             this.Load += new System.EventHandler(this.Login_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             this.ResumeLayout(false);
