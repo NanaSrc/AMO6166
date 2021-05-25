@@ -31,7 +31,18 @@ namespace amo6166
             Focus();
             BringToFront();
 
-            //public static void SetEnvironmentVariable(string variable, string? value, EnvironmentVariableTarget target);
+            if (Properties.Settings.Default.lembrar)
+            {
+                tbNome.Text = Properties.Settings.Default.user;
+                tbSenha.Text = Properties.Settings.Default.password;
+                cbLembrar.Checked = true;
+
+                if (VerificarAMO() == "Nana")
+                    lbAcesso.Text = "Acessando como: Nana";
+                else
+                    lbAcesso.Text = "Acessando como: Marco";
+            }
+
         }
 
         private void lbSenha_Click(object sender, EventArgs e)
@@ -80,6 +91,7 @@ namespace amo6166
             user.Key = tbSenha.Text;
             string nome = VerificarAMO();
 
+
             if (VerificarAMO().Equals("Nana") || VerificarAMO().Equals("Marco"))
                 user.Nomec = true;
 
@@ -98,9 +110,20 @@ namespace amo6166
             else if ((rbMoon.Checked && VerificarAMO() == "Nana") || (rbSummer.Checked && VerificarAMO() == "Marco"))
             {
                 if (VerificarAMO() == "Nana")
+                {
                     lbAcesso.Text = "Acessando como: Nana";
+
+                    if (Properties.Settings.Default.lembrar)
+                        rbMoon.Checked = true;
+                }
+                    
                 else
+                {
                     lbAcesso.Text = "Acessando como: Marco";
+
+                    if (Properties.Settings.Default.lembrar)
+                        rbSummer.Checked = true;
+                }
 
                 user.Ama = true;
             }
@@ -311,6 +334,25 @@ namespace amo6166
             startInfo.Arguments = "/C start https://github.com/AMO6166";
             start.StartInfo = startInfo;
             start.Start();
+        }
+
+        private void cbLembrar_CheckedChanged(object sender, EventArgs e)
+        {   
+
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (cbLembrar.Checked)
+            {
+                Properties.Settings.Default.lembrar = true;
+                Properties.Settings.Default.user = tbNome.Text;
+                Properties.Settings.Default.password = tbSenha.Text;
+            }
+            else
+            {
+                Properties.Settings.Default.lembrar = false;
+            }
         }
     }
 }

@@ -47,6 +47,7 @@ namespace amo6166
             this.label1 = new System.Windows.Forms.Label();
             this.lbInfo = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.cbLembrar = new MetroFramework.Controls.MetroCheckBox();
             this.SuspendLayout();
             // 
             // lbAcesso
@@ -276,11 +277,25 @@ namespace amo6166
             this.label2.Text = "Version: BETA 2.1.3";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
+            // cbLembrar
+            // 
+            this.cbLembrar.AutoSize = true;
+            this.cbLembrar.Location = new System.Drawing.Point(72, 261);
+            this.cbLembrar.Name = "cbLembrar";
+            this.cbLembrar.Size = new System.Drawing.Size(67, 15);
+            this.cbLembrar.Style = MetroFramework.MetroColorStyle.Purple;
+            this.cbLembrar.TabIndex = 52;
+            this.cbLembrar.Text = "Lembrar";
+            this.cbLembrar.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.cbLembrar.UseSelectable = true;
+            this.cbLembrar.CheckedChanged += new System.EventHandler(this.cbLembrar_CheckedChanged);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(652, 411);
+            this.Controls.Add(this.cbLembrar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbInfo);
             this.Controls.Add(this.label1);
@@ -306,6 +321,7 @@ namespace amo6166
             this.Style = MetroFramework.MetroColorStyle.Purple;
             this.Text = "6166";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Login_FormClosing);
             this.Load += new System.EventHandler(this.Login_Load);
             this.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Login_KeyPress);
             this.ResumeLayout(false);
@@ -332,5 +348,6 @@ namespace amo6166
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbInfo;
         private System.Windows.Forms.Label label2;
+        private MetroFramework.Controls.MetroCheckBox cbLembrar;
     }
 }
