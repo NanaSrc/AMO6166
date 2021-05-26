@@ -146,7 +146,7 @@ namespace amo6166
 
                     timer1.Enabled = true; // Enable the timer.
                     timer1.Start();//Strart it
-                    timer1.Interval = 1000; // The time per tick.
+                    timer1.Interval = 600; // The time per tick.
                     timer1.Tick += new EventHandler(timer1_Tick);
                 }
             }
