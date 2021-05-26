@@ -68,7 +68,7 @@ namespace amo6166
             // metroCheckBox1
             // 
             this.metroCheckBox1.AutoSize = true;
-            this.metroCheckBox1.Location = new System.Drawing.Point(23, 81);
+            this.metroCheckBox1.Location = new System.Drawing.Point(23, 82);
             this.metroCheckBox1.Name = "metroCheckBox1";
             this.metroCheckBox1.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox1.Style = MetroFramework.MetroColorStyle.White;
@@ -81,7 +81,7 @@ namespace amo6166
             // metroCheckBox2
             // 
             this.metroCheckBox2.AutoSize = true;
-            this.metroCheckBox2.Location = new System.Drawing.Point(23, 112);
+            this.metroCheckBox2.Location = new System.Drawing.Point(23, 113);
             this.metroCheckBox2.Name = "metroCheckBox2";
             this.metroCheckBox2.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox2.Style = MetroFramework.MetroColorStyle.Silver;
@@ -94,7 +94,7 @@ namespace amo6166
             // metroCheckBox3
             // 
             this.metroCheckBox3.AutoSize = true;
-            this.metroCheckBox3.Location = new System.Drawing.Point(23, 142);
+            this.metroCheckBox3.Location = new System.Drawing.Point(23, 143);
             this.metroCheckBox3.Name = "metroCheckBox3";
             this.metroCheckBox3.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox3.Style = MetroFramework.MetroColorStyle.Blue;
@@ -107,7 +107,7 @@ namespace amo6166
             // metroCheckBox4
             // 
             this.metroCheckBox4.AutoSize = true;
-            this.metroCheckBox4.Location = new System.Drawing.Point(23, 176);
+            this.metroCheckBox4.Location = new System.Drawing.Point(23, 177);
             this.metroCheckBox4.Name = "metroCheckBox4";
             this.metroCheckBox4.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox4.Style = MetroFramework.MetroColorStyle.Green;
@@ -120,7 +120,7 @@ namespace amo6166
             // metroCheckBox5
             // 
             this.metroCheckBox5.AutoSize = true;
-            this.metroCheckBox5.Location = new System.Drawing.Point(23, 209);
+            this.metroCheckBox5.Location = new System.Drawing.Point(23, 210);
             this.metroCheckBox5.Name = "metroCheckBox5";
             this.metroCheckBox5.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox5.Style = MetroFramework.MetroColorStyle.Lime;
@@ -133,7 +133,7 @@ namespace amo6166
             // metroCheckBox6
             // 
             this.metroCheckBox6.AutoSize = true;
-            this.metroCheckBox6.Location = new System.Drawing.Point(23, 249);
+            this.metroCheckBox6.Location = new System.Drawing.Point(23, 251);
             this.metroCheckBox6.Name = "metroCheckBox6";
             this.metroCheckBox6.Size = new System.Drawing.Size(90, 15);
             this.metroCheckBox6.Style = MetroFramework.MetroColorStyle.Teal;
@@ -146,7 +146,7 @@ namespace amo6166
             // metroCheckBox7
             // 
             this.metroCheckBox7.AutoSize = true;
-            this.metroCheckBox7.Location = new System.Drawing.Point(23, 292);
+            this.metroCheckBox7.Location = new System.Drawing.Point(23, 293);
             this.metroCheckBox7.Name = "metroCheckBox7";
             this.metroCheckBox7.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox7.Style = MetroFramework.MetroColorStyle.Orange;
@@ -159,7 +159,7 @@ namespace amo6166
             // metroCheckBox8
             // 
             this.metroCheckBox8.AutoSize = true;
-            this.metroCheckBox8.Location = new System.Drawing.Point(23, 323);
+            this.metroCheckBox8.Location = new System.Drawing.Point(23, 324);
             this.metroCheckBox8.Name = "metroCheckBox8";
             this.metroCheckBox8.Size = new System.Drawing.Size(50, 15);
             this.metroCheckBox8.Style = MetroFramework.MetroColorStyle.Brown;

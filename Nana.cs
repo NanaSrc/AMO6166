@@ -35,12 +35,16 @@ namespace amo6166
         {
             if (metroCheckBox11.Checked)
                 label11.Visible = true;
+            else
+                label11.Visible = false;
         }
 
         private void metroCheckBox1_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox1.Checked)
                 label1.Visible = true;
+            else
+                label1.Visible = false;
 
             if (label18.Visible)
                 label18.Visible = false;
@@ -50,18 +54,24 @@ namespace amo6166
         {
             if (metroCheckBox2.Checked)
                 label2.Visible = true;
+            else
+                label2.Visible = false;
         }
 
         private void metroCheckBox3_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox3.Checked)
                 label3.Visible = true;
+            else
+                label3.Visible = false;
         }
 
         private void metroCheckBox4_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox4.Checked)
                 label4.Visible = true;
+            else
+                label4.Visible = false;
         }
 
         private void metroCheckBox5_CheckedChanged(object sender, EventArgs e)
@@ -71,54 +81,74 @@ namespace amo6166
                 label5.Visible = true;
                 label6.Visible = true;
             }
+            else
+            {
+                label5.Visible = false;
+                label6.Visible = false;
+            }
         }
 
         private void metroCheckBox7_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox7.Checked)
                 label7.Visible = true;
+            else
+                label7.Visible = false;
         }
 
         private void metroCheckBox8_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox8.Checked)
                 label8.Visible = true;
+            else
+                label8.Visible = false;
         }
 
         private void metroCheckBox9_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox9.Checked)
                 label9.Visible = true;
+            else
+                label9.Visible = false;
         }
 
         private void metroCheckBox10_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox10.Checked)
                 label10.Visible = true;
+            else
+                label10.Visible = false;
         }
 
         private void metroCheckBox12_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox12.Checked)
                 label12.Visible = true;
+            else
+                label12.Visible = false;
         }
 
         private void metroCheckBox13_CheckedChanged(object sender, EventArgs e)
         {
             if (metroCheckBox13.Checked)
                 label13.Visible = true;
+            else
+                label13.Visible = false;
         }
 
         private void metroCheckBox14_CheckedChanged(object sender, EventArgs e)
         {
-            if (AllChecked())
+            if (metroCheckBox14.Checked)
             {
-                Clear();
+                if (AllChecked())
+                {
+                    Clear();
 
-                timer1.Enabled = true; // Enable the timer.
-                timer1.Start();//Strart it
-                timer1.Interval = 1000; // The time per tick.
-                timer1.Tick += new EventHandler(timer1_Tick);
+                    timer1.Enabled = true; // Enable the timer.
+                    timer1.Start();//Strart it
+                    timer1.Interval = 1000; // The time per tick.
+                    timer1.Tick += new EventHandler(timer1_Tick);
+                }
             }
         }
 
