@@ -59,7 +59,7 @@ namespace amo6166.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Naninha1")]
         public string user {
             get {
                 return ((string)(this["user"]));
@@ -71,7 +71,7 @@ namespace amo6166.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool lembrar {
             get {
                 return ((bool)(this["lembrar"]));
@@ -83,7 +83,7 @@ namespace amo6166.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("04051208.AMO")]
         public string password {
             get {
                 return ((string)(this["password"]));

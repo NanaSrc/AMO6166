@@ -27,11 +27,8 @@ namespace amo6166
         }
         private void Login_Load(object sender, EventArgs e)
         {
-            tbNome.Focus();
-            Focus();
-            BringToFront();
 
-            if (Properties.Settings.Default.lembrar)
+            if (Properties.Settings.Default.lembrar == true)
             {
                 tbNome.Text = Properties.Settings.Default.user;
                 tbSenha.Text = Properties.Settings.Default.password;
@@ -42,7 +39,14 @@ namespace amo6166
                 else
                     lbAcesso.Text = "Acessando como: Marco";
             }
+            else
+            {
+                
+            }
 
+            tbNome.Focus();
+            Focus();
+            BringToFront();
         }
 
         private void lbSenha_Click(object sender, EventArgs e)
@@ -91,7 +95,6 @@ namespace amo6166
             user.Key = tbSenha.Text;
             string nome = VerificarAMO();
 
-
             if (VerificarAMO().Equals("Nana") || VerificarAMO().Equals("Marco"))
                 user.Nomec = true;
 
@@ -130,12 +133,22 @@ namespace amo6166
 
             if (user.Ama && user.Nomec && user.Keyc)
             {
+                if (cbLembrar.Checked)
+                {
+                    Properties.Settings.Default.lembrar = true;
+                    Remember();
+                }
+                else
+                {
+                    Remember();
+                }
+
                 Hide();
                 //lov = new love(username, user.Nome);
                 pog = new ProgressBar(username, user.Nome);
                 pog.ShowDialog();
             
-                Remember();
+                //Remember();
                 Close();
             }
             else
@@ -349,17 +362,25 @@ namespace amo6166
 
         private void cbLembrar_CheckedChanged(object sender, EventArgs e)
         {   
-
+            /*if (cbLembrar.Checked)
+            {
+                Properties.Settings.Default.lembrar = true;
+                Remember();
+            }
+            else
+            {
+                Remember();
+            }*/
         }
                                 
         private void Login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            //Remember();
         }
 
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Remember();
+            //Remember();
         }
 
         private void Remember()
@@ -373,6 +394,8 @@ namespace amo6166
             else
             {
                 Properties.Settings.Default.lembrar = false;
+                Properties.Settings.Default.user = string.Empty;
+                Properties.Settings.Default.password = string.Empty;
             }
         }
     }
