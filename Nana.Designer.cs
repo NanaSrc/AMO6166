@@ -30,6 +30,7 @@ namespace amo6166
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.metroCheckBox1 = new MetroFramework.Controls.MetroCheckBox();
             this.metroCheckBox2 = new MetroFramework.Controls.MetroCheckBox();
             this.metroCheckBox3 = new MetroFramework.Controls.MetroCheckBox();
@@ -62,7 +63,6 @@ namespace amo6166
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // metroCheckBox1
@@ -506,6 +506,8 @@ namespace amo6166
         private MetroFramework.Controls.MetroCheckBox cbFour;
         private MetroFramework.Controls.MetroCheckBox cbFive;
         private MetroFramework.Controls.MetroCheckBox cbSix;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Timer timer1;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox1;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox2;
         private MetroFramework.Controls.MetroCheckBox metroCheckBox3;
@@ -538,6 +540,5 @@ namespace amo6166
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Timer timer1;
     }
 }

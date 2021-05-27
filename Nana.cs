@@ -28,7 +28,7 @@ namespace amo6166
             {
                 label6.Visible = false;
             }
-                
+
         }
 
         private void metroCheckBox11_CheckedChanged(object sender, EventArgs e)
