@@ -41,7 +41,14 @@ namespace amo6166
             this.label3 = new System.Windows.Forms.Label();
             this.lbNome = new System.Windows.Forms.Label();
             this.label = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbMail = new System.Windows.Forms.GroupBox();
+            this.tbTerminalzinho = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.tbMail.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -57,9 +64,9 @@ namespace amo6166
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.lbNome);
             this.groupBox1.Controls.Add(this.label);
-            this.groupBox1.Location = new System.Drawing.Point(23, 20);
+            this.groupBox1.Location = new System.Drawing.Point(573, 20);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(549, 181);
+            this.groupBox1.Size = new System.Drawing.Size(544, 181);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
@@ -170,12 +177,71 @@ namespace amo6166
             this.label.TabIndex = 0;
             this.label.Text = "Nome: ";
             // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.label1);
+            this.groupBox2.Controls.Add(this.tbTerminalzinho);
+            this.groupBox2.Location = new System.Drawing.Point(23, 20);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(544, 582);
+            this.groupBox2.TabIndex = 16;
+            this.groupBox2.TabStop = false;
+            // 
+            // tbMail
+            // 
+            this.tbMail.Controls.Add(this.label2);
+            this.tbMail.Location = new System.Drawing.Point(573, 207);
+            this.tbMail.Name = "tbMail";
+            this.tbMail.Size = new System.Drawing.Size(544, 395);
+            this.tbMail.TabIndex = 17;
+            this.tbMail.TabStop = false;
+            // 
+            // tbTerminalzinho
+            // 
+            this.tbTerminalzinho.AcceptsReturn = true;
+            this.tbTerminalzinho.AcceptsTab = true;
+            this.tbTerminalzinho.AllowDrop = true;
+            this.tbTerminalzinho.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.tbTerminalzinho.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tbTerminalzinho.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tbTerminalzinho.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(179)))), ((int)(((byte)(255)))));
+            this.tbTerminalzinho.Location = new System.Drawing.Point(23, 61);
+            this.tbTerminalzinho.Margin = new System.Windows.Forms.Padding(6, 5, 5, 5);
+            this.tbTerminalzinho.Multiline = true;
+            this.tbTerminalzinho.Name = "tbTerminalzinho";
+            this.tbTerminalzinho.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.tbTerminalzinho.Size = new System.Drawing.Size(500, 500);
+            this.tbTerminalzinho.TabIndex = 10;
+            this.tbTerminalzinho.Text = ">";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(23, 32);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(126, 16);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Caixa de entrada:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(18, 19);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(154, 16);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "Selecionar remetente:";
+            // 
             // Profile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1129, 625);
             this.ControlBox = false;
+            this.Controls.Add(this.tbMail);
+            this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.MaximizeBox = false;
@@ -191,6 +257,10 @@ namespace amo6166
             this.Load += new System.EventHandler(this.Profile_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.tbMail.ResumeLayout(false);
+            this.tbMail.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -209,5 +279,10 @@ namespace amo6166
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbNome;
         private System.Windows.Forms.Label label;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox tbMail;
+        private System.Windows.Forms.TextBox tbTerminalzinho;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
