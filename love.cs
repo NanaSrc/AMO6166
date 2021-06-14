@@ -85,7 +85,7 @@ namespace amo6166
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C start https://github.com/AMO6166";
+            startInfo.Arguments = "/C start https://github.com/Nanacore/";
             start.StartInfo = startInfo;
             start.Start();
         }
@@ -107,7 +107,7 @@ namespace amo6166
             if (btNanaPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btNanaPage);
-                Nana nana = new Nana();
+                Lisa nana = new Lisa();
                 PanelShow(nana);
             }
         }
@@ -603,6 +603,16 @@ namespace amo6166
         private void SelectText(Button bt)
         {
             bt.Text = bt.Text + " ☆";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelIcon_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

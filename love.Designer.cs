@@ -142,6 +142,7 @@ namespace amo6166
             this.label1.Size = new System.Drawing.Size(138, 32);
             this.label1.TabIndex = 53;
             this.label1.Text = "AMO6166™ ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panelIcon
             // 
@@ -159,6 +160,7 @@ namespace amo6166
             this.panelIcon.VerticalScrollbarBarColor = true;
             this.panelIcon.VerticalScrollbarHighlightOnWheel = false;
             this.panelIcon.VerticalScrollbarSize = 10;
+            this.panelIcon.Paint += new System.Windows.Forms.PaintEventHandler(this.panelIcon_Paint);
             // 
             // label2
             // 
@@ -202,7 +204,7 @@ namespace amo6166
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Black;
             this.metroLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.metroLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.metroLabel3.Location = new System.Drawing.Point(1143, 737);
             this.metroLabel3.Name = "metroLabel3";
@@ -237,13 +239,13 @@ namespace amo6166
             this.btNanaPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btNanaPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btNanaPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNanaPage.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btNanaPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btNanaPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btNanaPage.Location = new System.Drawing.Point(20, 155);
             this.btNanaPage.Name = "btNanaPage";
             this.btNanaPage.Size = new System.Drawing.Size(177, 46);
             this.btNanaPage.TabIndex = 2;
-            this.btNanaPage.Text = "☆ Nana\'s computer";
+            this.btNanaPage.Text = "☆ Lisa\'s computer";
             this.btNanaPage.UseVisualStyleBackColor = true;
             this.btNanaPage.Click += new System.EventHandler(this.btNanaPage_Click);
             // 
@@ -255,7 +257,7 @@ namespace amo6166
             this.btMarcoPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMarcoPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btMarcoPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMarcoPage.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btMarcoPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btMarcoPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btMarcoPage.Location = new System.Drawing.Point(19, 207);
             this.btMarcoPage.Name = "btMarcoPage";
@@ -273,7 +275,7 @@ namespace amo6166
             this.btGallery.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btGallery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btGallery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btGallery.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btGallery.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btGallery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btGallery.Location = new System.Drawing.Point(18, 363);
             this.btGallery.Name = "btGallery";
@@ -291,7 +293,7 @@ namespace amo6166
             this.btTerm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btTerm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btTerm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTerm.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btTerm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btTerm.Location = new System.Drawing.Point(18, 311);
             this.btTerm.Name = "btTerm";
@@ -309,7 +311,7 @@ namespace amo6166
             this.btGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btGame.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btGame.Location = new System.Drawing.Point(18, 259);
             this.btGame.Name = "btGame";
@@ -327,7 +329,7 @@ namespace amo6166
             this.btSite.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btSite.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btSite.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSite.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btSite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btSite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btSite.Location = new System.Drawing.Point(18, 623);
             this.btSite.Name = "btSite";
@@ -343,7 +345,7 @@ namespace amo6166
             this.btProfile.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btProfile.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(206)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
             this.btProfile.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btProfile.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btProfile.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btProfile.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.btProfile.Location = new System.Drawing.Point(915, 50);
             this.btProfile.Name = "btProfile";
@@ -361,7 +363,7 @@ namespace amo6166
             this.btPainting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btPainting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btPainting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPainting.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btPainting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btPainting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btPainting.Location = new System.Drawing.Point(18, 415);
             this.btPainting.Name = "btPainting";
@@ -379,7 +381,7 @@ namespace amo6166
             this.btMovie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMovie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMovie.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btMovie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btMovie.Location = new System.Drawing.Point(18, 467);
             this.btMovie.Name = "btMovie";
@@ -397,7 +399,7 @@ namespace amo6166
             this.btLibrary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btLibrary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLibrary.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btLibrary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btLibrary.Location = new System.Drawing.Point(18, 519);
             this.btLibrary.Name = "btLibrary";
@@ -415,7 +417,7 @@ namespace amo6166
             this.btFireplace.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btFireplace.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btFireplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btFireplace.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btFireplace.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btFireplace.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btFireplace.Location = new System.Drawing.Point(18, 571);
             this.btFireplace.Name = "btFireplace";
@@ -433,7 +435,7 @@ namespace amo6166
             this.btMain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btMain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMain.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btMain.Location = new System.Drawing.Point(20, 103);
             this.btMain.Name = "btMain";
@@ -451,7 +453,7 @@ namespace amo6166
             this.btExit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
             this.btExit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
             this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btExit.Font = new System.Drawing.Font("Cascadia Code SemiLight", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
             this.btExit.Location = new System.Drawing.Point(18, 682);
             this.btExit.Name = "btExit";
@@ -533,7 +535,7 @@ namespace amo6166
             // 
             // love
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -567,7 +569,7 @@ namespace amo6166
             this.Controls.Add(this.metroLabel2);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.panel);
-            this.Font = new System.Drawing.Font("Cascadia Code", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "love";
