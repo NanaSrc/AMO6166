@@ -57,6 +57,36 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="lbInfo.Text" xml:space="preserve">
+    <value>O aplicativo foi desenvolvido em C# utilizando a IDE Visual Studio da Microsoft Corporation juntamente com a Framework Modern UI (MetroFramework, desenvolvedores desconhecidos) para o Design do projeto. Para o desenvolvimento do programa também foi utilizado a ferramenta Git e o GitHub para que fosse possível a gestão do mesmo.
+Nosso repositório pode ser encontrado em: https://github.com/Nanacore/AMO6166/.
+
+Créditos: 
+Nana/Naninha1/nokia/LisA/Anna/Nanacore; 
+Marco/MarcoT/marcotduenas.
+
+Agradecimentos especiais: 
+Babs/Bacon/Baconhyum/Barbara - Por ter me dado as ideias iniciais do programa;
+Professora Sónia - Por ter me ensinado sobre a MetroFramework;
+Professor Mário - Por ter me ensinado tudo que sei sobre C# e programação de formulários no Visual Studio;
+Marco/MarcoT/marcotduenas - Por tere me apoiado e me inspirado em dias ruins :);
+StackOverflow - Por ter me ajudado em momentos onde eu me senti perdida e sem respostas. Consegui resolver muitos erros e implementar coisas novas por causa desse site.</value>
+  </data>
+  <data name="lbText.Text" xml:space="preserve">
+    <value>The application was developed in C# using the Visual Studio IDE from Microsoft Corporation together with the Modern UI Framework (MetroFramework, unknown developers) for the design of the project. For the development of the program, the Git tool and GitHub were also used to make it possible to manage it.
+Our repository can be found at: https://github.com/Nanacore/AMO6166/.
+
+Credits:
+Nana/Naninha1/nokia/LisA/Anna/Nanacore;
+Marco/MarcoT/marcotduenas.
+
+Special thanks:
+Babs/Bacon/Baconhyum/Barbara - For giving me the initial ideas for the program;
+Professor Sónia - For teaching me about MetroFramework;
+Professor Mário - For teaching me everything I know about C# and forms programming in Visual Studio;
+Marco/MarcoT/marcotduenas - For supporting me and inspiring me on bad days :);
+StackOverflow - For helping me in times when I felt lost and without answers. I was able to resolve many errors and implement new things because of this site.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -47,6 +47,7 @@ namespace amo6166
             this.lbInfo.Name = "lbInfo";
             this.lbInfo.Size = new System.Drawing.Size(827, 448);
             this.lbInfo.TabIndex = 0;
+            this.lbInfo.Text = resources.GetString("lbInfo.Text");
             this.lbInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbInfo.WrapToLine = true;
             // 
@@ -107,6 +108,7 @@ namespace amo6166
             this.lbText.Name = "lbText";
             this.lbText.Size = new System.Drawing.Size(827, 448);
             this.lbText.TabIndex = 52;
+            this.lbText.Text = resources.GetString("lbText.Text");
             this.lbText.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbText.Visible = false;
             this.lbText.WrapToLine = true;
