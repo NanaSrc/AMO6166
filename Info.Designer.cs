@@ -47,7 +47,6 @@ namespace amo6166
             this.lbInfo.Name = "lbInfo";
             this.lbInfo.Size = new System.Drawing.Size(827, 448);
             this.lbInfo.TabIndex = 0;
-            this.lbInfo.Text = resources.GetString("lbInfo.Text");
             this.lbInfo.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbInfo.WrapToLine = true;
             // 
@@ -62,22 +61,6 @@ namespace amo6166
             this.lbIdioma.Text = "Selecione o idioma:";
             this.lbIdioma.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            /*<<<<<<< HEAD
-                        // cbIdioma
-                        // 
-                        this.cbIdioma.BackColor = System.Drawing.SystemColors.Window;
-                        this.cbIdioma.FormattingEnabled = true;
-                        this.cbIdioma.Items.AddRange(new object[] {
-                        "English",
-                        "Português (Brasil)"});
-                        this.cbIdioma.Location = new System.Drawing.Point(671, 50);
-                        this.cbIdioma.Name = "cbIdioma";
-                        this.cbIdioma.Size = new System.Drawing.Size(191, 23);
-                        this.cbIdioma.TabIndex = 2;
-                        this.cbIdioma.SelectedIndexChanged += new System.EventHandler(this.cbIdioma_SelectedIndexChanged);
-                        // 
-            =======
-            >>>>>>> 55a5ac29285a6644bfc028c398e9aa608d00e867*/
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
@@ -123,7 +106,6 @@ namespace amo6166
             this.lbText.Name = "lbText";
             this.lbText.Size = new System.Drawing.Size(827, 448);
             this.lbText.TabIndex = 52;
-            this.lbText.Text = resources.GetString("lbText.Text");
             this.lbText.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbText.Visible = false;
             this.lbText.WrapToLine = true;
