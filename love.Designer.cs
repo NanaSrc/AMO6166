@@ -42,7 +42,7 @@ namespace amo6166
             this.lbInfo = new System.Windows.Forms.Label();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.btLogout = new System.Windows.Forms.Label();
-            this.btNanaPage = new System.Windows.Forms.Button();
+            this.btLisaPage = new System.Windows.Forms.Button();
             this.btMarcoPage = new System.Windows.Forms.Button();
             this.btGallery = new System.Windows.Forms.Button();
             this.btTerm = new System.Windows.Forms.Button();
@@ -230,24 +230,24 @@ namespace amo6166
             this.btLogout.Text = "Logout";
             this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
-            // btNanaPage
+            // btLisaPage
             // 
-            this.btNanaPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btNanaPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btNanaPage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btNanaPage.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btNanaPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btNanaPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btNanaPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btNanaPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btNanaPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btNanaPage.Location = new System.Drawing.Point(20, 155);
-            this.btNanaPage.Name = "btNanaPage";
-            this.btNanaPage.Size = new System.Drawing.Size(177, 46);
-            this.btNanaPage.TabIndex = 2;
-            this.btNanaPage.Text = "☆ Lisa\'s computer";
-            this.btNanaPage.UseVisualStyleBackColor = true;
-            this.btNanaPage.Click += new System.EventHandler(this.btNanaPage_Click);
+            this.btLisaPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btLisaPage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btLisaPage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btLisaPage.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btLisaPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btLisaPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btLisaPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLisaPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btLisaPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btLisaPage.Location = new System.Drawing.Point(20, 155);
+            this.btLisaPage.Name = "btLisaPage";
+            this.btLisaPage.Size = new System.Drawing.Size(177, 46);
+            this.btLisaPage.TabIndex = 2;
+            this.btLisaPage.Text = "☆ Lisa\'s computer";
+            this.btLisaPage.UseVisualStyleBackColor = true;
+            this.btLisaPage.Click += new System.EventHandler(this.btNanaPage_Click);
             // 
             // btMarcoPage
             // 
@@ -556,7 +556,7 @@ namespace amo6166
             this.Controls.Add(this.btTerm);
             this.Controls.Add(this.btGallery);
             this.Controls.Add(this.btMarcoPage);
-            this.Controls.Add(this.btNanaPage);
+            this.Controls.Add(this.btLisaPage);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.label3);
@@ -598,7 +598,7 @@ namespace amo6166
         private System.Windows.Forms.Label lbInfo;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.Label btLogout;
-        private System.Windows.Forms.Button btNanaPage;
+        private System.Windows.Forms.Button btLisaPage;
         private System.Windows.Forms.Button btMarcoPage;
         private System.Windows.Forms.Button btGallery;
         private System.Windows.Forms.Button btTerm;

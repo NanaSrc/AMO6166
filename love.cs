@@ -35,7 +35,7 @@ namespace amo6166
 
             if (username == "Marco")
                 ChangeTheme(MetroFramework.MetroThemeStyle.Light);
-            else if (username == "Nana")
+            else if (username == "Lisa")
                 ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
         }
 
@@ -49,10 +49,7 @@ namespace amo6166
                 MessageBox.Show("That's all folks!", ">(");
                 Application.Exit();
             }
-            else
-            {
-                MessageBox.Show("Isso nunca é um adeus", ":)");
-            }
+            
         }
 
         private void PanelShow(Form form)
@@ -104,11 +101,11 @@ namespace amo6166
 
         private void btNanaPage_Click(object sender, EventArgs e)
         {
-            if (btNanaPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btLisaPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btNanaPage);
-                Lisa nana = new Lisa();
-                PanelShow(nana);
+                Active(btLisaPage);
+                Lisa lisa = new Lisa();
+                PanelShow(lisa);
             }
         }
 
@@ -152,10 +149,10 @@ namespace amo6166
                 corB = Color.FromArgb(183, 161, 255);
             }
 
-            btNanaPage.FlatAppearance.BorderColor = corB;
-            btNanaPage.ForeColor = cor;
-            btNanaPage.FlatAppearance.BorderSize = 1;
-            btNanaPage.Text = "☆ Nana's computer";
+            btLisaPage.FlatAppearance.BorderColor = corB;
+            btLisaPage.ForeColor = cor;
+            btLisaPage.FlatAppearance.BorderSize = 1;
+            btLisaPage.Text = "☆ Lisa's computer";
 
             btMarcoPage.FlatAppearance.BorderColor = corB;
             btMarcoPage.ForeColor = cor;
@@ -441,10 +438,10 @@ namespace amo6166
                 btMain.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
                 btMain.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btNanaPage.ForeColor = Color.FromArgb(31, 29, 39);
-                btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btNanaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btNanaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btLisaPage.ForeColor = Color.FromArgb(31, 29, 39);
+                btLisaPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btLisaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btLisaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btMarcoPage.ForeColor = Color.FromArgb(31, 29, 39);
                 btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
@@ -524,10 +521,10 @@ namespace amo6166
                 btMain.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
                 btMain.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btNanaPage.ForeColor = Color.FromArgb(224, 215, 255);
-                btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btNanaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btNanaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btLisaPage.ForeColor = Color.FromArgb(224, 215, 255);
+                btLisaPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btLisaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btLisaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btMarcoPage.ForeColor = Color.FromArgb(224, 215, 255);
                 btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);

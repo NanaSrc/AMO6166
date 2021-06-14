@@ -113,7 +113,7 @@ namespace amo6166
             }
             else if ((rbMoon.Checked && VerificarAMO() == "Lisa") || (rbSummer.Checked && VerificarAMO() == "Marco"))
             {
-                if (VerificarAMO() == "Nana")
+                if (VerificarAMO() == "Lisa")
                 {
                     lbAcesso.Text = "Acessando como: Lisa";
 
@@ -314,7 +314,7 @@ namespace amo6166
             else if (lbAcesso.Text == "Acessando como: Marco")
                 username = "Marco";
             else
-                username = "pessoa anônima";
+                username = "Pessoa Anônima";
         }
 
         private void tbNome_TextChanged(object sender, EventArgs e)
