@@ -30,13 +30,18 @@ namespace amo6166
                 lbIdioma.Visible = false;
                 lbLanguage.Visible = true;
             }
-            else if (cbLanguage.Text == "Português (Brasil)")
+            else if (cbLanguage.Text == "Português")
             {
                 lbText.Visible = false;
                 lbInfo.Visible = true;
                 lbIdioma.Visible = true;
                 lbLanguage.Visible = false;
             }
+        }
+
+        private void metroLabel2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

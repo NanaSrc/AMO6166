@@ -64,12 +64,13 @@ namespace amo6166
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(521, 575);
+            this.metroLabel2.Location = new System.Drawing.Point(774, 575);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(341, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(87, 19);
             this.metroLabel2.TabIndex = 3;
-            this.metroLabel2.Text = "By AMO6166™, we are hated but I feel loved with you. ©";
+            this.metroLabel2.Text = "By Nαnα™ ©";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
             // 
             // label1
             // 
@@ -130,7 +131,7 @@ namespace amo6166
             this.cbLanguage.FormattingEnabled = true;
             this.cbLanguage.ItemHeight = 23;
             this.cbLanguage.Items.AddRange(new object[] {
-            "Português (Brasil)",
+            "Português",
             "English"});
             this.cbLanguage.Location = new System.Drawing.Point(693, 44);
             this.cbLanguage.Name = "cbLanguage";
