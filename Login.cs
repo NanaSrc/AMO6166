@@ -35,8 +35,8 @@ namespace amo6166
                 tbSenha.Text = Properties.Settings.Default.password;
                 cbLembrar.Checked = true;
 
-                if (VerificarAMO() == "Nana")
-                    lbAcesso.Text = "Acessando como: Nana";
+                if (VerificarAMO() == "Lisa")
+                    lbAcesso.Text = "Acessando como: Lisa";
                 else
                     lbAcesso.Text = "Acessando como: Marco";
             }
@@ -56,21 +56,21 @@ namespace amo6166
             {
                 if (VerificarAMO() == "Marco")
                 {
-                    MessageBox.Show("N + M . AMO " +
+                    MessageBox.Show("L + M . AMO " +
                     Environment.NewLine +
                     "Vê se não esquece na próxima, seu desgraçadinho!", ":eye:");
                     hint--;
                 }
-                else if (VerificarAMO() == "Nana")
+                else if (VerificarAMO() == "Lisa")
                 {
-                    MessageBox.Show("N + M . AMO " +
+                    MessageBox.Show("L + M . AMO " +
                     Environment.NewLine +
-                    "Como assim você não lembra? Foi você que programou isso, Anna", ":rage:");
+                    "Como assim você não lembra? Foi você que programou isso, Lisa", ":rage:");
                     hint--;
                 }
                 else
                 {
-                    MessageBox.Show("Nada aqui pra você! Tente novamente sendo o Marco ou a Nana talvez?", ";_;");
+                    MessageBox.Show("Nada aqui pra você! Tente novamente sendo o Marco ou a Lisa talvez?", ";_;");
                 }
             }
             else
@@ -96,26 +96,26 @@ namespace amo6166
             user.Key = tbSenha.Text;
             string nome = VerificarAMO();
 
-            if (VerificarAMO().Equals("Nana") || VerificarAMO().Equals("Marco"))
+            if (VerificarAMO().Equals("Lisa") || VerificarAMO().Equals("Marco"))
                 user.Nomec = true;
 
-            if (user.Key == "12080405.AMO" || user.Key == "04051208.AMO" || user.Key == ".")
+            if (user.Key == "12080405.AMO" || user.Key == "04051208.AMO")
                 user.Keyc = true;
 
-            if ((rbMoon.Checked && VerificarAMO() == "Marco") || (rbSummer.Checked && VerificarAMO() == "Nana"))
+            if ((rbMoon.Checked && VerificarAMO() == "Marco") || (rbSummer.Checked && VerificarAMO() == "Lisa"))
             {
-                if (nome == "Nana" && rbSummer.Checked)
+                if (nome == "Lisa" && rbSummer.Checked)
                     MessageBox.Show("Essa é a frase do Marco...", "Error 666");
                 else if (nome == "Marco" && rbMoon.Checked)
-                    MessageBox.Show("Essa é a frase da Nana...", "Error 444");
+                    MessageBox.Show("Essa é a frase da Lisa...", "Error 444");
 
                 user.Ama = false;
             }
-            else if ((rbMoon.Checked && VerificarAMO() == "Nana") || (rbSummer.Checked && VerificarAMO() == "Marco"))
+            else if ((rbMoon.Checked && VerificarAMO() == "Lisa") || (rbSummer.Checked && VerificarAMO() == "Marco"))
             {
                 if (VerificarAMO() == "Nana")
                 {
-                    lbAcesso.Text = "Acessando como: Nana";
+                    lbAcesso.Text = "Acessando como: Lisa";
 
                     if (Properties.Settings.Default.lembrar)
                         rbMoon.Checked = true;
@@ -168,7 +168,7 @@ namespace amo6166
                     {
                         if (!user.Nomec)
                         {
-                            MessageBox.Show("Apenas Marco e Naninha podem acessar.", "Vá embora");
+                            MessageBox.Show("Apenas Marco e Lisa podem acessar.", "Vá embora");
                         }
                         else if (user.Keyc == false )
                         {
@@ -188,7 +188,7 @@ namespace amo6166
                                     Clean();
                                     break;
                                 case 3:
-                                    if(username == "Nana")
+                                    if(username == "Lisa")
                                         MessageBox.Show("Ok, se você continuar errando eu vou assumir que você não seja a " + username, ":rage: 4");
                                     if(username == "Marco")
                                         MessageBox.Show("Ok, se você continuar errando eu vou assumir que você não seja o " + username, ":rage: 4");
@@ -199,7 +199,7 @@ namespace amo6166
                                     Clean();
                                     break;
                                 case 5:
-                                    if (username == "Nana")
+                                    if (username == "Lisa")
                                         MessageBox.Show("Definitivamente você não é a " + username + ". Ao dar OK você morrerá instantaneamente. (Você foi avisado)", "Sequência de autodestruição iniciada");
                                     if (username == "Marco")
                                         MessageBox.Show("Definitivamente você não é o " + username + ". Ao dar OK você morrerá instantaneamente. (Você foi avisado)", "Sequência de autodestruição iniciada");
@@ -231,21 +231,21 @@ namespace amo6166
 
         private void rbMoon_CheckedChanged(object sender, EventArgs e)
         {
-            if ((VerificarAMO() == "Nana") && rbMoon.Checked)
+            if ((VerificarAMO() == "Lisa") && rbMoon.Checked)
             {
-                lbAcesso.Text = "Acessando como: Nana";
+                lbAcesso.Text = "Acessando como: Lisa";
             }
             else
                 lbAcesso.Text = "Acessando como: Anônimo";
-            /*lbAcesso.Text = "Acessando como: Nana";
-            username = "Nana";*/
+            /*lbAcesso.Text = "Acessando como: Lisa";
+            username = "Lisa";*/
         }
 
         private string VerificarAMO()
         {
-            if (tbNome.Text == "nokia1666" || tbNome.Text == "Nokia1666" || tbNome.Text == "LisA" || tbNome.Text == "nana1666" || tbNome.Text == "Nana1666" || tbNome.Text == "Naninha1")
-                return "Nana";
-            if (tbNome.Text == "marco1666" || tbNome.Text == "Marco1666" || tbNome.Text == "IAmHated" || tbNome.Text == "hated1666" || tbNome.Text == "Hated1666" || tbNome.Text == "MarcoT")
+            if (tbNome.Text == "Lisa6111" || tbNome.Text == "lisa6111")
+                return "Lisa";
+            if (tbNome.Text == "Marco6111" || tbNome.Text == "marco6111")
                 return "Marco";
             else
                 return "Anônimo";
@@ -309,8 +309,8 @@ namespace amo6166
 
         private void lbAcesso_TextChanged(object sender, EventArgs e)
         {
-            if (lbAcesso.Text == "Acessando como: Nana")
-                username = "Nana";
+            if (lbAcesso.Text == "Acessando como: Lisa")
+                username = "Lisa";
             else if (lbAcesso.Text == "Acessando como: Marco")
                 username = "Marco";
             else
@@ -323,9 +323,9 @@ namespace amo6166
             {
                 lbAcesso.Text = "Acessando como: Marco";
             }
-            else if(VerificarAMO() == "Nana")
+            else if(VerificarAMO() == "Lisa")
             {
-                lbAcesso.Text = "Acessando como: Nana";
+                lbAcesso.Text = "Acessando como: Lisa";
             }
             else
                 lbAcesso.Text = "Acessando como: Anônimo";
@@ -356,7 +356,7 @@ namespace amo6166
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C start https://github.com/AMO6166";
+            startInfo.Arguments = "/C start https://github.com/Nanacore/";
             start.StartInfo = startInfo;
             start.Start();
         }
