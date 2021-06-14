@@ -206,12 +206,12 @@ namespace amo6166
             this.metroLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.metroLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.metroLabel3.Location = new System.Drawing.Point(1143, 737);
+            this.metroLabel3.Location = new System.Drawing.Point(1182, 737);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(193, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(154, 19);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroLabel3.TabIndex = 57;
-            this.metroLabel3.Text = "Desenvolvido por: AMO6166 ©";
+            this.metroLabel3.Text = "Developed by Nαnα™ ©";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel3.UseCustomForeColor = true;
             this.metroLabel3.UseStyleColors = true;

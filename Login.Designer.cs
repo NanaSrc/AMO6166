@@ -54,7 +54,7 @@ namespace amo6166
             // 
             this.lbAcesso.AutoSize = true;
             this.lbAcesso.BackColor = System.Drawing.Color.Black;
-            this.lbAcesso.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbAcesso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(32)))), ((int)(((byte)(250)))));
             this.lbAcesso.Location = new System.Drawing.Point(4, 383);
             this.lbAcesso.Name = "lbAcesso";
@@ -210,14 +210,14 @@ namespace amo6166
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Black;
             this.metroLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.metroLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.metroLabel3.Location = new System.Drawing.Point(445, 383);
+            this.metroLabel3.Location = new System.Drawing.Point(484, 383);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(193, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(154, 19);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroLabel3.TabIndex = 46;
-            this.metroLabel3.Text = "Desenvolvido por: AMO6166 ©";
+            this.metroLabel3.Text = "Developed by Nαnα™ ©";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel3.UseCustomForeColor = true;
             this.metroLabel3.UseStyleColors = true;
