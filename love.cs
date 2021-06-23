@@ -33,10 +33,11 @@ namespace amo6166
             Focus();
             BringToFront();
 
-            if (username == "Marco")
-                ChangeTheme(MetroFramework.MetroThemeStyle.Light);
-            else if (username == "Lisa")
-                ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
+            btDiary.Text = "☆ " +
+                username +
+                "'s diary";
+
+            pic.BackgroundImage = Properties.Resources.US2;
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -131,8 +132,9 @@ namespace amo6166
                 pic.Visible = true;
 
             DefaultColor();
+
             if(bt != btDiary)
-                pic.BackgroundImage = Properties.Resources.diary;
+                pic.BackgroundImage = Properties.Resources.US2;
 
             bt.FlatAppearance.BorderColor = Color.FromArgb(152, 63, 104);
             if(Theme == MetroFramework.MetroThemeStyle.Dark)
@@ -253,7 +255,7 @@ namespace amo6166
             if (btDiary.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btDiary);
-                pic.BackgroundImage = Properties.Resources.diary;
+                panel.BackgroundImage = Properties.Resources.diary;
                 Diary term = new Diary(username);
                 PanelShow(term);
                 //SelectText(btTerm);
