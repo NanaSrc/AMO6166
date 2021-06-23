@@ -2,3 +2,4 @@ Loading
 Background image
 Rename
 Login and username
+Variáveis de ambiente
