@@ -133,9 +133,6 @@ namespace amo6166
 
             DefaultColor();
 
-            if(bt != btDiary)
-                pic.BackgroundImage = Properties.Resources.US2;
-
             bt.FlatAppearance.BorderColor = Color.FromArgb(152, 63, 104);
             if(Theme == MetroFramework.MetroThemeStyle.Dark)
                 bt.ForeColor = Color.FromArgb(183, 161, 255);
@@ -255,7 +252,6 @@ namespace amo6166
             if (btDiary.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
                 Active(btDiary);
-                panel.BackgroundImage = Properties.Resources.diary;
                 Diary term = new Diary(username);
                 PanelShow(term);
                 //SelectText(btTerm);
