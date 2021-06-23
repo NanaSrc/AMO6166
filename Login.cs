@@ -29,22 +29,6 @@ namespace amo6166
         private void Login_Load(object sender, EventArgs e)
         {
 
-            if (Properties.Settings.Default.lembrar == true)
-            {
-                tbNome.Text = Properties.Settings.Default.user;
-                tbSenha.Text = Properties.Settings.Default.password;
-                cbLembrar.Checked = true;
-
-                if (VerificarAMO() == "Lisa")
-                    lbAcesso.Text = "Acessando como: Lisa";
-                else
-                    lbAcesso.Text = "Acessando como: Marco";
-            }
-            else
-            {
-                
-            }
-
             tbNome.Focus();
             Focus();
             BringToFront();
@@ -94,17 +78,11 @@ namespace amo6166
                 if (VerificarAMO() == "Lisa")
                 {
                     lbAcesso.Text = "Acessando como: Lisa";
-
-                    if (Properties.Settings.Default.lembrar)
-                        rbMoon.Checked = true;
                 }
                     
                 else
                 {
                     lbAcesso.Text = "Acessando como: Marco";
-
-                    if (Properties.Settings.Default.lembrar)
-                        rbSummer.Checked = true;
                 }
 
                 user.Ama = true;
@@ -114,7 +92,6 @@ namespace amo6166
             {
                 if (cbLembrar.Checked)
                 {
-                    Properties.Settings.Default.lembrar = true;
                     Remember();
                 }
                 else
@@ -360,22 +337,6 @@ namespace amo6166
         private void Login_FormClosed(object sender, FormClosedEventArgs e)
         {
             //Remember();
-        }
-
-        private void Remember()
-        {
-            if (cbLembrar.Checked)
-            {
-                Properties.Settings.Default.lembrar = true;
-                Properties.Settings.Default.user = tbNome.Text;
-                Properties.Settings.Default.password = tbSenha.Text;
-            }
-            else
-            {
-                Properties.Settings.Default.lembrar = false;
-                Properties.Settings.Default.user = string.Empty;
-                Properties.Settings.Default.password = string.Empty;
-            }
         }
     }
 }
