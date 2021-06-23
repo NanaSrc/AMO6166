@@ -52,29 +52,7 @@ namespace amo6166
 
         private void lbSenha_Click(object sender, EventArgs e)
         {
-            if (hint >= 1)
-            {
-                if (VerificarAMO() == "Marco")
-                {
-                    MessageBox.Show("L + M . AMO " +
-                    Environment.NewLine +
-                    "Vê se não esquece na próxima, seu desgraçadinho!", ":eye:");
-                    hint--;
-                }
-                else if (VerificarAMO() == "Lisa")
-                {
-                    MessageBox.Show("L + M . AMO " +
-                    Environment.NewLine +
-                    "Como assim você não lembra? Foi você que programou isso, Lisa", ":rage:");
-                    hint--;
-                }
-                else
-                {
-                    MessageBox.Show("Nada aqui pra você! Tente novamente sendo o Marco ou a Lisa talvez?", ";_;");
-                }
-            }
-            else
-                MessageBox.Show("Você já pegou sua dica!", ">)");
+            
         }
 
         private void mtShow_CheckedChanged(object sender, EventArgs e)
@@ -243,7 +221,7 @@ namespace amo6166
 
         private string VerificarAMO()
         {
-            if (tbNome.Text == "Lisa6111" || tbNome.Text == "lisa6111")
+            if (tbNome.Text == "Lisa1666" || tbNome.Text == "lisa1666")
                 return "Lisa";
             if (tbNome.Text == "Marco6111" || tbNome.Text == "marco6111")
                 return "Marco";

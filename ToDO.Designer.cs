@@ -1,7 +1,7 @@
 ﻿
 namespace amo6166
 {
-    partial class Marco
+    partial class ToDo
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace amo6166
         {
             this.SuspendLayout();
             // 
-            // Marco
+            // ToDo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -40,17 +40,24 @@ namespace amo6166
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Movable = false;
-            this.Name = "Marco";
+            this.Name = "ToDo";
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "Marco";
+            this.Style = MetroFramework.MetroColorStyle.Red;
+            this.Text = "To do:";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Load += new System.EventHandler(this.Marco_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+        private MetroFramework.Controls.MetroCheckBox cb1;
+        private MetroFramework.Controls.MetroCheckBox cbTwo;
+        private MetroFramework.Controls.MetroCheckBox cbThree;
+        private MetroFramework.Controls.MetroCheckBox cbFour;
+        private MetroFramework.Controls.MetroCheckBox cbFive;
+        private MetroFramework.Controls.MetroCheckBox cbSix;
+        private System.Windows.Forms.Panel panel1;
     }
 }

@@ -8,12 +8,16 @@ using System.Windows.Forms;
 
 namespace amo6166
 {
-    public partial class Lisa : MetroFramework.Forms.MetroForm
+    public partial class Bank : MetroFramework.Forms.MetroForm
     {
-        public Lisa()
+        public Bank()
         {
             InitializeComponent();
         }
 
+        private void Game_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

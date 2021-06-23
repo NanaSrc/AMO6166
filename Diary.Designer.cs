@@ -1,7 +1,7 @@
 ﻿
 namespace amo6166
 {
-    partial class Terminal
+    partial class Diary
     {
         /// <summary>
         /// Required designer variable.

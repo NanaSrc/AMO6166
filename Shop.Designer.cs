@@ -1,7 +1,7 @@
 ﻿
 namespace amo6166
 {
-    partial class Game
+    partial class Shop
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@ namespace amo6166
         {
             this.SuspendLayout();
             // 
-            // Game
+            // Shop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -40,14 +40,13 @@ namespace amo6166
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Movable = false;
-            this.Name = "Game";
+            this.Name = "Shop";
             this.Resizable = false;
             this.ShadowType = MetroFramework.Forms.MetroFormShadowType.None;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Style = MetroFramework.MetroColorStyle.Orange;
-            this.Text = "Game";
+            this.Text = "To shop:";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
-            this.Load += new System.EventHandler(this.Game_Load);
+            this.Load += new System.EventHandler(this.Marco_Load);
             this.ResumeLayout(false);
 
         }

@@ -31,6 +31,7 @@ namespace amo6166
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(love));
             this.panel = new MetroFramework.Controls.MetroPanel();
+            this.pic = new System.Windows.Forms.PictureBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.lbLogin = new MetroFramework.Controls.MetroLabel();
@@ -42,29 +43,31 @@ namespace amo6166
             this.lbInfo = new System.Windows.Forms.Label();
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.btLogout = new System.Windows.Forms.Label();
-            this.btLisaPage = new System.Windows.Forms.Button();
-            this.btMarcoPage = new System.Windows.Forms.Button();
-            this.btGallery = new System.Windows.Forms.Button();
-            this.btTerm = new System.Windows.Forms.Button();
-            this.btGame = new System.Windows.Forms.Button();
+            this.btToDo = new System.Windows.Forms.Button();
+            this.btShop = new System.Windows.Forms.Button();
+            this.btAlbum = new System.Windows.Forms.Button();
+            this.btDiary = new System.Windows.Forms.Button();
+            this.btBank = new System.Windows.Forms.Button();
             this.btSite = new System.Windows.Forms.Button();
             this.btProfile = new System.Windows.Forms.Button();
-            this.btPainting = new System.Windows.Forms.Button();
-            this.btMovie = new System.Windows.Forms.Button();
-            this.btLibrary = new System.Windows.Forms.Button();
+            this.btNotes = new System.Windows.Forms.Button();
+            this.btCalendar = new System.Windows.Forms.Button();
+            this.btBirthdays = new System.Windows.Forms.Button();
             this.btFireplace = new System.Windows.Forms.Button();
-            this.btMain = new System.Windows.Forms.Button();
+            this.btMenu = new System.Windows.Forms.Button();
             this.btExit = new System.Windows.Forms.Button();
             this.cbTheme = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.rbLight = new MetroFramework.Controls.MetroRadioButton();
             this.rbDark = new MetroFramework.Controls.MetroRadioButton();
+            this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // panel
             // 
-            this.panel.BackgroundImage = global::amo6166.Properties.Resources.US2;
             this.panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.panel.Controls.Add(this.pic);
             this.panel.HorizontalScrollbarBarColor = true;
             this.panel.HorizontalScrollbarHighlightOnWheel = false;
             this.panel.HorizontalScrollbarSize = 10;
@@ -79,6 +82,18 @@ namespace amo6166
             this.panel.VerticalScrollbarBarColor = true;
             this.panel.VerticalScrollbarHighlightOnWheel = false;
             this.panel.VerticalScrollbarSize = 10;
+            // 
+            // pic
+            // 
+            this.pic.BackgroundImage = global::amo6166.Properties.Resources.US2;
+            this.pic.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pic.InitialImage = null;
+            this.pic.Location = new System.Drawing.Point(0, 0);
+            this.pic.Name = "pic";
+            this.pic.Size = new System.Drawing.Size(1129, 625);
+            this.pic.TabIndex = 2;
+            this.pic.TabStop = false;
+            this.pic.Click += new System.EventHandler(this.pic_Click);
             // 
             // metroLabel1
             // 
@@ -113,9 +128,9 @@ namespace amo6166
             this.lbLogin.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lbLogin.Location = new System.Drawing.Point(1178, 53);
             this.lbLogin.Name = "lbLogin";
-            this.lbLogin.Size = new System.Drawing.Size(65, 19);
+            this.lbLogin.Size = new System.Drawing.Size(21, 19);
             this.lbLogin.TabIndex = 0;
-            this.lbLogin.Text = "Anônimo";
+            this.lbLogin.Text = "--";
             this.lbLogin.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbLogin.UseCustomForeColor = true;
             // 
@@ -126,9 +141,9 @@ namespace amo6166
             this.lbUser.ForeColor = System.Drawing.SystemColors.HighlightText;
             this.lbUser.Location = new System.Drawing.Point(1069, 53);
             this.lbUser.Name = "lbUser";
-            this.lbUser.Size = new System.Drawing.Size(65, 19);
+            this.lbUser.Size = new System.Drawing.Size(21, 19);
             this.lbUser.TabIndex = 0;
-            this.lbUser.Text = "Anônimo";
+            this.lbUser.Text = "--";
             this.lbUser.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.lbUser.UseCustomForeColor = true;
             // 
@@ -169,9 +184,9 @@ namespace amo6166
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(225, 55);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(222, 17);
+            this.label2.Size = new System.Drawing.Size(146, 17);
             this.label2.TabIndex = 54;
-            this.label2.Text = "I Am Hated, but I feel loved with you.";
+            this.label2.Text = "Manage your problems";
             // 
             // label3
             // 
@@ -230,96 +245,96 @@ namespace amo6166
             this.btLogout.Text = "Logout";
             this.btLogout.Click += new System.EventHandler(this.btLogout_Click);
             // 
-            // btLisaPage
+            // btToDo
             // 
-            this.btLisaPage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btLisaPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btLisaPage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btLisaPage.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btLisaPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btLisaPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btLisaPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLisaPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btLisaPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btLisaPage.Location = new System.Drawing.Point(20, 155);
-            this.btLisaPage.Name = "btLisaPage";
-            this.btLisaPage.Size = new System.Drawing.Size(177, 46);
-            this.btLisaPage.TabIndex = 2;
-            this.btLisaPage.Text = "☆ Lisa\'s computer";
-            this.btLisaPage.UseVisualStyleBackColor = true;
-            this.btLisaPage.Click += new System.EventHandler(this.btNanaPage_Click);
+            this.btToDo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btToDo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btToDo.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btToDo.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btToDo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btToDo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btToDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btToDo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btToDo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btToDo.Location = new System.Drawing.Point(20, 155);
+            this.btToDo.Name = "btToDo";
+            this.btToDo.Size = new System.Drawing.Size(177, 46);
+            this.btToDo.TabIndex = 2;
+            this.btToDo.Text = "☆ To do list";
+            this.btToDo.UseVisualStyleBackColor = true;
+            this.btToDo.Click += new System.EventHandler(this.btNanaPage_Click);
             // 
-            // btMarcoPage
+            // btShop
             // 
-            this.btMarcoPage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMarcoPage.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMarcoPage.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btMarcoPage.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btMarcoPage.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btMarcoPage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMarcoPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btMarcoPage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btMarcoPage.Location = new System.Drawing.Point(19, 207);
-            this.btMarcoPage.Name = "btMarcoPage";
-            this.btMarcoPage.Size = new System.Drawing.Size(178, 46);
-            this.btMarcoPage.TabIndex = 3;
-            this.btMarcoPage.Text = "☆ Marco\'s computer";
-            this.btMarcoPage.UseVisualStyleBackColor = true;
-            this.btMarcoPage.Click += new System.EventHandler(this.btMarcoPage_Click);
+            this.btShop.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btShop.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btShop.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btShop.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btShop.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btShop.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btShop.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btShop.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btShop.Location = new System.Drawing.Point(19, 207);
+            this.btShop.Name = "btShop";
+            this.btShop.Size = new System.Drawing.Size(178, 46);
+            this.btShop.TabIndex = 3;
+            this.btShop.Text = "☆ Shop list";
+            this.btShop.UseVisualStyleBackColor = true;
+            this.btShop.Click += new System.EventHandler(this.btMarcoPage_Click);
             // 
-            // btGallery
+            // btAlbum
             // 
-            this.btGallery.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btGallery.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btGallery.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btGallery.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btGallery.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btGallery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btGallery.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btGallery.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btGallery.Location = new System.Drawing.Point(18, 363);
-            this.btGallery.Name = "btGallery";
-            this.btGallery.Size = new System.Drawing.Size(179, 46);
-            this.btGallery.TabIndex = 6;
-            this.btGallery.Text = "☆ Wonderful gallery ";
-            this.btGallery.UseVisualStyleBackColor = true;
-            this.btGallery.Click += new System.EventHandler(this.btGallery_Click);
+            this.btAlbum.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btAlbum.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btAlbum.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btAlbum.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btAlbum.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btAlbum.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btAlbum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btAlbum.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btAlbum.Location = new System.Drawing.Point(18, 363);
+            this.btAlbum.Name = "btAlbum";
+            this.btAlbum.Size = new System.Drawing.Size(179, 46);
+            this.btAlbum.TabIndex = 6;
+            this.btAlbum.Text = "☆ Album";
+            this.btAlbum.UseVisualStyleBackColor = true;
+            this.btAlbum.Click += new System.EventHandler(this.btGallery_Click);
             // 
-            // btTerm
+            // btDiary
             // 
-            this.btTerm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btTerm.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btTerm.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btTerm.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btTerm.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btTerm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btTerm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btTerm.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btTerm.Location = new System.Drawing.Point(18, 311);
-            this.btTerm.Name = "btTerm";
-            this.btTerm.Size = new System.Drawing.Size(179, 46);
-            this.btTerm.TabIndex = 5;
-            this.btTerm.Text = "☆ Console text";
-            this.btTerm.UseVisualStyleBackColor = true;
-            this.btTerm.Click += new System.EventHandler(this.btTerm_Click);
+            this.btDiary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btDiary.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btDiary.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btDiary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btDiary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btDiary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btDiary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btDiary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btDiary.Location = new System.Drawing.Point(18, 311);
+            this.btDiary.Name = "btDiary";
+            this.btDiary.Size = new System.Drawing.Size(179, 46);
+            this.btDiary.TabIndex = 5;
+            this.btDiary.Text = "☆ Diary";
+            this.btDiary.UseVisualStyleBackColor = true;
+            this.btDiary.Click += new System.EventHandler(this.btTerm_Click);
             // 
-            // btGame
+            // btBank
             // 
-            this.btGame.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btGame.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btGame.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btGame.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btGame.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btGame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btGame.Location = new System.Drawing.Point(18, 259);
-            this.btGame.Name = "btGame";
-            this.btGame.Size = new System.Drawing.Size(179, 46);
-            this.btGame.TabIndex = 4;
-            this.btGame.Text = "☆ A simple game";
-            this.btGame.UseVisualStyleBackColor = true;
-            this.btGame.Click += new System.EventHandler(this.btGame_Click);
+            this.btBank.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBank.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btBank.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btBank.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btBank.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btBank.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBank.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btBank.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btBank.Location = new System.Drawing.Point(18, 259);
+            this.btBank.Name = "btBank";
+            this.btBank.Size = new System.Drawing.Size(179, 46);
+            this.btBank.TabIndex = 4;
+            this.btBank.Text = "☆ Mini bank";
+            this.btBank.UseVisualStyleBackColor = true;
+            this.btBank.Click += new System.EventHandler(this.btGame_Click);
             // 
             // btSite
             // 
@@ -355,59 +370,59 @@ namespace amo6166
             this.btProfile.UseVisualStyleBackColor = true;
             this.btProfile.Click += new System.EventHandler(this.btProfile_Click);
             // 
-            // btPainting
+            // btNotes
             // 
-            this.btPainting.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btPainting.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btPainting.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btPainting.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btPainting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btPainting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btPainting.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btPainting.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btPainting.Location = new System.Drawing.Point(18, 415);
-            this.btPainting.Name = "btPainting";
-            this.btPainting.Size = new System.Drawing.Size(179, 46);
-            this.btPainting.TabIndex = 7;
-            this.btPainting.Text = "☆ Painting room";
-            this.btPainting.UseVisualStyleBackColor = true;
-            this.btPainting.Click += new System.EventHandler(this.btPainting_Click);
+            this.btNotes.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btNotes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btNotes.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btNotes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btNotes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btNotes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btNotes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btNotes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btNotes.Location = new System.Drawing.Point(18, 415);
+            this.btNotes.Name = "btNotes";
+            this.btNotes.Size = new System.Drawing.Size(179, 46);
+            this.btNotes.TabIndex = 7;
+            this.btNotes.Text = "☆ Notes";
+            this.btNotes.UseVisualStyleBackColor = true;
+            this.btNotes.Click += new System.EventHandler(this.btPainting_Click);
             // 
-            // btMovie
+            // btCalendar
             // 
-            this.btMovie.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMovie.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMovie.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btMovie.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btMovie.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btMovie.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMovie.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btMovie.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btMovie.Location = new System.Drawing.Point(18, 467);
-            this.btMovie.Name = "btMovie";
-            this.btMovie.Size = new System.Drawing.Size(179, 46);
-            this.btMovie.TabIndex = 8;
-            this.btMovie.Text = "☆ Movie room";
-            this.btMovie.UseVisualStyleBackColor = true;
-            this.btMovie.Click += new System.EventHandler(this.btMovie_Click);
+            this.btCalendar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCalendar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btCalendar.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btCalendar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btCalendar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btCalendar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCalendar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btCalendar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btCalendar.Location = new System.Drawing.Point(18, 467);
+            this.btCalendar.Name = "btCalendar";
+            this.btCalendar.Size = new System.Drawing.Size(179, 46);
+            this.btCalendar.TabIndex = 8;
+            this.btCalendar.Text = "☆ Calendar";
+            this.btCalendar.UseVisualStyleBackColor = true;
+            this.btCalendar.Click += new System.EventHandler(this.btMovie_Click);
             // 
-            // btLibrary
+            // btBirthdays
             // 
-            this.btLibrary.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btLibrary.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btLibrary.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btLibrary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btLibrary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btLibrary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLibrary.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btLibrary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btLibrary.Location = new System.Drawing.Point(18, 519);
-            this.btLibrary.Name = "btLibrary";
-            this.btLibrary.Size = new System.Drawing.Size(179, 46);
-            this.btLibrary.TabIndex = 9;
-            this.btLibrary.Text = "☆ A library";
-            this.btLibrary.UseVisualStyleBackColor = true;
-            this.btLibrary.Click += new System.EventHandler(this.btLibrary_Click);
+            this.btBirthdays.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btBirthdays.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btBirthdays.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btBirthdays.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btBirthdays.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btBirthdays.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btBirthdays.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btBirthdays.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btBirthdays.Location = new System.Drawing.Point(18, 519);
+            this.btBirthdays.Name = "btBirthdays";
+            this.btBirthdays.Size = new System.Drawing.Size(179, 46);
+            this.btBirthdays.TabIndex = 9;
+            this.btBirthdays.Text = "☆ Birthdays";
+            this.btBirthdays.UseVisualStyleBackColor = true;
+            this.btBirthdays.Click += new System.EventHandler(this.btLibrary_Click);
             // 
             // btFireplace
             // 
@@ -423,27 +438,27 @@ namespace amo6166
             this.btFireplace.Name = "btFireplace";
             this.btFireplace.Size = new System.Drawing.Size(179, 46);
             this.btFireplace.TabIndex = 10;
-            this.btFireplace.Text = "☆ Warm fireplace";
+            this.btFireplace.Text = "☆ ";
             this.btFireplace.UseVisualStyleBackColor = true;
             this.btFireplace.Click += new System.EventHandler(this.btFireplace_Click);
             // 
-            // btMain
+            // btMenu
             // 
-            this.btMain.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btMain.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
-            this.btMain.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
-            this.btMain.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
-            this.btMain.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
-            this.btMain.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMain.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btMain.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
-            this.btMain.Location = new System.Drawing.Point(20, 103);
-            this.btMain.Name = "btMain";
-            this.btMain.Size = new System.Drawing.Size(177, 46);
-            this.btMain.TabIndex = 1;
-            this.btMain.Text = "☆ Main hall";
-            this.btMain.UseVisualStyleBackColor = true;
-            this.btMain.Click += new System.EventHandler(this.btMain_Click);
+            this.btMenu.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btMenu.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(183)))), ((int)(((byte)(161)))), ((int)(((byte)(255)))));
+            this.btMenu.FlatAppearance.CheckedBackColor = System.Drawing.SystemColors.InfoText;
+            this.btMenu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(29)))), ((int)(((byte)(39)))));
+            this.btMenu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(7)))), ((int)(((byte)(16)))));
+            this.btMenu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btMenu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(215)))), ((int)(((byte)(255)))));
+            this.btMenu.Location = new System.Drawing.Point(20, 103);
+            this.btMenu.Name = "btMenu";
+            this.btMenu.Size = new System.Drawing.Size(177, 46);
+            this.btMenu.TabIndex = 1;
+            this.btMenu.Text = "☆ Menu";
+            this.btMenu.UseVisualStyleBackColor = true;
+            this.btMenu.Click += new System.EventHandler(this.btMain_Click);
             // 
             // btExit
             // 
@@ -545,18 +560,18 @@ namespace amo6166
             this.Controls.Add(this.metroLabel4);
             this.Controls.Add(this.cbTheme);
             this.Controls.Add(this.btExit);
-            this.Controls.Add(this.btMain);
+            this.Controls.Add(this.btMenu);
             this.Controls.Add(this.btSite);
             this.Controls.Add(this.btFireplace);
-            this.Controls.Add(this.btLibrary);
-            this.Controls.Add(this.btMovie);
-            this.Controls.Add(this.btPainting);
+            this.Controls.Add(this.btBirthdays);
+            this.Controls.Add(this.btCalendar);
+            this.Controls.Add(this.btNotes);
             this.Controls.Add(this.btProfile);
-            this.Controls.Add(this.btGame);
-            this.Controls.Add(this.btTerm);
-            this.Controls.Add(this.btGallery);
-            this.Controls.Add(this.btMarcoPage);
-            this.Controls.Add(this.btLisaPage);
+            this.Controls.Add(this.btBank);
+            this.Controls.Add(this.btDiary);
+            this.Controls.Add(this.btAlbum);
+            this.Controls.Add(this.btShop);
+            this.Controls.Add(this.btToDo);
             this.Controls.Add(this.btLogout);
             this.Controls.Add(this.metroLabel3);
             this.Controls.Add(this.label3);
@@ -579,6 +594,8 @@ namespace amo6166
             this.Text = " ☆";
             this.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.Load += new System.EventHandler(this.love_Load);
+            this.panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -598,22 +615,23 @@ namespace amo6166
         private System.Windows.Forms.Label lbInfo;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.Label btLogout;
-        private System.Windows.Forms.Button btLisaPage;
-        private System.Windows.Forms.Button btMarcoPage;
-        private System.Windows.Forms.Button btGallery;
-        private System.Windows.Forms.Button btTerm;
-        private System.Windows.Forms.Button btGame;
+        private System.Windows.Forms.Button btToDo;
+        private System.Windows.Forms.Button btShop;
+        private System.Windows.Forms.Button btAlbum;
+        private System.Windows.Forms.Button btDiary;
+        private System.Windows.Forms.Button btBank;
         private System.Windows.Forms.Button btSite;
         private System.Windows.Forms.Button btProfile;
-        private System.Windows.Forms.Button btPainting;
-        private System.Windows.Forms.Button btMovie;
-        private System.Windows.Forms.Button btLibrary;
+        private System.Windows.Forms.Button btNotes;
+        private System.Windows.Forms.Button btCalendar;
+        private System.Windows.Forms.Button btBirthdays;
         private System.Windows.Forms.Button btFireplace;
-        private System.Windows.Forms.Button btMain;
+        private System.Windows.Forms.Button btMenu;
         private System.Windows.Forms.Button btExit;
         private MetroFramework.Controls.MetroComboBox cbTheme;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private MetroFramework.Controls.MetroRadioButton rbLight;
         private MetroFramework.Controls.MetroRadioButton rbDark;
+        private System.Windows.Forms.PictureBox pic;
     }
 }

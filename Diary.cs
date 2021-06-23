@@ -9,13 +9,13 @@ using System.Windows.Forms;
 
 namespace amo6166
 {
-    public partial class Terminal : MetroFramework.Forms.MetroForm
+    public partial class Diary : MetroFramework.Forms.MetroForm
     {
         string username;
         string content;
         string path;
         int count = 0;
-        public Terminal(string username)
+        public Diary(string username)
         {
             InitializeComponent();
             this.username = username;

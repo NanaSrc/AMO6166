@@ -8,14 +8,14 @@ using System.Windows.Forms;
 
 namespace amo6166
 {
-    public partial class Game : MetroFramework.Forms.MetroForm
+    public partial class Shop : MetroFramework.Forms.MetroForm
     {
-        public Game()
+        public Shop()
         {
             InitializeComponent();
         }
 
-        private void Game_Load(object sender, EventArgs e)
+        private void Marco_Load(object sender, EventArgs e)
         {
 
         }
