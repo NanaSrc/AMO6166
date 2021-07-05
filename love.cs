@@ -27,16 +27,17 @@ namespace amo6166
         {
             lbUser.Text = username;
             lbLogin.Text = login;
-            Active(btMain);
+            Active(btMenu);
             cbTheme.SelectedIndex = 0;
             UpdateStyles();
             Focus();
             BringToFront();
 
-            if (username == "Marco")
-                ChangeTheme(MetroFramework.MetroThemeStyle.Light);
-            else if (username == "Nana")
-                ChangeTheme(MetroFramework.MetroThemeStyle.Dark);
+            btDiary.Text = "☆ " +
+                username +
+                "'s diary";
+
+            pic.BackgroundImage = Properties.Resources.US2;
         }
 
         private void btSair_Click(object sender, EventArgs e)
@@ -49,10 +50,7 @@ namespace amo6166
                 MessageBox.Show("That's all folks!", ">(");
                 Application.Exit();
             }
-            else
-            {
-                MessageBox.Show("Isso nunca é um adeus", ":)");
-            }
+            
         }
 
         private void PanelShow(Form form)
@@ -85,7 +83,7 @@ namespace amo6166
             System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
-            startInfo.Arguments = "/C start https://github.com/AMO6166";
+            startInfo.Arguments = "/C start https://github.com/Nanacore/";
             start.StartInfo = startInfo;
             start.Start();
         }
@@ -104,11 +102,11 @@ namespace amo6166
 
         private void btNanaPage_Click(object sender, EventArgs e)
         {
-            if (btNanaPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btToDo.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btNanaPage);
-                Nana nana = new Nana();
-                PanelShow(nana);
+                Active(btToDo);
+                ToDo lisa = new ToDo();
+                PanelShow(lisa);
             }
         }
 
@@ -128,7 +126,13 @@ namespace amo6166
 
         private void Active(Button bt)
         {
+            if (bt != btMenu)
+                pic.Visible = false;
+            else
+                pic.Visible = true;
+
             DefaultColor();
+
             bt.FlatAppearance.BorderColor = Color.FromArgb(152, 63, 104);
             if(Theme == MetroFramework.MetroThemeStyle.Dark)
                 bt.ForeColor = Color.FromArgb(183, 161, 255);
@@ -152,60 +156,62 @@ namespace amo6166
                 corB = Color.FromArgb(183, 161, 255);
             }
 
-            btNanaPage.FlatAppearance.BorderColor = corB;
-            btNanaPage.ForeColor = cor;
-            btNanaPage.FlatAppearance.BorderSize = 1;
-            btNanaPage.Text = "☆ Nana's computer";
+            btToDo.FlatAppearance.BorderColor = corB;
+            btToDo.ForeColor = cor;
+            btToDo.FlatAppearance.BorderSize = 1;
+            btToDo.Text = "☆ To do list";
 
-            btMarcoPage.FlatAppearance.BorderColor = corB;
-            btMarcoPage.ForeColor = cor;
-            btMarcoPage.FlatAppearance.BorderSize = 1;
-            btMarcoPage.Text = "☆ Marco's computer";
+            btShop.FlatAppearance.BorderColor = corB;
+            btShop.ForeColor = cor;
+            btShop.FlatAppearance.BorderSize = 1;
+            btShop.Text = "☆ Shop list";
 
-            btGame.FlatAppearance.BorderColor = corB;
-            btGame.ForeColor = cor;
-            btGame.FlatAppearance.BorderSize = 1;
-            btGame.Text = "☆ A simple game";
+            btBank.FlatAppearance.BorderColor = corB;
+            btBank.ForeColor = cor;
+            btBank.FlatAppearance.BorderSize = 1;
+            btBank.Text = "☆ Mini bank";
 
-            btTerm.FlatAppearance.BorderColor = corB;
-            btTerm.ForeColor = cor;
-            btTerm.FlatAppearance.BorderSize = 1;
-            btTerm.Text = "☆ Console text";
+            btDiary.FlatAppearance.BorderColor = corB;
+            btDiary.ForeColor = cor;
+            btDiary.FlatAppearance.BorderSize = 1;
+            btDiary.Text = "☆ " +
+                username +
+                "'s diary";
 
-            btGallery.FlatAppearance.BorderColor = corB;
-            btGallery.ForeColor = cor;
-            btGallery.FlatAppearance.BorderSize = 1;
-            btGallery.Text = "☆ Wonderful gallery";
+            btAlbum.FlatAppearance.BorderColor = corB;
+            btAlbum.ForeColor = cor;
+            btAlbum.FlatAppearance.BorderSize = 1;
+            btAlbum.Text = "☆ Album";
 
             btSite.FlatAppearance.BorderColor = corB;
             btSite.ForeColor = cor;
             btSite.FlatAppearance.BorderSize = 1;
             btSite.Text = "☆ amo6166.com";
 
-            btPainting.FlatAppearance.BorderColor = corB;
-            btPainting.ForeColor = cor;
-            btPainting.FlatAppearance.BorderSize = 1;
-            btPainting.Text = "☆ Painting room";
+            btNotes.FlatAppearance.BorderColor = corB;
+            btNotes.ForeColor = cor;
+            btNotes.FlatAppearance.BorderSize = 1;
+            btNotes.Text = "☆ Notes";
 
-            btMovie.FlatAppearance.BorderColor = corB;
-            btMovie.ForeColor = cor;
-            btMovie.FlatAppearance.BorderSize = 1;
-            btMovie.Text = "☆ Movie room";
+            btCalendar.FlatAppearance.BorderColor = corB;
+            btCalendar.ForeColor = cor;
+            btCalendar.FlatAppearance.BorderSize = 1;
+            btCalendar.Text = "☆ Calendar";
 
-            btLibrary.FlatAppearance.BorderColor = corB;
-            btLibrary.ForeColor = cor;
-            btLibrary.FlatAppearance.BorderSize = 1;
-            btLibrary.Text = "☆ A library";
+            btBirthdays.FlatAppearance.BorderColor = corB;
+            btBirthdays.ForeColor = cor;
+            btBirthdays.FlatAppearance.BorderSize = 1;
+            btBirthdays.Text = "☆ Birthdays";
 
             btFireplace.FlatAppearance.BorderColor = corB;
             btFireplace.ForeColor = cor;
             btFireplace.FlatAppearance.BorderSize = 1;
-            btFireplace.Text = "☆ Warm fireplace";
+            btFireplace.Text = "☆ ";
 
-            btMain.FlatAppearance.BorderColor = corB;
-            btMain.ForeColor = cor;
-            btMain.FlatAppearance.BorderSize = 1;
-            btMain.Text = "☆ Main hall";
+            btMenu.FlatAppearance.BorderColor = corB;
+            btMenu.ForeColor = cor;
+            btMenu.FlatAppearance.BorderSize = 1;
+            btMenu.Text = "☆ Menu";
 
             btExit.FlatAppearance.BorderColor = corB;
             btExit.ForeColor = cor;
@@ -220,11 +226,11 @@ namespace amo6166
 
         private void btMarcoPage_Click(object sender, EventArgs e)
         {
-            if (btMarcoPage.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btShop.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                btMarcoPage.Text = "Marco's computer";
-                Active(btMarcoPage);
-                Marco marco = new Marco();
+                btShop.Text = "Shop list";
+                Active(btShop);
+                Shop marco = new Shop();
                 PanelShow(marco);
                 //SelectText(btMarcoPage);
             }
@@ -232,10 +238,10 @@ namespace amo6166
 
         private void btGame_Click(object sender, EventArgs e)
         {
-            if (btGame.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btBank.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btGame);
-                Game game = new Game();
+                Active(btBank);
+                Bank game = new Bank();
                 PanelShow(game);
                 //SelectText(btGame);
             }
@@ -243,10 +249,10 @@ namespace amo6166
 
         private void btTerm_Click(object sender, EventArgs e)
         {
-            if (btTerm.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btDiary.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btTerm);
-                Terminal term = new Terminal(username);
+                Active(btDiary);
+                Diary term = new Diary(username);
                 PanelShow(term);
                 //SelectText(btTerm);
             }
@@ -254,9 +260,9 @@ namespace amo6166
 
         private void btGallery_Click(object sender, EventArgs e)
         {
-            if (btGallery.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btAlbum.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btGallery);
+                Active(btAlbum);
                 Galeria gallery = new Galeria();
                 PanelShow(gallery);
                 //SelectText(btGallery);
@@ -276,9 +282,9 @@ namespace amo6166
 
         private void btPainting_Click(object sender, EventArgs e)
         {
-            if (btPainting.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btNotes.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btPainting);
+                Active(btNotes);
                 Painting paint = new Painting();
                 PanelShow(paint);
                 //SelectText(btPainting);
@@ -287,9 +293,9 @@ namespace amo6166
 
         private void btMovie_Click(object sender, EventArgs e)
         {
-            if (btMovie.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btCalendar.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btMovie);
+                Active(btCalendar);
                 Movie movie = new Movie();
                 PanelShow(movie);
                 //SelectText(btMovie);
@@ -298,9 +304,9 @@ namespace amo6166
 
         private void btLibrary_Click(object sender, EventArgs e)
         {
-            if (btLibrary.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btBirthdays.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                Active(btLibrary);
+                Active(btBirthdays);
                 Library lib = new Library();
                 PanelShow(lib);
                 //SelectText(btLibrary);
@@ -320,10 +326,10 @@ namespace amo6166
 
         private void btMain_Click(object sender, EventArgs e)
         {
-            if (btMain.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
+            if (btMenu.FlatAppearance.BorderColor != Color.FromArgb(152, 63, 104))
             {
-                btMain.Text = "Main hall";
-                Active(btMain);
+                btMenu.Text = "Menu";
+                Active(btMenu);
                 panel.Controls.Clear();
                 //SelectText(btMain);
             }
@@ -333,7 +339,7 @@ namespace amo6166
         {
             Active(btExit);
             //SelectText(btMain);
-            DialogResult resultado = MessageBox.Show("Deseja sair do nosso programinha?", ":(", MessageBoxButtons.YesNo);
+            DialogResult resultado = MessageBox.Show("Exit?", ":(", MessageBoxButtons.YesNo);
             //I love you to the moon and back
             if (resultado == DialogResult.Yes)
             {
@@ -436,55 +442,55 @@ namespace amo6166
                 label2.ForeColor = Color.FromArgb(31, 29, 39);
                 label3.ForeColor = Color.Black;
 
-                btMain.ForeColor = Color.FromArgb(31, 29, 39);
-                btMain.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btMain.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btMain.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btMenu.ForeColor = Color.FromArgb(31, 29, 39);
+                btMenu.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btMenu.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btMenu.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btNanaPage.ForeColor = Color.FromArgb(31, 29, 39);
-                btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btNanaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btNanaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btToDo.ForeColor = Color.FromArgb(31, 29, 39);
+                btToDo.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btToDo.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btToDo.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btMarcoPage.ForeColor = Color.FromArgb(31, 29, 39);
-                btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btMarcoPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btMarcoPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btShop.ForeColor = Color.FromArgb(31, 29, 39);
+                btShop.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btShop.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btShop.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btTerm.ForeColor = Color.FromArgb(31, 29, 39);
-                btTerm.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btTerm.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btTerm.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btDiary.ForeColor = Color.FromArgb(31, 29, 39);
+                btDiary.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btDiary.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btDiary.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btPainting.ForeColor = Color.FromArgb(31, 29, 39);
-                btPainting.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btPainting.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btPainting.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btNotes.ForeColor = Color.FromArgb(31, 29, 39);
+                btNotes.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btNotes.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btNotes.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btMovie.ForeColor = Color.FromArgb(31, 29, 39);
-                btMovie.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btMovie.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btMovie.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btCalendar.ForeColor = Color.FromArgb(31, 29, 39);
+                btCalendar.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btCalendar.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btCalendar.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btGallery.ForeColor = Color.FromArgb(31, 29, 39);
-                btGallery.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btGallery.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btGallery.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btAlbum.ForeColor = Color.FromArgb(31, 29, 39);
+                btAlbum.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btAlbum.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btAlbum.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btGame.ForeColor = Color.FromArgb(31, 29, 39);
-                btGame.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btGame.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btGame.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btBank.ForeColor = Color.FromArgb(31, 29, 39);
+                btBank.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btBank.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btBank.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btSite.ForeColor = Color.FromArgb(31, 29, 39);
                 btSite.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
                 btSite.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
                 btSite.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
-                btLibrary.ForeColor = Color.FromArgb(31, 29, 39);
-                btLibrary.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
-                btLibrary.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
-                btLibrary.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
+                btBirthdays.ForeColor = Color.FromArgb(31, 29, 39);
+                btBirthdays.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
+                btBirthdays.FlatAppearance.MouseOverBackColor = Color.FromArgb(224, 215, 255);
+                btBirthdays.FlatAppearance.MouseDownBackColor = Color.FromArgb(199, 179, 187);
 
                 btFireplace.ForeColor = Color.FromArgb(31, 29, 39);
                 btFireplace.FlatAppearance.BorderColor = Color.FromArgb(45, 41, 56);
@@ -510,7 +516,7 @@ namespace amo6166
             }
             else if (theme == MetroFramework.MetroThemeStyle.Dark)
             {
-                panel.BackgroundImage = Properties.Resources.US2;
+                pic.BackgroundImage = Properties.Resources.US2;
                 //metroLabel1.ForeColor = Color.FromArgb(31, 29, 39);
                 //metroLabel2.ForeColor = Color.FromArgb(31, 29, 39);
                 metroLabel3.ForeColor = Color.FromArgb(64, 64, 64);
@@ -519,55 +525,55 @@ namespace amo6166
                 label2.ForeColor = Color.FromArgb(183, 161, 255);
                 label3.ForeColor = Color.DarkGray;
 
-                btMain.ForeColor = Color.FromArgb(224, 215, 255);
-                btMain.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btMain.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btMain.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btMenu.ForeColor = Color.FromArgb(224, 215, 255);
+                btMenu.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btMenu.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btMenu.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btNanaPage.ForeColor = Color.FromArgb(224, 215, 255);
-                btNanaPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btNanaPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btNanaPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btToDo.ForeColor = Color.FromArgb(224, 215, 255);
+                btToDo.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btToDo.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btToDo.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btMarcoPage.ForeColor = Color.FromArgb(224, 215, 255);
-                btMarcoPage.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btMarcoPage.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btMarcoPage.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btShop.ForeColor = Color.FromArgb(224, 215, 255);
+                btShop.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btShop.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btShop.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btTerm.ForeColor = Color.FromArgb(224, 215, 255);
-                btTerm.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btTerm.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btTerm.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btDiary.ForeColor = Color.FromArgb(224, 215, 255);
+                btDiary.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btDiary.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btDiary.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btPainting.ForeColor = Color.FromArgb(224, 215, 255);
-                btPainting.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btPainting.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btPainting.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btNotes.ForeColor = Color.FromArgb(224, 215, 255);
+                btNotes.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btNotes.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btNotes.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btMovie.ForeColor = Color.FromArgb(224, 215, 255);
-                btMovie.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btMovie.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btMovie.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btCalendar.ForeColor = Color.FromArgb(224, 215, 255);
+                btCalendar.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btCalendar.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btCalendar.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btGallery.ForeColor = Color.FromArgb(224, 215, 255);
-                btGallery.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btGallery.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btGallery.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btAlbum.ForeColor = Color.FromArgb(224, 215, 255);
+                btAlbum.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btAlbum.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btAlbum.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btGame.ForeColor = Color.FromArgb(224, 215, 255);
-                btGame.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btGame.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btGame.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btBank.ForeColor = Color.FromArgb(224, 215, 255);
+                btBank.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btBank.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btBank.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btSite.ForeColor = Color.FromArgb(224, 215, 255);
                 btSite.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
                 btSite.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
                 btSite.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
-                btLibrary.ForeColor = Color.FromArgb(224, 215, 255);
-                btLibrary.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
-                btLibrary.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
-                btLibrary.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
+                btBirthdays.ForeColor = Color.FromArgb(224, 215, 255);
+                btBirthdays.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
+                btBirthdays.FlatAppearance.MouseDownBackColor = Color.FromArgb(31, 29, 39);
+                btBirthdays.FlatAppearance.MouseOverBackColor = Color.FromArgb(29, 7, 16);
 
                 btFireplace.ForeColor = Color.FromArgb(224, 215, 255);
                 btFireplace.FlatAppearance.BorderColor = Color.FromArgb(183, 161, 255);
@@ -603,6 +609,21 @@ namespace amo6166
         private void SelectText(Button bt)
         {
             bt.Text = bt.Text + " ☆";
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelIcon_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pic_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

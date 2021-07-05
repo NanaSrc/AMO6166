@@ -45,7 +45,6 @@ namespace amo6166
                         Environment.NewLine +
                         "After Eating Fish"*/;
                     //fish1.Visible = true;
-                    label2.Visible = true;
                     break;
                 //10
                 case "<//                   >":
@@ -58,30 +57,29 @@ namespace amo6166
                 //20
                 case "<////                 >":
                     lbBar.Text = "<//////               >";
-                    lbLoading.Text = "☆ Feeding monkeys...";
+                    lbLoading.Text = "☆ Loading...";
                     //label1.Visible = false;
-                    label2.Visible = false;
                     //fish2.Visible = false;
                     //fish3.Visible = true;
                     break;
                 //30
                 case "<//////               >":
                     lbBar.Text = "<////////             >";
-                    lbLoading.Text = "☆ Feeding monkeys.";
+                    lbLoading.Text = "☆ Loading.";
                     //fish3.Visible = false;
                     //fish4.Visible = true;
                     break;
                 //40
                 case "<////////             >":
                     lbBar.Text = "<//////////           >";
-                    lbLoading.Text = "☆ Loving Marco..";
+                    lbLoading.Text = "☆ Loading Marco..";
                     //fish4.Visible = false;
                     //fish5.Visible = true;
                     break;
                 //50
                 case "<//////////           >":
                     lbBar.Text = "<////////////         >";
-                    lbLoading.Text = "☆ Loving Nana...";
+                    lbLoading.Text = "☆ Loading Lisa...";
                     //fish5.Visible = false;
                     //fish6.Visible = true;
                     break;
@@ -94,12 +92,7 @@ namespace amo6166
                 //70
                 case "<//////////////       >":
                     lbBar.Text = "<////////////////     >";
-                    lbLoading.Text = "☆ Cleaning Windows.. "/* +
-                        Environment.NewLine +
-                        "(yes I said windows b****)"*/;
-                    //label1.TextAlign = ContentAlignment.MiddleCenter;
-                    //label1.Text = "yes I said windows b****";
-                    //label1.Visible = true;
+                    lbLoading.Text = "☆ Cleaning Windows.. ";
                     break;
                 //80
                 case "<////////////////     >":
@@ -142,12 +135,6 @@ namespace amo6166
                 lov.BringToFront();
                 //Hide();
             }
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Congrats! Now you have a fish in ur stomach :)");
-            
         }
     }
 }

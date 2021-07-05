@@ -54,7 +54,7 @@ namespace amo6166
             // 
             this.lbAcesso.AutoSize = true;
             this.lbAcesso.BackColor = System.Drawing.Color.Black;
-            this.lbAcesso.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbAcesso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.lbAcesso.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(152)))), ((int)(((byte)(32)))), ((int)(((byte)(250)))));
             this.lbAcesso.Location = new System.Drawing.Point(4, 383);
             this.lbAcesso.Name = "lbAcesso";
@@ -134,9 +134,9 @@ namespace amo6166
             this.metroLabel2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.metroLabel2.Location = new System.Drawing.Point(71, 208);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(68, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(58, 19);
             this.metroLabel2.TabIndex = 43;
-            this.metroLabel2.Text = "I love you:";
+            this.metroLabel2.Text = "Are you:";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
             // btLogin
@@ -182,10 +182,10 @@ namespace amo6166
             this.rbMoon.AutoSize = true;
             this.rbMoon.Location = new System.Drawing.Point(173, 212);
             this.rbMoon.Name = "rbMoon";
-            this.rbMoon.Size = new System.Drawing.Size(140, 15);
+            this.rbMoon.Size = new System.Drawing.Size(123, 15);
             this.rbMoon.Style = MetroFramework.MetroColorStyle.Red;
             this.rbMoon.TabIndex = 3;
-            this.rbMoon.Text = "to the moon and back";
+            this.rbMoon.Text = "A robot, what else?";
             this.rbMoon.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbMoon.UseSelectable = true;
             this.rbMoon.CheckedChanged += new System.EventHandler(this.rbMoon_CheckedChanged);
@@ -194,12 +194,12 @@ namespace amo6166
             // rbSummer
             // 
             this.rbSummer.AutoSize = true;
-            this.rbSummer.Location = new System.Drawing.Point(348, 212);
+            this.rbSummer.Location = new System.Drawing.Point(381, 212);
             this.rbSummer.Name = "rbSummer";
-            this.rbSummer.Size = new System.Drawing.Size(152, 15);
+            this.rbSummer.Size = new System.Drawing.Size(119, 15);
             this.rbSummer.Style = MetroFramework.MetroColorStyle.Blue;
             this.rbSummer.TabIndex = 4;
-            this.rbSummer.Text = "to the summer and back";
+            this.rbSummer.Text = "A human (I guess)";
             this.rbSummer.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.rbSummer.UseSelectable = true;
             this.rbSummer.CheckedChanged += new System.EventHandler(this.rbSummer_CheckedChanged);
@@ -210,14 +210,14 @@ namespace amo6166
             this.metroLabel3.AutoSize = true;
             this.metroLabel3.BackColor = System.Drawing.Color.Black;
             this.metroLabel3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.metroLabel3.Font = new System.Drawing.Font("Cascadia Code SemiBold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.metroLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.metroLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.metroLabel3.Location = new System.Drawing.Point(445, 383);
+            this.metroLabel3.Location = new System.Drawing.Point(484, 383);
             this.metroLabel3.Name = "metroLabel3";
-            this.metroLabel3.Size = new System.Drawing.Size(193, 19);
+            this.metroLabel3.Size = new System.Drawing.Size(154, 19);
             this.metroLabel3.Style = MetroFramework.MetroColorStyle.Silver;
             this.metroLabel3.TabIndex = 46;
-            this.metroLabel3.Text = "Desenvolvido por: AMO6166 ©";
+            this.metroLabel3.Text = "Developed by Nαnα™ ©";
             this.metroLabel3.Theme = MetroFramework.MetroThemeStyle.Dark;
             this.metroLabel3.UseCustomForeColor = true;
             this.metroLabel3.UseStyleColors = true;

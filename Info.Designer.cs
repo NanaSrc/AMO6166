@@ -62,31 +62,16 @@ namespace amo6166
             this.lbIdioma.Text = "Selecione o idioma:";
             this.lbIdioma.Theme = MetroFramework.MetroThemeStyle.Dark;
             // 
-            /*<<<<<<< HEAD
-                        // cbIdioma
-                        // 
-                        this.cbIdioma.BackColor = System.Drawing.SystemColors.Window;
-                        this.cbIdioma.FormattingEnabled = true;
-                        this.cbIdioma.Items.AddRange(new object[] {
-                        "English",
-                        "Português (Brasil)"});
-                        this.cbIdioma.Location = new System.Drawing.Point(671, 50);
-                        this.cbIdioma.Name = "cbIdioma";
-                        this.cbIdioma.Size = new System.Drawing.Size(191, 23);
-                        this.cbIdioma.TabIndex = 2;
-                        this.cbIdioma.SelectedIndexChanged += new System.EventHandler(this.cbIdioma_SelectedIndexChanged);
-                        // 
-            =======
-            >>>>>>> 55a5ac29285a6644bfc028c398e9aa608d00e867*/
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
-            this.metroLabel2.Location = new System.Drawing.Point(521, 575);
+            this.metroLabel2.Location = new System.Drawing.Point(774, 575);
             this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(341, 19);
+            this.metroLabel2.Size = new System.Drawing.Size(87, 19);
             this.metroLabel2.TabIndex = 3;
-            this.metroLabel2.Text = "By AMO6166™, we are hated but I feel loved with you. ©";
+            this.metroLabel2.Text = "By Nαnα™ ©";
             this.metroLabel2.Theme = MetroFramework.MetroThemeStyle.Dark;
+            this.metroLabel2.Click += new System.EventHandler(this.metroLabel2_Click);
             // 
             // label1
             // 
@@ -148,7 +133,7 @@ namespace amo6166
             this.cbLanguage.FormattingEnabled = true;
             this.cbLanguage.ItemHeight = 23;
             this.cbLanguage.Items.AddRange(new object[] {
-            "Português (Brasil)",
+            "Português",
             "English"});
             this.cbLanguage.Location = new System.Drawing.Point(693, 44);
             this.cbLanguage.Name = "cbLanguage";

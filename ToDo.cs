@@ -8,16 +8,12 @@ using System.Windows.Forms;
 
 namespace amo6166
 {
-    public partial class Marco : MetroFramework.Forms.MetroForm
+    public partial class ToDo : MetroFramework.Forms.MetroForm
     {
-        public Marco()
+        public ToDo()
         {
             InitializeComponent();
         }
 
-        private void Marco_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

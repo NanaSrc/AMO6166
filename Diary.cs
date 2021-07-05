@@ -9,19 +9,19 @@ using System.Windows.Forms;
 
 namespace amo6166
 {
-    public partial class Terminal : MetroFramework.Forms.MetroForm
+    public partial class Diary : MetroFramework.Forms.MetroForm
     {
         string username;
         string content;
         string path;
         int count = 0;
-        public Terminal(string username)
+        public Diary(string username)
         {
             InitializeComponent();
             this.username = username;
 
-            if (username == "Nana")
-                path = "../../../notes/nana.txt";
+            if (username == "Lisa")
+                path = "../../../notes/lisa.txt";
             else
                 path = "../../../notes/marco.txt";
 
@@ -46,45 +46,18 @@ namespace amo6166
                     fs.Close();
                 }
             }
-
-            
-
-            /*try 
-            {
-                fs = new FileStream("text.txt", FileMode.OpenOrCreate, FileAccess.Write);
-                sw = new StreamWriter(fs);
-                sw.Write(content);
-
-                sw.Close();
-                fs.Close();
-            }
-            catch (System.IO.IOException)
-            {
-
-            }
-            finally
-            {
-
-            }*/
-
-            //}
         }
 
         private void tbTerminalzinho_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //string comando = tbTerminalzinho.Text;
-            /*if (e.KeyChar == (char)13)
-            {
-                content += ((char)11);
-                content.Replace(" ", "\t");
-            }*/
+            
         }
 
         private void Terminal_Load(object sender, EventArgs e)
         {
             tbTerminalzinho.Focus();
 
-            if (username == "Nana")
+            if (username == "Lisa")
             {
                 tbTerminalzinho.BackColor = Color.FromArgb(31, 29, 39);
                 tbTerminalzinho.ForeColor = Color.FromArgb(183, 161, 255); 
